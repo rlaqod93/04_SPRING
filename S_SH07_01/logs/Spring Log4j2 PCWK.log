@@ -1,0 +1,63 @@
+[2022-06-07 09:00:59.745] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-07 09:00:59.761] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3d285d7e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@40005471, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2cd76f31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@367ffa75, org.springframework.test.context.transaction.TransactionalTestExecutionListener@49438269, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ba2f4ec, org.springframework.test.context.event.EventPublishingTestExecutionListener@1c1bbc4e]
+[2022-06-07 09:00:59.965] DEBUG SonySpeaker.<init>(SonySpeaker.java:11) - 쏘니 스피커 생성자 호출
+[2022-06-07 09:00:59.982] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:28) - =================
+[2022-06-07 09:00:59.982] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:29) - =0. setUp()=
+[2022-06-07 09:00:59.982] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:30) - =================
+[2022-06-07 09:00:59.984] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:32) - =context=org.springframework.context.support.GenericApplicationContext@2d2ffcb7, started on Tue Jun 07 09:00:59 KST 2022
+[2022-06-07 09:00:59.984] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:33) - =tv=com.pcwk.ehr.LgTV@27912e3
+[2022-06-07 09:00:59.985] DEBUG JAnnotationTest.Test(JAnnotationTest.java:47) - =================
+[2022-06-07 09:00:59.985] DEBUG JAnnotationTest.Test(JAnnotationTest.java:48) - =Test()=
+[2022-06-07 09:00:59.985] DEBUG JAnnotationTest.Test(JAnnotationTest.java:49) - =================
+[2022-06-07 09:00:59.985] DEBUG LgTV.powerOn(LgTV.java:25) - 엘지TV 전원을 켠다.
+[2022-06-07 09:00:59.985] DEBUG SonySpeaker.volumeUp(SonySpeaker.java:15) - 쏘니 스피커 volumeUp 호출
+[2022-06-07 09:00:59.985] DEBUG SonySpeaker.volumeDown(SonySpeaker.java:19) - 쏘니 스피커 volumeDown 호출
+[2022-06-07 09:00:59.985] DEBUG LgTV.powerOff(LgTV.java:30) - 엘지TV 전원을 끈다.
+[2022-06-07 09:00:59.986] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:40) - =================
+[2022-06-07 09:00:59.987] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:41) - =9. tearDown()=
+[2022-06-07 09:00:59.987] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:42) - =================
+[2022-06-07 09:01:42.698] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-07 09:01:42.706] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-07 09:01:42.902] DEBUG SonySpeaker.<init>(SonySpeaker.java:11) - 쏘니 스피커 생성자 호출
+[2022-06-07 09:01:42.919] DEBUG JTvPcwk.setUp(JTvPcwk.java:29) - =================
+[2022-06-07 09:01:42.920] DEBUG JTvPcwk.setUp(JTvPcwk.java:30) - =0. setUp()=
+[2022-06-07 09:01:42.920] DEBUG JTvPcwk.setUp(JTvPcwk.java:31) - =================
+[2022-06-07 09:01:42.920] DEBUG JTvPcwk.tearDown(JTvPcwk.java:46) - =================
+[2022-06-07 09:01:42.920] DEBUG JTvPcwk.tearDown(JTvPcwk.java:47) - =9. tearDown()=
+[2022-06-07 09:01:42.920] DEBUG JTvPcwk.tearDown(JTvPcwk.java:48) - =================
+[2022-06-07 09:01:47.365] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-07 09:01:47.374] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-07 09:01:47.571] DEBUG SonySpeaker.<init>(SonySpeaker.java:11) - 쏘니 스피커 생성자 호출
+[2022-06-07 09:01:47.588] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:28) - =================
+[2022-06-07 09:01:47.589] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:29) - =0. setUp()=
+[2022-06-07 09:01:47.589] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:30) - =================
+[2022-06-07 09:01:47.590] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:32) - =context=org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Tue Jun 07 09:01:47 KST 2022
+[2022-06-07 09:01:47.591] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:33) - =tv=com.pcwk.ehr.LgTV@2f666ebb
+[2022-06-07 09:01:47.591] DEBUG JAnnotationTest.Test(JAnnotationTest.java:47) - =================
+[2022-06-07 09:01:47.591] DEBUG JAnnotationTest.Test(JAnnotationTest.java:48) - =Test()=
+[2022-06-07 09:01:47.591] DEBUG JAnnotationTest.Test(JAnnotationTest.java:49) - =================
+[2022-06-07 09:01:47.591] DEBUG LgTV.powerOn(LgTV.java:25) - 엘지TV 전원을 켠다.
+[2022-06-07 09:01:47.592] DEBUG SonySpeaker.volumeUp(SonySpeaker.java:15) - 쏘니 스피커 volumeUp 호출
+[2022-06-07 09:01:47.592] DEBUG SonySpeaker.volumeDown(SonySpeaker.java:19) - 쏘니 스피커 volumeDown 호출
+[2022-06-07 09:01:47.592] DEBUG LgTV.powerOff(LgTV.java:30) - 엘지TV 전원을 끈다.
+[2022-06-07 09:01:47.593] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:40) - =================
+[2022-06-07 09:01:47.593] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:41) - =9. tearDown()=
+[2022-06-07 09:01:47.593] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:42) - =================
+[2022-06-07 09:02:48.381] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-07 09:02:48.391] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-07 09:02:48.597] DEBUG SonySpeaker.<init>(SonySpeaker.java:11) - 쏘니 스피커 생성자 호출
+[2022-06-07 09:02:48.615] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:28) - =================
+[2022-06-07 09:02:48.615] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:29) - =0. setUp()=
+[2022-06-07 09:02:48.615] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:30) - =================
+[2022-06-07 09:02:48.617] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:32) - =context=org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Tue Jun 07 09:02:48 KST 2022
+[2022-06-07 09:02:48.617] DEBUG JAnnotationTest.setUp(JAnnotationTest.java:33) - =tv=com.pcwk.ehr.LgTV@2f666ebb
+[2022-06-07 09:02:48.617] DEBUG JAnnotationTest.Test(JAnnotationTest.java:47) - =================
+[2022-06-07 09:02:48.617] DEBUG JAnnotationTest.Test(JAnnotationTest.java:48) - =Test()=
+[2022-06-07 09:02:48.618] DEBUG JAnnotationTest.Test(JAnnotationTest.java:49) - =================
+[2022-06-07 09:02:48.618] DEBUG LgTV.powerOn(LgTV.java:25) - 엘지TV 전원을 켠다.
+[2022-06-07 09:02:48.618] DEBUG SonySpeaker.volumeUp(SonySpeaker.java:15) - 쏘니 스피커 volumeUp 호출
+[2022-06-07 09:02:48.618] DEBUG SonySpeaker.volumeDown(SonySpeaker.java:19) - 쏘니 스피커 volumeDown 호출
+[2022-06-07 09:02:48.618] DEBUG LgTV.powerOff(LgTV.java:30) - 엘지TV 전원을 끈다.
+[2022-06-07 09:02:48.619] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:40) - =================
+[2022-06-07 09:02:48.619] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:41) - =9. tearDown()=
+[2022-06-07 09:02:48.619] DEBUG JAnnotationTest.tearDown(JAnnotationTest.java:42) - =================
