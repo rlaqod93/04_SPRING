@@ -1,21 +1,17 @@
 package com.pcwk.ehr;
 
-public class UserVO extends DTO{
+public class UserVO extends DTO {
+	private String uId;  // 사용자 아이디
+	private String name; // 이름
+	private String passwd; // 미밀번호
 	
-	private String uId; // 사용자 아이디
-	private String name; // 사용자 이름
-	private String passwd; // 사용자 비번
+	private Level  level;//등급: 1 -> BASIC,2 -> SILVER,3 -> GOLD
+	private int    login; //로그인
+	private int    recommend;//추천수
+	private String email;//이메일
+	private String regDt;//등록일
 	
-	private Level level;// 등급 : 1->BASIC, 2->SILVER, 3->GOLD
-	private int login; // 로그인
-	private int recommend; // 추천수
-	private String email; // 이메일
-	private String regDt; // 등록일
-	
-	
-	public UserVO() {
-		
-	}
+	public UserVO() {}
 	
 	public UserVO(String uId, String name, String passwd, Level level, int login, int recommend, String email,
 			String regDt) {
@@ -29,7 +25,7 @@ public class UserVO extends DTO{
 		this.email = email;
 		this.regDt = regDt;
 	}
-
+	
 	public int getLogin() {
 		return login;
 	}
@@ -65,7 +61,7 @@ public class UserVO extends DTO{
 	public Level getLevel() {
 		return level;
 	}
-	
+
 	public void setLevel(Level level) {
 		this.level = level;
 	}
@@ -100,7 +96,8 @@ public class UserVO extends DTO{
 				+ ", recommend=" + recommend + ", email=" + email + ", regDt=" + regDt + ", toString()="
 				+ super.toString() + "]";
 	}
-	
+
+    //
 	/**
 	 * 다음 레벨로 up
 	 */
@@ -112,6 +109,8 @@ public class UserVO extends DTO{
 			this.level = nextLevel;
 		}
 	}
+	
+
 	
 	
 }

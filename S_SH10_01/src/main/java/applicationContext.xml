@@ -4,22 +4,22 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
-	
-	<!-- service -->
-	<bean id="userService" class="com.pcwk.ehr.UserServicelmpl">
-		<property name="userDao" ref="userDao"/>
-		<property name="dataSource" ref="dataSource"></property>
-	</bean>
-	
+    
+    <!-- service -->
+    <bean id="userService" class="com.pcwk.ehr.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
     <!-- DataSource를 구현한 SimpleDriverDataSource -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <!-- jdbc 드라이버 -->
         <property name="driverClass" value="oracle.jdbc.driver.OracleDriver"/>
         <!-- jdbc url -->
         <property name="url" value="jdbc:oracle:thin:@192.168.3.101:1521:xe"/>
+<!--    <property name="url" value="jdbc:oracle:thin:@192.168.3.23:1521:xe"/> -->
         <!-- username -->
         <property name="username" value="SPRING"/>
-        <!-- 비밀번호 -->
+        <!-- password -->
         <property name="password" value="pcwk_spring"/>
     </bean>
     

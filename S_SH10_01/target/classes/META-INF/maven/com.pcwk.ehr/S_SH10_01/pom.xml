@@ -12,7 +12,7 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-   <properties>
+    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -22,25 +22,10 @@
         <ojdbc8-version>18.3.0.0</ojdbc8-version>
         <spring-context-version>5.3.18</spring-context-version>
         <spring-jdbc-version>5.3.18</spring-jdbc-version>
-        <javax.mail-version>1.4.7</javax.mail-version>
     </properties>
 
     <!-- lib관리 -->
     <dependencies>
-    <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
-	<dependency>
-	    <groupId>javax.mail</groupId>
-	    <artifactId>mail</artifactId>
-	    <version>${javax.mail-version}</version>
-	</dependency>
-    
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-context-support</artifactId>
-	    <version>${spring-context-version}</version>
-	</dependency>
-    
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
         <dependency>
             <groupId>org.springframework</groupId>

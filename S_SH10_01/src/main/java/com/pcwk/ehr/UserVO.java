@@ -101,17 +101,4 @@ public class UserVO extends DTO{
 				+ super.toString() + "]";
 	}
 	
-	/**
-	 * 다음 레벨로 up
-	 */
-	public void upgradeLevel() {
-		Level nextLevel = this.level.nextLevel();
-		if(null == nextLevel) {
-			throw new IllegalArgumentException(this.level+"더이상 등업이 불가능 합니다.");
-		}else {
-			this.level = nextLevel;
-		}
-	}
-	
-	
 }

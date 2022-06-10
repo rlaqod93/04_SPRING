@@ -1,73 +1,20 @@
 package com.pcwk.ehr;
 
-public class UserVO extends DTO{
-	
+public class UserVO {
+
 	private String uId; // 사용자 아이디
 	private String name; // 사용자 이름
 	private String passwd; // 사용자 비번
-	
-	private Level level;// 등급 : 1->BASIC, 2->SILVER, 3->GOLD
-	private int login; // 로그인
-	private int recommend; // 추천수
-	private String email; // 이메일
-	private String regDt; // 등록일
-	
-	
+
 	public UserVO() {
 		
 	}
-	
-	public UserVO(String uId, String name, String passwd, Level level, int login, int recommend, String email,
-			String regDt) {
+
+	public UserVO(String uId, String name, String passwd) {
 		super();
 		this.uId = uId;
 		this.name = name;
 		this.passwd = passwd;
-		this.level = level;
-		this.login = login;
-		this.recommend = recommend;
-		this.email = email;
-		this.regDt = regDt;
-	}
-
-	public int getLogin() {
-		return login;
-	}
-
-	public void setLogin(int login) {
-		this.login = login;
-	}
-
-	public int getRecommend() {
-		return recommend;
-	}
-
-	public void setRecommend(int recommend) {
-		this.recommend = recommend;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getRegDt() {
-		return regDt;
-	}
-
-	public void setRegDt(String regDt) {
-		this.regDt = regDt;
-	}
-
-	public Level getLevel() {
-		return level;
-	}
-	
-	public void setLevel(Level level) {
-		this.level = level;
 	}
 
 	public String getuId() {
@@ -96,9 +43,9 @@ public class UserVO extends DTO{
 
 	@Override
 	public String toString() {
-		return "UserVO [uId=" + uId + ", name=" + name + ", passwd=" + passwd + ", level=" + level + ", login=" + login
-				+ ", recommend=" + recommend + ", email=" + email + ", regDt=" + regDt + ", toString()="
-				+ super.toString() + "]";
+		return "UserVO [uId=" + uId + ", name=" + name + ", passwd=" + passwd + "]";
 	}
 	
+	
+
 }

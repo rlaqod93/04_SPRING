@@ -24,15 +24,14 @@ public interface UserDao {
 	int doDelete(UserVO inVO) throws SQLException;
 	
 	/**
-	 * 사용자 수정 기능
+	 * 사용자 수정 가능
 	 * @param inVO
 	 * @return 1(성공) / 0(실패)
 	 * @throws SQLException
 	 */
 	int doUpdate(UserVO inVO) throws SQLException;
-	
-	
-	List<UserVO> getAll(UserVO inVO);
+
+	List<UserVO> getAll();
 
 	// 총 건수
 	int getCount(UserVO inVO) throws SQLException;
@@ -45,7 +44,7 @@ public interface UserDao {
 	 * @throws SQLException
 	 * @throws ClassNotFoundException 
 	 */
-	int doInsert(UserVO inVO) throws SQLException;
+	int doInsert(UserVO inVO) throws SQLException;//수정
 
 	void deleteAll() throws SQLException;
 

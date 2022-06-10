@@ -54,6 +54,7 @@ public class UserDaoImpl implements UserDao {
 		jdbcTemplate = new JdbcTemplate(dataSource);
 	}
 	
+
 	@Override
 	public int doUpdate(UserVO inVO) throws SQLException {
 		int flag = 0;
@@ -86,28 +87,27 @@ public class UserDaoImpl implements UserDao {
 	
 	@Override
 	public List<UserVO> getAll(UserVO inVO){
-		//sb.append("WHERE u_id LIKE ? || '%' \n");
 		List<UserVO> list = null;
 		StringBuilder sb = new StringBuilder(100);
-		sb.append("SELECT u_id,             \n");
-		sb.append("       name,             \n");
-		sb.append("       passwd,           \n");
-		sb.append("       u_level,          \n");
-		sb.append("       login,            \n");
-		sb.append("       recommend,        \n");
-		sb.append("       email,            \n");
+		sb.append("SELECT u_id,      \n");
+		sb.append("       name,      \n");
+		sb.append("       passwd,    \n");
+		sb.append("       u_level,   \n");
+		sb.append("       login,     \n");
+		sb.append("       recommend, \n");
+		sb.append("       email,     \n");
 		sb.append("       TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt \n");
-		sb.append("FROM hr_member           \n");
+		sb.append("FROM hr_member    \n");
 		sb.append("WHERE u_id LIKE ? || '%' \n");
-		sb.append("ORDER BY u_id            \n");
+		sb.append("ORDER BY u_id     \n");
 		LOG.debug("===========================");
-		LOG.debug("=param :\n" + inVO.toString());
+		LOG.debug("=param : " + inVO.toString());
 		LOG.debug("=sql :\n" + sb.toString());
 		LOG.debug("===========================");
-		
 		Object[] args = {inVO.getuId()};
 		
-		list = jdbcTemplate.query(sb.toString(), rowMapper,args);
+		list = jdbcTemplate.query(sb.toString(), rowMapper, args);
+		
 		for(UserVO vo : list) {
 			LOG.debug("vo : " + vo.toString());
 		}
@@ -151,34 +151,33 @@ public class UserDaoImpl implements UserDao {
 	public int doInsert(final UserVO inVO) throws SQLException{
 		int flag = 0;
 		StringBuilder sb = new StringBuilder(100);
-		sb.append(" INSERT INTO hr_member (    \n");
-		sb.append(" 	    u_id,              \n");
-		sb.append(" 	    name,              \n");
-		sb.append(" 	    passwd,            \n");
-		sb.append("         u_level,           \n");
-		sb.append("         login,             \n");
-		sb.append("         recommend,         \n");
-		sb.append("         email,             \n");
-		sb.append("         reg_dt             \n");
-		sb.append(" ) VALUES (                 \n");
-		sb.append(" 	?,                     \n");
-		sb.append(" 	?,                     \n");
-		sb.append(" 	?,                     \n");
-		sb.append(" 	?,                     \n");
-		sb.append(" 	?,                     \n");
-		sb.append(" 	?,                     \n");
-		sb.append(" 	?,                     \n");
-		sb.append(" 	SYSDATE                \n");
-		sb.append(" )                          \n");
+		sb.append(" INSERT INTO hr_member (   \n");
+		sb.append(" 	        u_id,         \n");
+		sb.append(" 	        name,         \n");
+		sb.append(" 	        passwd,       \n");
+		sb.append("             u_level,      \n");
+		sb.append("             login,        \n");
+		sb.append("             recommend,    \n");
+		sb.append("             email,        \n");
+		sb.append("             reg_dt        \n");
+		sb.append(" ) VALUES (                \n");
+		sb.append(" 	?,                    \n");
+		sb.append(" 	?,                    \n");
+		sb.append(" 	?,                    \n");
+		sb.append(" 	?,                    \n");
+		sb.append(" 	?,                    \n");
+		sb.append(" 	?,                    \n");
+		sb.append(" 	?,                    \n");
+		sb.append(" 	SYSDATE               \n");
+		sb.append(" )                         \n");
 		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
 		LOG.debug("sql:\n" + sb.toString());
 		LOG.debug("============================");
 		
 		Object[] args = {inVO.getuId(), inVO.getName(), inVO.getPasswd(),
-						 inVO.getLevel().getValue(),inVO.getLogin(),inVO.getRecommend(),inVO.getEmail()
-		};
-		
+						inVO.getLevel().getValue(), inVO.getLogin(),
+						inVO.getRecommend(), inVO.getEmail()};
 		for(Object obj : args) {
 			LOG.debug("Object param : " + obj.toString());
 		}
@@ -223,8 +222,8 @@ public class UserDaoImpl implements UserDao {
 		sb.append("       recommend, \n");
 		sb.append("       email,     \n");
 		sb.append("       TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt \n");
-		sb.append("FROM   hr_member  \n");
-		sb.append("WHERE  u_id = ?   \n");
+		sb.append("FROM   hr_member \n");
+		sb.append("WHERE  u_id = ?  \n");
 		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
 		LOG.debug("sql:\n" + sb.toString());
@@ -252,21 +251,17 @@ public class UserDaoImpl implements UserDao {
 		int flag = 0;
 		StringBuilder sb = new StringBuilder(100);
 		sb.append("DELETE FROM hr_member \n");
-		sb.append("WHERE u_id = ?        \n");
+		sb.append("WHERE u_id = ? \n");
 		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
 		LOG.debug("sql:\n" + sb.toString());
 		LOG.debug("============================");
-		
-		Object[] args = {inVO.getuId()	};
-		
+		Object[] args = {inVO.getuId()};
 		for(Object obj : args) {
 			LOG.debug("Object param : " + obj.toString());
 		}
-		
 		flag = jdbcTemplate.update(sb.toString(), args);
-		LOG.debug("flag : " + flag);
-		
+		LOG.debug("flag = " + flag);
 		return flag;
 	}
 
@@ -275,6 +270,5 @@ public class UserDaoImpl implements UserDao {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 
 }

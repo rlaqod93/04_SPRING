@@ -1,245 +1,86 @@
-[2022-06-07 09:03:51.908] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-[2022-06-07 09:03:51.924] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
-[2022-06-07 09:03:52.151] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - ========================
-[2022-06-07 09:03:52.152] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =0.setUp()=
-[2022-06-07 09:03:52.152] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:40) - ========================
-[2022-06-07 09:03:52.154] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:46) - context : org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Tue Jun 07 09:03:52 KST 2022
-[2022-06-07 09:03:52.154] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:47) - dao : com.pcwk.ehr.UserDaoImpl@39b43d60
-[2022-06-07 09:03:52.154] DEBUG UserDaoImpl.deleteAll(UserDaoImpl.java:133) - ============================
-[2022-06-07 09:03:52.155] DEBUG UserDaoImpl.deleteAll(UserDaoImpl.java:134) - sql:
-DELETE FROM hr_member 
-
-[2022-06-07 09:03:52.155] DEBUG UserDaoImpl.deleteAll(UserDaoImpl.java:135) - ============================
-[2022-06-07 09:03:52.763] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:76) - ============================
-[2022-06-07 09:03:52.763] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:77) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:52.763] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:78) - sql:
-SELECT COUNT(*) AS cnt   
-FROM hr_member           
-WHERE u_id LIKE ? || '%' 
-
-[2022-06-07 09:03:52.763] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:79) - ============================
-[2022-06-07 09:03:52.763] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - Object param:p03
-[2022-06-07 09:03:52.871] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ============================
-[2022-06-07 09:03:52.871] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:85) - count=0
-[2022-06-07 09:03:52.871] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ============================
-[2022-06-07 09:03:52.872] DEBUG UserDaoImpl.add(UserDaoImpl.java:112) - ============================
-[2022-06-07 09:03:52.872] DEBUG UserDaoImpl.add(UserDaoImpl.java:113) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:52.872] DEBUG UserDaoImpl.add(UserDaoImpl.java:114) - sql:
- INSERT INTO hr_member (    
- 	    u_id,              
- 	    name,              
- 	    passwd             
- ) VALUES (                 
- 	?,                     
- 	?,                     
- 	?                      
- )                          
-
-[2022-06-07 09:03:52.872] DEBUG UserDaoImpl.add(UserDaoImpl.java:115) - ============================
-[2022-06-07 09:03:52.872] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : p03
-[2022-06-07 09:03:52.872] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 김동호03
-[2022-06-07 09:03:52.872] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 1130
-[2022-06-07 09:03:52.922] DEBUG UserDaoImpl.add(UserDaoImpl.java:123) - flag : 1
-[2022-06-07 09:03:52.922] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:76) - ============================
-[2022-06-07 09:03:52.922] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:77) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:52.922] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:78) - sql:
-SELECT COUNT(*) AS cnt   
-FROM hr_member           
-WHERE u_id LIKE ? || '%' 
-
-[2022-06-07 09:03:52.922] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:79) - ============================
-[2022-06-07 09:03:52.922] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - Object param:p03
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ============================
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:85) - count=1
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ============================
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.add(UserDaoImpl.java:112) - ============================
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.add(UserDaoImpl.java:113) - param:UserVO [uId=p030, name=김동호030, passwd=1130]
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.add(UserDaoImpl.java:114) - sql:
- INSERT INTO hr_member (    
- 	    u_id,              
- 	    name,              
- 	    passwd             
- ) VALUES (                 
- 	?,                     
- 	?,                     
- 	?                      
- )                          
-
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.add(UserDaoImpl.java:115) - ============================
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : p030
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 김동호030
-[2022-06-07 09:03:52.965] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 1130
-[2022-06-07 09:03:53.006] DEBUG UserDaoImpl.add(UserDaoImpl.java:123) - flag : 1
-[2022-06-07 09:03:53.006] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:76) - ============================
-[2022-06-07 09:03:53.006] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:77) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.006] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:78) - sql:
-SELECT COUNT(*) AS cnt   
-FROM hr_member           
-WHERE u_id LIKE ? || '%' 
-
-[2022-06-07 09:03:53.006] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:79) - ============================
-[2022-06-07 09:03:53.006] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - Object param:p03
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ============================
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:85) - count=2
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ============================
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.add(UserDaoImpl.java:112) - ============================
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.add(UserDaoImpl.java:113) - param:UserVO [uId=p0300, name=김동호0300, passwd=1130]
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.add(UserDaoImpl.java:114) - sql:
- INSERT INTO hr_member (    
- 	    u_id,              
- 	    name,              
- 	    passwd             
- ) VALUES (                 
- 	?,                     
- 	?,                     
- 	?                      
- )                          
-
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.add(UserDaoImpl.java:115) - ============================
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : p0300
-[2022-06-07 09:03:53.047] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 김동호0300
-[2022-06-07 09:03:53.048] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 1130
-[2022-06-07 09:03:53.089] DEBUG UserDaoImpl.add(UserDaoImpl.java:123) - flag : 1
-[2022-06-07 09:03:53.090] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:76) - ============================
-[2022-06-07 09:03:53.090] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:77) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.090] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:78) - sql:
-SELECT COUNT(*) AS cnt   
-FROM hr_member           
-WHERE u_id LIKE ? || '%' 
-
-[2022-06-07 09:03:53.090] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:79) - ============================
-[2022-06-07 09:03:53.090] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - Object param:p03
-[2022-06-07 09:03:53.133] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ============================
-[2022-06-07 09:03:53.133] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:85) - count=3
-[2022-06-07 09:03:53.133] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ============================
-[2022-06-07 09:03:53.133] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:46) - ===========================
-[2022-06-07 09:03:53.133] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:47) - =sql :
-SELECT u_id,   
-       name,   
-       passwd 
-FROM hr_member 
-ORDER BY u_id  
-
-[2022-06-07 09:03:53.133] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:48) - ===========================
-[2022-06-07 09:03:53.183] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:61) - vo : UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.183] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:61) - vo : UserVO [uId=p030, name=김동호030, passwd=1130]
-[2022-06-07 09:03:53.183] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:61) - vo : UserVO [uId=p0300, name=김동호0300, passwd=1130]
-[2022-06-07 09:03:53.184] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:134) - ========================
-[2022-06-07 09:03:53.184] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:135) - =9.tearDown()=
-[2022-06-07 09:03:53.184] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:136) - ========================
-[2022-06-07 09:03:53.186] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - ========================
-[2022-06-07 09:03:53.186] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =0.setUp()=
-[2022-06-07 09:03:53.186] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:40) - ========================
-[2022-06-07 09:03:53.186] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:46) - context : org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Tue Jun 07 09:03:52 KST 2022
-[2022-06-07 09:03:53.186] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:47) - dao : com.pcwk.ehr.UserDaoImpl@39b43d60
-[2022-06-07 09:03:53.186] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:76) - ========================
-[2022-06-07 09:03:53.186] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:77) - =1.addAndGet()=
-[2022-06-07 09:03:53.186] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:78) - ========================
-[2022-06-07 09:03:53.186] DEBUG UserDaoImpl.deleteAll(UserDaoImpl.java:133) - ============================
-[2022-06-07 09:03:53.186] DEBUG UserDaoImpl.deleteAll(UserDaoImpl.java:134) - sql:
-DELETE FROM hr_member 
-
-[2022-06-07 09:03:53.186] DEBUG UserDaoImpl.deleteAll(UserDaoImpl.java:135) - ============================
-[2022-06-07 09:03:53.228] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:76) - ============================
-[2022-06-07 09:03:53.228] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:77) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.228] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:78) - sql:
-SELECT COUNT(*) AS cnt   
-FROM hr_member           
-WHERE u_id LIKE ? || '%' 
-
-[2022-06-07 09:03:53.228] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:79) - ============================
-[2022-06-07 09:03:53.228] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - Object param:p03
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ============================
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:85) - count=0
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ============================
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.add(UserDaoImpl.java:112) - ============================
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.add(UserDaoImpl.java:113) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.add(UserDaoImpl.java:114) - sql:
- INSERT INTO hr_member (    
- 	    u_id,              
- 	    name,              
- 	    passwd             
- ) VALUES (                 
- 	?,                     
- 	?,                     
- 	?                      
- )                          
-
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.add(UserDaoImpl.java:115) - ============================
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : p03
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 김동호03
-[2022-06-07 09:03:53.268] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 1130
-[2022-06-07 09:03:53.312] DEBUG UserDaoImpl.add(UserDaoImpl.java:123) - flag : 1
-[2022-06-07 09:03:53.312] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:76) - ============================
-[2022-06-07 09:03:53.312] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:77) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.312] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:78) - sql:
-SELECT COUNT(*) AS cnt   
-FROM hr_member           
-WHERE u_id LIKE ? || '%' 
-
-[2022-06-07 09:03:53.312] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:79) - ============================
-[2022-06-07 09:03:53.312] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - Object param:p03
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ============================
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:85) - count=1
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ============================
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.add(UserDaoImpl.java:112) - ============================
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.add(UserDaoImpl.java:113) - param:UserVO [uId=p030, name=김동호030, passwd=1130]
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.add(UserDaoImpl.java:114) - sql:
- INSERT INTO hr_member (    
- 	    u_id,              
- 	    name,              
- 	    passwd             
- ) VALUES (                 
- 	?,                     
- 	?,                     
- 	?                      
- )                          
-
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.add(UserDaoImpl.java:115) - ============================
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : p030
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 김동호030
-[2022-06-07 09:03:53.353] DEBUG UserDaoImpl.add(UserDaoImpl.java:119) - Object param : 1130
-[2022-06-07 09:03:53.412] DEBUG UserDaoImpl.add(UserDaoImpl.java:123) - flag : 1
-[2022-06-07 09:03:53.412] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:76) - ============================
-[2022-06-07 09:03:53.412] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:77) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.412] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:78) - sql:
-SELECT COUNT(*) AS cnt   
-FROM hr_member           
-WHERE u_id LIKE ? || '%' 
-
-[2022-06-07 09:03:53.413] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:79) - ============================
-[2022-06-07 09:03:53.413] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - Object param:p03
-[2022-06-07 09:03:53.454] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ============================
-[2022-06-07 09:03:53.454] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:85) - count=2
-[2022-06-07 09:03:53.454] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ============================
-[2022-06-07 09:03:53.454] DEBUG UserDaoImpl.get(UserDaoImpl.java:159) - ============================
-[2022-06-07 09:03:53.454] DEBUG UserDaoImpl.get(UserDaoImpl.java:160) - param:UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.454] DEBUG UserDaoImpl.get(UserDaoImpl.java:161) - sql:
-SELECT u_id,     
-       name,     
-       passwd    
-FROM   hr_member 
-WHERE  u_id = ?  
-
-[2022-06-07 09:03:53.454] DEBUG UserDaoImpl.get(UserDaoImpl.java:162) - ============================
-[2022-06-07 09:03:53.454] DEBUG UserDaoImpl.get(UserDaoImpl.java:165) - Object param:p03
-[2022-06-07 09:03:53.499] DEBUG UserDaoImpl.get(UserDaoImpl.java:187) - ============================
-[2022-06-07 09:03:53.499] DEBUG UserDaoImpl.get(UserDaoImpl.java:188) - outVO=UserVO [uId=p03, name=김동호03, passwd=1130]
-[2022-06-07 09:03:53.499] DEBUG UserDaoImpl.get(UserDaoImpl.java:189) - ============================
-[2022-06-07 09:03:53.499] DEBUG UserDaoImpl.get(UserDaoImpl.java:159) - ============================
-[2022-06-07 09:03:53.499] DEBUG UserDaoImpl.get(UserDaoImpl.java:160) - param:UserVO [uId=p030, name=김동호030, passwd=1130]
-[2022-06-07 09:03:53.499] DEBUG UserDaoImpl.get(UserDaoImpl.java:161) - sql:
-SELECT u_id,     
-       name,     
-       passwd    
-FROM   hr_member 
-WHERE  u_id = ?  
-
-[2022-06-07 09:03:53.499] DEBUG UserDaoImpl.get(UserDaoImpl.java:162) - ============================
-[2022-06-07 09:03:53.499] DEBUG UserDaoImpl.get(UserDaoImpl.java:165) - Object param:p030
-[2022-06-07 09:03:53.540] DEBUG UserDaoImpl.get(UserDaoImpl.java:187) - ============================
-[2022-06-07 09:03:53.540] DEBUG UserDaoImpl.get(UserDaoImpl.java:188) - outVO=UserVO [uId=p030, name=김동호030, passwd=1130]
-[2022-06-07 09:03:53.540] DEBUG UserDaoImpl.get(UserDaoImpl.java:189) - ============================
-[2022-06-07 09:03:53.540] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:134) - ========================
-[2022-06-07 09:03:53.540] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:135) - =9.tearDown()=
-[2022-06-07 09:03:53.540] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:136) - ========================
+[2022-06-02 11:20:24.334] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 11:20:24.344] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 11:20:24.530] DEBUG JTvPcwk.setUp(JTvPcwk.java:29) - =================
+[2022-06-02 11:20:24.530] DEBUG JTvPcwk.setUp(JTvPcwk.java:30) - =0. setUp()=
+[2022-06-02 11:20:24.530] DEBUG JTvPcwk.setUp(JTvPcwk.java:31) - =================
+[2022-06-02 11:20:24.531] DEBUG SamsungTV.<init>(SamsungTV.java:11) - 삼성TV 디폴트 생성자 SamsungTV()
+[2022-06-02 11:20:24.531] DEBUG SamsungTV.initMethod(SamsungTV.java:16) - 삼성TV initMethod()
+[2022-06-02 11:20:24.531] DEBUG SamsungTV.<init>(SamsungTV.java:11) - 삼성TV 디폴트 생성자 SamsungTV()
+[2022-06-02 11:20:24.532] DEBUG SamsungTV.initMethod(SamsungTV.java:16) - 삼성TV initMethod()
+[2022-06-02 11:20:24.534] DEBUG JTvPcwk.setUp(JTvPcwk.java:35) - =context=org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Thu Jun 02 11:20:24 KST 2022
+[2022-06-02 11:20:24.534] DEBUG JTvPcwk.setUp(JTvPcwk.java:36) - =tv01=com.pcwk.ehr.SamsungTV@821330f
+[2022-06-02 11:20:24.534] DEBUG JTvPcwk.setUp(JTvPcwk.java:37) - =tv02=com.pcwk.ehr.SamsungTV@6f43c82
+[2022-06-02 11:20:24.534] DEBUG JTvPcwk.tvTest(JTvPcwk.java:53) - =================
+[2022-06-02 11:20:24.534] DEBUG JTvPcwk.tvTest(JTvPcwk.java:54) - =tvTest()=
+[2022-06-02 11:20:24.535] DEBUG JTvPcwk.tvTest(JTvPcwk.java:55) - =================
+[2022-06-02 11:20:24.535] DEBUG SamsungTV.powerOn(SamsungTV.java:26) - 삼성TV 전원을 켠다.
+[2022-06-02 11:20:24.535] DEBUG SamsungTV.volumeUp(SamsungTV.java:36) - 삼성TV 볼륨을 높인다..
+[2022-06-02 11:20:24.535] DEBUG SamsungTV.volumeDown(SamsungTV.java:41) - 삼성TV 볼륨을 낮춘다..
+[2022-06-02 11:20:24.535] DEBUG SamsungTV.powerOff(SamsungTV.java:31) - 삼성TV 전원을 끈다.
+[2022-06-02 11:20:24.536] DEBUG JTvPcwk.tearDown(JTvPcwk.java:46) - =================
+[2022-06-02 11:20:24.536] DEBUG JTvPcwk.tearDown(JTvPcwk.java:47) - =9. tearDown()=
+[2022-06-02 11:20:24.536] DEBUG JTvPcwk.tearDown(JTvPcwk.java:48) - =================
+[2022-06-02 11:20:50.735] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 11:20:50.745] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 11:20:50.889] DEBUG SamsungTV.<init>(SamsungTV.java:11) - 삼성TV 디폴트 생성자 SamsungTV()
+[2022-06-02 11:20:50.891] DEBUG SamsungTV.initMethod(SamsungTV.java:16) - 삼성TV initMethod()
+[2022-06-02 11:20:50.910] DEBUG JTvPcwk.setUp(JTvPcwk.java:29) - =================
+[2022-06-02 11:20:50.911] DEBUG JTvPcwk.setUp(JTvPcwk.java:30) - =0. setUp()=
+[2022-06-02 11:20:50.911] DEBUG JTvPcwk.setUp(JTvPcwk.java:31) - =================
+[2022-06-02 11:20:50.912] DEBUG JTvPcwk.setUp(JTvPcwk.java:35) - =context=org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Thu Jun 02 11:20:50 KST 2022
+[2022-06-02 11:20:50.913] DEBUG JTvPcwk.setUp(JTvPcwk.java:36) - =tv01=com.pcwk.ehr.SamsungTV@821330f
+[2022-06-02 11:20:50.913] DEBUG JTvPcwk.setUp(JTvPcwk.java:37) - =tv02=com.pcwk.ehr.SamsungTV@821330f
+[2022-06-02 11:20:50.913] DEBUG JTvPcwk.tvTest(JTvPcwk.java:53) - =================
+[2022-06-02 11:20:50.913] DEBUG JTvPcwk.tvTest(JTvPcwk.java:54) - =tvTest()=
+[2022-06-02 11:20:50.913] DEBUG JTvPcwk.tvTest(JTvPcwk.java:55) - =================
+[2022-06-02 11:20:50.914] DEBUG SamsungTV.powerOn(SamsungTV.java:26) - 삼성TV 전원을 켠다.
+[2022-06-02 11:20:50.914] DEBUG SamsungTV.volumeUp(SamsungTV.java:36) - 삼성TV 볼륨을 높인다..
+[2022-06-02 11:20:50.914] DEBUG SamsungTV.volumeDown(SamsungTV.java:41) - 삼성TV 볼륨을 낮춘다..
+[2022-06-02 11:20:50.914] DEBUG SamsungTV.powerOff(SamsungTV.java:31) - 삼성TV 전원을 끈다.
+[2022-06-02 11:20:50.915] DEBUG JTvPcwk.tearDown(JTvPcwk.java:46) - =================
+[2022-06-02 11:20:50.915] DEBUG JTvPcwk.tearDown(JTvPcwk.java:47) - =9. tearDown()=
+[2022-06-02 11:20:50.915] DEBUG JTvPcwk.tearDown(JTvPcwk.java:48) - =================
+[2022-06-02 11:20:50.924] DEBUG SamsungTV.destroyMethod(SamsungTV.java:21) - 삼성TV destroyMethod()
+[2022-06-02 11:29:32.179] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 11:29:32.188] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 11:29:32.348] DEBUG SamsungTV.<init>(SamsungTV.java:12) - 삼성TV 디폴트 생성자 SamsungTV()
+[2022-06-02 11:29:32.350] DEBUG SamsungTV.initMethod(SamsungTV.java:17) - 삼성TV initMethod()
+[2022-06-02 11:29:32.372] DEBUG JTvPcwk.setUp(JTvPcwk.java:29) - =================
+[2022-06-02 11:29:32.372] DEBUG JTvPcwk.setUp(JTvPcwk.java:30) - =0. setUp()=
+[2022-06-02 11:29:32.372] DEBUG JTvPcwk.setUp(JTvPcwk.java:31) - =================
+[2022-06-02 11:29:32.374] DEBUG JTvPcwk.setUp(JTvPcwk.java:35) - =context=org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Thu Jun 02 11:29:32 KST 2022
+[2022-06-02 11:29:32.374] DEBUG JTvPcwk.setUp(JTvPcwk.java:36) - =tv01=com.pcwk.ehr.SamsungTV@821330f
+[2022-06-02 11:29:32.374] DEBUG JTvPcwk.setUp(JTvPcwk.java:37) - =tv02=com.pcwk.ehr.SamsungTV@821330f
+[2022-06-02 11:29:32.375] DEBUG JTvPcwk.tvTest(JTvPcwk.java:53) - =================
+[2022-06-02 11:29:32.375] DEBUG JTvPcwk.tvTest(JTvPcwk.java:54) - =tvTest()=
+[2022-06-02 11:29:32.375] DEBUG JTvPcwk.tvTest(JTvPcwk.java:55) - =================
+[2022-06-02 11:29:32.375] DEBUG SamsungTV.powerOn(SamsungTV.java:27) - 삼성TV 전원을 켠다.
+[2022-06-02 11:29:32.375] DEBUG SonySpeaker.<init>(SonySpeaker.java:11) - 쏘니 스피커 생성자 호출
+[2022-06-02 11:29:32.375] DEBUG SonySpeaker.volumeUp(SonySpeaker.java:14) - 쏘니 스피커 volumeUp 호출
+[2022-06-02 11:29:32.376] DEBUG SonySpeaker.<init>(SonySpeaker.java:11) - 쏘니 스피커 생성자 호출
+[2022-06-02 11:29:32.376] DEBUG SonySpeaker.volumeDown(SonySpeaker.java:17) - 쏘니 스피커 volumeDown 호출
+[2022-06-02 11:29:32.376] DEBUG SamsungTV.powerOff(SamsungTV.java:32) - 삼성TV 전원을 끈다.
+[2022-06-02 11:29:32.377] DEBUG JTvPcwk.tearDown(JTvPcwk.java:46) - =================
+[2022-06-02 11:29:32.377] DEBUG JTvPcwk.tearDown(JTvPcwk.java:47) - =9. tearDown()=
+[2022-06-02 11:29:32.377] DEBUG JTvPcwk.tearDown(JTvPcwk.java:48) - =================
+[2022-06-02 11:29:32.386] DEBUG SamsungTV.destroyMethod(SamsungTV.java:22) - 삼성TV destroyMethod()
+[2022-06-02 11:35:37.071] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-02 11:35:37.081] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-02 11:35:37.246] DEBUG SonySpeaker.<init>(SonySpeaker.java:11) - 쏘니 스피커 생성자 호출
+[2022-06-02 11:35:37.265] DEBUG SamsungTV.initMethod(SamsungTV.java:23) - 삼성TV initMethod()
+[2022-06-02 11:35:37.285] DEBUG JTvPcwk.setUp(JTvPcwk.java:29) - =================
+[2022-06-02 11:35:37.286] DEBUG JTvPcwk.setUp(JTvPcwk.java:30) - =0. setUp()=
+[2022-06-02 11:35:37.286] DEBUG JTvPcwk.setUp(JTvPcwk.java:31) - =================
+[2022-06-02 11:35:37.289] DEBUG JTvPcwk.setUp(JTvPcwk.java:35) - =context=org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Thu Jun 02 11:35:37 KST 2022
+[2022-06-02 11:35:37.289] DEBUG JTvPcwk.setUp(JTvPcwk.java:36) - =tv01=com.pcwk.ehr.SamsungTV@2f953efd
+[2022-06-02 11:35:37.289] DEBUG JTvPcwk.setUp(JTvPcwk.java:37) - =tv02=com.pcwk.ehr.SamsungTV@2f953efd
+[2022-06-02 11:35:37.290] DEBUG JTvPcwk.tvTest(JTvPcwk.java:53) - =================
+[2022-06-02 11:35:37.290] DEBUG JTvPcwk.tvTest(JTvPcwk.java:54) - =tvTest()=
+[2022-06-02 11:35:37.290] DEBUG JTvPcwk.tvTest(JTvPcwk.java:55) - =================
+[2022-06-02 11:35:37.290] DEBUG SamsungTV.powerOn(SamsungTV.java:33) - 삼성TV 전원을 켠다.
+[2022-06-02 11:35:37.290] DEBUG SonySpeaker.volumeUp(SonySpeaker.java:14) - 쏘니 스피커 volumeUp 호출
+[2022-06-02 11:35:37.290] DEBUG SonySpeaker.volumeDown(SonySpeaker.java:17) - 쏘니 스피커 volumeDown 호출
+[2022-06-02 11:35:37.291] DEBUG SamsungTV.powerOff(SamsungTV.java:38) - 삼성TV 전원을 끈다.
+[2022-06-02 11:35:37.292] DEBUG JTvPcwk.tearDown(JTvPcwk.java:46) - =================
+[2022-06-02 11:35:37.292] DEBUG JTvPcwk.tearDown(JTvPcwk.java:47) - =9. tearDown()=
+[2022-06-02 11:35:37.292] DEBUG JTvPcwk.tearDown(JTvPcwk.java:48) - =================

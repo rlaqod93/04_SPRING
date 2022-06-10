@@ -1,18 +1,20 @@
 package com.pcwk.ehr;
 
 public enum Level {
-	
+
 	//BASIC(1),SILVER(2),GOLD(3);
-	GOLD(3,null),SILVER(2,GOLD),BASIC(1,SILVER);
+	GOLD(3,null),SILVER(2,GOLD), BASIC(1,SILVER);
 	
 	private final int value;
 	//다음 레벨
 	private final Level next;
 	
+	
 	Level(int value,Level next){
 		this.value = value;
-		this.next = next;
+		this.next  = next;
 	}
+
 	/**
 	 * 다음 Level 가지고 오기
 	 * @return Level
@@ -20,7 +22,6 @@ public enum Level {
 	public Level nextLevel() {
 		return this.next;
 	}
-	
 	
 	/**
 	 * 값을 가지고 올때 사용
@@ -43,7 +44,7 @@ public enum Level {
 		case 1: return BASIC;
 		case 2: return SILVER;
 		case 3: return GOLD;
-		default : throw new AssertionError("Unknown value:"+value);
+		default: throw new AssertionError("Unknown value:"+ value);
 		
 		}
 	}

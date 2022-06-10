@@ -1,0 +1,467 @@
+[2022-06-09 10:48:26.002] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-09 10:48:26.017] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a52dba3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2a5c8d3f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@752325ad, org.springframework.test.context.support.DirtiesContextTestExecutionListener@279fedbd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@b3ca52e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@45c7e403, org.springframework.test.context.event.EventPublishingTestExecutionListener@2925bf5b]
+[2022-06-09 10:48:26.232] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'dataSource' of bean class [com.pcwk.ehr.UserServiceImpl]: Bean property 'dataSource' is not writable or has an invalid setter method. Did you mean 'datasource'?
+[2022-06-09 10:48:26.234] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@752325ad] to prepare test instance [com.pcwk.ehr.JUnitUserServiceTest@62656be4]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'dataSource' of bean class [com.pcwk.ehr.UserServiceImpl]: Bean property 'dataSource' is not writable or has an invalid setter method. Did you mean 'datasource'?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1744) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'dataSource' of bean class [com.pcwk.ehr.UserServiceImpl]: Bean property 'dataSource' is not writable or has an invalid setter method. Did you mean 'datasource'?
+	at org.springframework.beans.BeanWrapperImpl.createNotWritablePropertyException(BeanWrapperImpl.java:243) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.processLocalProperty(AbstractNestablePropertyAccessor.java:432) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:278) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:266) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:104) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:79) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1740) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-09 11:05:19.629] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-09 11:05:19.639] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3d285d7e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@40005471, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2cd76f31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@367ffa75, org.springframework.test.context.transaction.TransactionalTestExecutionListener@49438269, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ba2f4ec, org.springframework.test.context.event.EventPublishingTestExecutionListener@1c1bbc4e]
+[2022-06-09 11:05:19.864] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'dataSource' of bean class [com.pcwk.ehr.UserServiceImpl]: Bean property 'dataSource' is not writable or has an invalid setter method. Did you mean 'datasource'?
+[2022-06-09 11:05:19.866] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2cd76f31] to prepare test instance [com.pcwk.ehr.JUnitUserServiceTest@78fa769e]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in class path resource [applicationContext.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'dataSource' of bean class [com.pcwk.ehr.UserServiceImpl]: Bean property 'dataSource' is not writable or has an invalid setter method. Did you mean 'datasource'?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1744) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'dataSource' of bean class [com.pcwk.ehr.UserServiceImpl]: Bean property 'dataSource' is not writable or has an invalid setter method. Did you mean 'datasource'?
+	at org.springframework.beans.BeanWrapperImpl.createNotWritablePropertyException(BeanWrapperImpl.java:243) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.processLocalProperty(AbstractNestablePropertyAccessor.java:432) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:278) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:266) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:104) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:79) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1740) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-09 11:06:10.246] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-09 11:06:10.259] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3d285d7e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@40005471, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2cd76f31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@367ffa75, org.springframework.test.context.transaction.TransactionalTestExecutionListener@49438269, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ba2f4ec, org.springframework.test.context.event.EventPublishingTestExecutionListener@1c1bbc4e]
+[2022-06-09 11:06:10.487] DEBUG JUnitUserServiceTest.setUp(JUnitUserServiceTest.java:50) - ========================
+[2022-06-09 11:06:10.487] DEBUG JUnitUserServiceTest.setUp(JUnitUserServiceTest.java:51) - =0.setUp()=
+[2022-06-09 11:06:10.487] DEBUG JUnitUserServiceTest.setUp(JUnitUserServiceTest.java:52) - ========================
+[2022-06-09 11:06:10.489] DEBUG JUnitUserServiceTest.setUp(JUnitUserServiceTest.java:65) - context : org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Thu Jun 09 11:06:10 KST 2022
+[2022-06-09 11:06:10.489] DEBUG JUnitUserServiceTest.setUp(JUnitUserServiceTest.java:66) - userService : com.pcwk.ehr.UserServiceImpl@6aa8e115
+[2022-06-09 11:06:10.489] DEBUG JUnitUserServiceTest.setUp(JUnitUserServiceTest.java:67) - dao : com.pcwk.ehr.UserDaoImpl@5e21e98f
+[2022-06-09 11:06:10.489] DEBUG JUnitUserServiceTest.setUp(JUnitUserServiceTest.java:68) - dataSource : org.springframework.jdbc.datasource.SimpleDriverDataSource@51a9ad5e
+[2022-06-09 11:06:10.490] DEBUG TestUserService.<init>(TestUserService.java:21) - ===========================
+[2022-06-09 11:06:10.490] DEBUG TestUserService.<init>(TestUserService.java:22) - =uId=p03000
+[2022-06-09 11:06:10.490] DEBUG TestUserService.<init>(TestUserService.java:23) - ===========================
+[2022-06-09 11:06:10.490] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:255) - ============================
+[2022-06-09 11:06:10.490] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:256) - param:UserVO [uId=p03, name=김동호03, passwd=1130, level=BASIC, login=49, recommend=0, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@609bcfb6]
+[2022-06-09 11:06:10.491] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:257) - sql:
+DELETE FROM hr_member 
+WHERE u_id = ? 
+
+[2022-06-09 11:06:10.491] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:258) - ============================
+[2022-06-09 11:06:10.491] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:261) - Object param : p03
+[2022-06-09 11:06:10.965] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:264) - flag = 0
+[2022-06-09 11:06:10.966] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:255) - ============================
+[2022-06-09 11:06:10.966] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:256) - param:UserVO [uId=p030, name=김동호030, passwd=1130, level=BASIC, login=50, recommend=10, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@63b1d4fa]
+[2022-06-09 11:06:10.966] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:257) - sql:
+DELETE FROM hr_member 
+WHERE u_id = ? 
+
+[2022-06-09 11:06:10.966] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:258) - ============================
+[2022-06-09 11:06:10.966] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:261) - Object param : p030
+[2022-06-09 11:06:11.044] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:264) - flag = 0
+[2022-06-09 11:06:11.044] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:255) - ============================
+[2022-06-09 11:06:11.045] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:256) - param:UserVO [uId=p0300, name=김동호0300, passwd=1130, level=SILVER, login=51, recommend=29, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@75459c75]
+[2022-06-09 11:06:11.045] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:257) - sql:
+DELETE FROM hr_member 
+WHERE u_id = ? 
+
+[2022-06-09 11:06:11.045] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:258) - ============================
+[2022-06-09 11:06:11.045] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:261) - Object param : p0300
+[2022-06-09 11:06:11.116] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:264) - flag = 0
+[2022-06-09 11:06:11.116] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:255) - ============================
+[2022-06-09 11:06:11.116] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:256) - param:UserVO [uId=p03000, name=김동호03000, passwd=1130, level=SILVER, login=51, recommend=30, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@3e5499cc]
+[2022-06-09 11:06:11.116] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:257) - sql:
+DELETE FROM hr_member 
+WHERE u_id = ? 
+
+[2022-06-09 11:06:11.116] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:258) - ============================
+[2022-06-09 11:06:11.116] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:261) - Object param : p03000
+[2022-06-09 11:06:11.179] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:264) - flag = 0
+[2022-06-09 11:06:11.180] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:255) - ============================
+[2022-06-09 11:06:11.180] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:256) - param:UserVO [uId=p030000, name=김동호030000, passwd=1130, level=GOLD, login=52, recommend=31, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2a3c96e3]
+[2022-06-09 11:06:11.180] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:257) - sql:
+DELETE FROM hr_member 
+WHERE u_id = ? 
+
+[2022-06-09 11:06:11.180] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:258) - ============================
+[2022-06-09 11:06:11.180] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:261) - Object param : p030000
+[2022-06-09 11:06:11.243] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:264) - flag = 0
+[2022-06-09 11:06:11.243] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:127) - ============================
+[2022-06-09 11:06:11.243] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:128) - param:UserVO [uId=p03, name=김동호03, passwd=1130, level=BASIC, login=49, recommend=0, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@609bcfb6]
+[2022-06-09 11:06:11.243] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:129) - sql:
+SELECT COUNT(*) AS cnt   
+FROM hr_member           
+WHERE u_id LIKE ? || '%' 
+
+[2022-06-09 11:06:11.243] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:130) - ============================
+[2022-06-09 11:06:11.243] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:132) - Object param:p03
+[2022-06-09 11:06:11.340] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:135) - ============================
+[2022-06-09 11:06:11.340] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:136) - count=0
+[2022-06-09 11:06:11.340] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:137) - ============================
+[2022-06-09 11:06:11.341] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:173) - ============================
+[2022-06-09 11:06:11.341] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:174) - param:UserVO [uId=p03, name=김동호03, passwd=1130, level=BASIC, login=49, recommend=0, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@609bcfb6]
+[2022-06-09 11:06:11.341] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:175) - sql:
+ INSERT INTO hr_member (   
+ 	        u_id,         
+ 	        name,         
+ 	        passwd,       
+             u_level,      
+             login,        
+             recommend,    
+             email,        
+             reg_dt        
+ ) VALUES (                
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	SYSDATE               
+ )                         
+
+[2022-06-09 11:06:11.341] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:176) - ============================
+[2022-06-09 11:06:11.341] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : p03
+[2022-06-09 11:06:11.341] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 김동호03
+[2022-06-09 11:06:11.342] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 1130
+[2022-06-09 11:06:11.342] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 1
+[2022-06-09 11:06:11.342] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 49
+[2022-06-09 11:06:11.342] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 0
+[2022-06-09 11:06:11.342] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : tubus1130@gmail.com
+[2022-06-09 11:06:11.425] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:186) - flag : 1
+[2022-06-09 11:06:11.425] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:173) - ============================
+[2022-06-09 11:06:11.425] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:174) - param:UserVO [uId=p030, name=김동호030, passwd=1130, level=BASIC, login=50, recommend=10, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@63b1d4fa]
+[2022-06-09 11:06:11.425] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:175) - sql:
+ INSERT INTO hr_member (   
+ 	        u_id,         
+ 	        name,         
+ 	        passwd,       
+             u_level,      
+             login,        
+             recommend,    
+             email,        
+             reg_dt        
+ ) VALUES (                
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	SYSDATE               
+ )                         
+
+[2022-06-09 11:06:11.425] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:176) - ============================
+[2022-06-09 11:06:11.425] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : p030
+[2022-06-09 11:06:11.425] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 김동호030
+[2022-06-09 11:06:11.425] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 1130
+[2022-06-09 11:06:11.426] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 1
+[2022-06-09 11:06:11.426] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 50
+[2022-06-09 11:06:11.426] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 10
+[2022-06-09 11:06:11.426] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : tubus1130@gmail.com
+[2022-06-09 11:06:11.552] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:186) - flag : 1
+[2022-06-09 11:06:11.552] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:173) - ============================
+[2022-06-09 11:06:11.552] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:174) - param:UserVO [uId=p0300, name=김동호0300, passwd=1130, level=SILVER, login=51, recommend=29, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@75459c75]
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:175) - sql:
+ INSERT INTO hr_member (   
+ 	        u_id,         
+ 	        name,         
+ 	        passwd,       
+             u_level,      
+             login,        
+             recommend,    
+             email,        
+             reg_dt        
+ ) VALUES (                
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	SYSDATE               
+ )                         
+
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:176) - ============================
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : p0300
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 김동호0300
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 1130
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 2
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 51
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 29
+[2022-06-09 11:06:11.553] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : tubus1130@gmail.com
+[2022-06-09 11:06:11.656] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:186) - flag : 1
+[2022-06-09 11:06:11.656] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:173) - ============================
+[2022-06-09 11:06:11.656] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:174) - param:UserVO [uId=p03000, name=김동호03000, passwd=1130, level=SILVER, login=51, recommend=30, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@3e5499cc]
+[2022-06-09 11:06:11.656] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:175) - sql:
+ INSERT INTO hr_member (   
+ 	        u_id,         
+ 	        name,         
+ 	        passwd,       
+             u_level,      
+             login,        
+             recommend,    
+             email,        
+             reg_dt        
+ ) VALUES (                
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	SYSDATE               
+ )                         
+
+[2022-06-09 11:06:11.656] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:176) - ============================
+[2022-06-09 11:06:11.657] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : p03000
+[2022-06-09 11:06:11.657] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 김동호03000
+[2022-06-09 11:06:11.657] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 1130
+[2022-06-09 11:06:11.657] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 2
+[2022-06-09 11:06:11.657] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 51
+[2022-06-09 11:06:11.657] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 30
+[2022-06-09 11:06:11.657] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : tubus1130@gmail.com
+[2022-06-09 11:06:11.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:186) - flag : 1
+[2022-06-09 11:06:11.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:173) - ============================
+[2022-06-09 11:06:11.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:174) - param:UserVO [uId=p030000, name=김동호030000, passwd=1130, level=GOLD, login=52, recommend=31, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2a3c96e3]
+[2022-06-09 11:06:11.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:175) - sql:
+ INSERT INTO hr_member (   
+ 	        u_id,         
+ 	        name,         
+ 	        passwd,       
+             u_level,      
+             login,        
+             recommend,    
+             email,        
+             reg_dt        
+ ) VALUES (                
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	?,                    
+ 	SYSDATE               
+ )                         
+
+[2022-06-09 11:06:11.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:176) - ============================
+[2022-06-09 11:06:11.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : p030000
+[2022-06-09 11:06:11.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 김동호030000
+[2022-06-09 11:06:11.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 1130
+[2022-06-09 11:06:11.763] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 3
+[2022-06-09 11:06:11.763] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 52
+[2022-06-09 11:06:11.763] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : 31
+[2022-06-09 11:06:11.763] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:182) - Object param : tubus1130@gmail.com
+[2022-06-09 11:06:11.873] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:186) - flag : 1
+[2022-06-09 11:06:11.873] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:127) - ============================
+[2022-06-09 11:06:11.873] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:128) - param:UserVO [uId=p03, name=김동호03, passwd=1130, level=BASIC, login=49, recommend=0, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@609bcfb6]
+[2022-06-09 11:06:11.873] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:129) - sql:
+SELECT COUNT(*) AS cnt   
+FROM hr_member           
+WHERE u_id LIKE ? || '%' 
+
+[2022-06-09 11:06:11.873] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:130) - ============================
+[2022-06-09 11:06:11.873] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:132) - Object param:p03
+[2022-06-09 11:06:11.945] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:135) - ============================
+[2022-06-09 11:06:11.946] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:136) - count=5
+[2022-06-09 11:06:11.946] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:137) - ============================
+[2022-06-09 11:06:12.003] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:103) - ===========================
+[2022-06-09 11:06:12.004] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:104) - =param : UserVO [uId=p03, name=김동호03, passwd=1130, level=BASIC, login=49, recommend=0, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@609bcfb6]
+[2022-06-09 11:06:12.004] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:105) - =sql :
+SELECT u_id,      
+       name,      
+       passwd,    
+       u_level,   
+       login,     
+       recommend, 
+       email,     
+       TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt 
+FROM hr_member    
+WHERE u_id LIKE ? || '%' 
+ORDER BY u_id     
+
+[2022-06-09 11:06:12.004] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:106) - ===========================
+[2022-06-09 11:06:12.011] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:112) - vo : UserVO [uId=p03, name=김동호03, passwd=1130, level=BASIC, login=49, recommend=0, email=tubus1130@gmail.com, regDt=2022-06-09 11:06:12, toString()=com.pcwk.ehr.UserVO@5fb97279]
+[2022-06-09 11:06:12.011] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:112) - vo : UserVO [uId=p030, name=김동호030, passwd=1130, level=BASIC, login=50, recommend=10, email=tubus1130@gmail.com, regDt=2022-06-09 11:06:12, toString()=com.pcwk.ehr.UserVO@439a8f59]
+[2022-06-09 11:06:12.011] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:112) - vo : UserVO [uId=p0300, name=김동호0300, passwd=1130, level=SILVER, login=51, recommend=29, email=tubus1130@gmail.com, regDt=2022-06-09 11:06:12, toString()=com.pcwk.ehr.UserVO@61861a29]
+[2022-06-09 11:06:12.011] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:112) - vo : UserVO [uId=p03000, name=김동호03000, passwd=1130, level=SILVER, login=51, recommend=30, email=tubus1130@gmail.com, regDt=2022-06-09 11:06:13, toString()=com.pcwk.ehr.UserVO@31024624]
+[2022-06-09 11:06:12.011] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:112) - vo : UserVO [uId=p030000, name=김동호030000, passwd=1130, level=GOLD, login=52, recommend=31, email=tubus1130@gmail.com, regDt=2022-06-09 11:06:13, toString()=com.pcwk.ehr.UserVO@25bcd0c7]
+[2022-06-09 11:06:12.011] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:71) - ============================
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:72) - param:UserVO [uId=p030, name=김동호030, passwd=1130, level=SILVER, login=50, recommend=10, email=tubus1130@gmail.com, regDt=2022-06-09 11:06:12, toString()=com.pcwk.ehr.UserVO@439a8f59]
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:73) - sql:
+UPDATE hr_member        
+SET name      = ?,      
+    passwd    = ?,      
+    u_level   = ?,      
+    login     = ?,      
+    recommend = ?,      
+    email     = ?,      
+    reg_dt    = SYSDATE 
+WHERE u_id    = ?       
+
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:74) - ============================
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:80) - Object param : 김동호030
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:80) - Object param : 1130
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:80) - Object param : 2
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:80) - Object param : 50
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:80) - Object param : 10
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:80) - Object param : tubus1130@gmail.com
+[2022-06-09 11:06:12.012] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:80) - Object param : p030
+[2022-06-09 11:06:12.013] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:84) - flag : 1
+[2022-06-09 11:06:12.013] DEBUG TestUserService.upgradeLevel(TestUserService.java:34) - ===========================
+[2022-06-09 11:06:12.013] DEBUG TestUserService.upgradeLevel(TestUserService.java:35) - =upgradeLevel=
+[2022-06-09 11:06:12.013] DEBUG TestUserService.upgradeLevel(TestUserService.java:36) - ===========================
+[2022-06-09 11:06:12.014] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:15) - ===============================
+[2022-06-09 11:06:12.014] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:16) - =TestUserServiceException=TestUserServiceException : p03000
+[2022-06-09 11:06:12.014] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:17) - ===============================
+[2022-06-09 11:06:12.014] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:63) - ================
+[2022-06-09 11:06:12.014] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:64) - =rollback******=
+[2022-06-09 11:06:12.014] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:65) - ================
+[2022-06-09 11:06:12.015] DEBUG JUnitUserServiceTest.allOrNothing(JUnitUserServiceTest.java:110) - ===========================
+[2022-06-09 11:06:12.015] DEBUG JUnitUserServiceTest.allOrNothing(JUnitUserServiceTest.java:111) - =allOrNothing Exception=TestUserServiceException : p03000
+[2022-06-09 11:06:12.015] DEBUG JUnitUserServiceTest.allOrNothing(JUnitUserServiceTest.java:112) - ===========================
+[2022-06-09 11:06:12.015] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:227) - ============================
+[2022-06-09 11:06:12.015] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:228) - param:UserVO [uId=p030, name=김동호030, passwd=1130, level=BASIC, login=50, recommend=10, email=tubus1130@gmail.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@63b1d4fa]
+[2022-06-09 11:06:12.015] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:229) - sql:
+SELECT u_id,     
+       name,     
+       passwd,    
+       u_level,   
+       login,     
+       recommend, 
+       email,     
+       TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt 
+FROM   hr_member 
+WHERE  u_id = ?  
+
+[2022-06-09 11:06:12.015] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:230) - ============================
+[2022-06-09 11:06:12.016] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:233) - Object param:p030
+[2022-06-09 11:06:12.062] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:242) - ============================
+[2022-06-09 11:06:12.062] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:243) - outVO=UserVO [uId=p030, name=김동호030, passwd=1130, level=BASIC, login=50, recommend=10, email=tubus1130@gmail.com, regDt=2022-06-09 11:06:12, toString()=com.pcwk.ehr.UserVO@3a4e343]
+[2022-06-09 11:06:12.062] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:244) - ============================

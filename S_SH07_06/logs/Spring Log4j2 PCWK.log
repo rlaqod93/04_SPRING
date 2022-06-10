@@ -1,0 +1,299 @@
+[2022-06-03 09:19:15.591] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:19:15.605] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@302552ec, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d285d7e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@40005471, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2cd76f31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@367ffa75, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49438269, org.springframework.test.context.event.EventPublishingTestExecutionListener@ba2f4ec]
+[2022-06-03 09:19:15.752] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'collectionSetBean' defined in class path resource [applicationCollectionSetBean.xml]: Error converting typed String value for bean property 'addressList' with key [0]; nested exception is java.lang.ClassNotFoundException: String
+[2022-06-03 09:19:15.755] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@40005471] to prepare test instance [com.pcwk.ehr.JCollectionSetBeanTest@71075444]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'collectionSetBean' defined in class path resource [applicationCollectionSetBean.xml]: Error converting typed String value for bean property 'addressList' with key [0]; nested exception is java.lang.ClassNotFoundException: String
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:218) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedSet(BeanDefinitionValueResolver.java:440) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:177) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: String
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[?:1.8.0_202]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_202]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[?:1.8.0_202]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_202]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_202]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_202]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.config.TypedStringValue.resolveTargetType(TypedStringValue.java:166) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveTargetType(BeanDefinitionValueResolver.java:295) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:207) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedSet(BeanDefinitionValueResolver.java:440) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:177) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-03 09:19:18.351] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:19:18.360] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ed3ccb2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1a677343, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15de0b3c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@489115ef, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3857f613, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@198b6731, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c6908d7]
+[2022-06-03 09:19:18.501] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'collectionSetBean' defined in class path resource [applicationCollectionSetBean.xml]: Error converting typed String value for bean property 'addressList' with key [0]; nested exception is java.lang.ClassNotFoundException: String
+[2022-06-03 09:19:18.504] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15de0b3c] to prepare test instance [com.pcwk.ehr.JCollectionSetBeanTest@45d84a20]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'collectionSetBean' defined in class path resource [applicationCollectionSetBean.xml]: Error converting typed String value for bean property 'addressList' with key [0]; nested exception is java.lang.ClassNotFoundException: String
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:218) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedSet(BeanDefinitionValueResolver.java:440) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:177) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: String
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[?:1.8.0_202]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_202]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[?:1.8.0_202]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_202]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_202]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_202]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284) ~[spring-core-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.config.TypedStringValue.resolveTargetType(TypedStringValue.java:166) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveTargetType(BeanDefinitionValueResolver.java:295) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:207) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedSet(BeanDefinitionValueResolver.java:440) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:177) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-03 09:19:47.295] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:19:47.304] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ed3ccb2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1a677343, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15de0b3c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@489115ef, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3857f613, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@198b6731, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c6908d7]
+[2022-06-03 09:19:47.516] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:26) - =================
+[2022-06-03 09:19:47.516] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:27) - =0. setUp()=
+[2022-06-03 09:19:47.528] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:28) - =================
+[2022-06-03 09:19:47.530] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:30) - =context=org.springframework.context.support.GenericApplicationContext@37271612, started on Fri Jun 03 09:19:47 KST 2022
+[2022-06-03 09:19:47.531] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:43) - =================
+[2022-06-03 09:19:47.531] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:44) - =Test()=
+[2022-06-03 09:19:47.531] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:45) - =================
+[2022-06-03 09:19:47.533] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:36) - =================
+[2022-06-03 09:19:47.533] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:37) - =9. tearDown()=
+[2022-06-03 09:19:47.533] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:38) - =================
+[2022-06-03 09:22:47.148] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:22:47.157] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-03 09:22:47.357] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:30) - =================
+[2022-06-03 09:22:47.357] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:31) - =0. setUp()=
+[2022-06-03 09:22:47.358] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:32) - =================
+[2022-06-03 09:22:47.367] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:35) - =context=org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Fri Jun 03 09:22:47 KST 2022
+[2022-06-03 09:22:47.368] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:36) - =collectionSetBean=com.pcwk.ehr.collection.CollectionSetBean@45385f75
+[2022-06-03 09:22:47.369] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:50) - =================
+[2022-06-03 09:22:47.369] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:51) - =Test()=
+[2022-06-03 09:22:47.369] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:52) - =================
+[2022-06-03 09:22:47.371] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:43) - =================
+[2022-06-03 09:22:47.371] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:44) - =9. tearDown()=
+[2022-06-03 09:22:47.371] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:45) - =================
+[2022-06-03 09:24:58.266] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:24:58.276] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a677343, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@15de0b3c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@489115ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3857f613, org.springframework.test.context.transaction.TransactionalTestExecutionListener@198b6731, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c6908d7, org.springframework.test.context.event.EventPublishingTestExecutionListener@3c9754d8]
+[2022-06-03 09:24:58.453] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:32) - =================
+[2022-06-03 09:24:58.453] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:33) - =0. setUp()=
+[2022-06-03 09:24:58.453] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:34) - =================
+[2022-06-03 09:24:58.461] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:37) - =context=org.springframework.context.support.GenericApplicationContext@ed7f8b4, started on Fri Jun 03 09:24:58 KST 2022
+[2022-06-03 09:24:58.461] DEBUG JCollectionSetBeanTest.setUp(JCollectionSetBeanTest.java:38) - =collectionSetBean=com.pcwk.ehr.collection.CollectionSetBean@45385f75
+[2022-06-03 09:24:58.462] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:52) - =================
+[2022-06-03 09:24:58.462] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:53) - =Test()=
+[2022-06-03 09:24:58.462] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:54) - =================
+[2022-06-03 09:24:58.462] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:57) - str : 서울시 강남구 삼성동
+[2022-06-03 09:24:58.462] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:57) - str : 서울시 영등포구 여의도
+[2022-06-03 09:24:58.463] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:57) - str : 서울시 마포구 DMC
+[2022-06-03 09:24:58.463] DEBUG JCollectionSetBeanTest.Test(JCollectionSetBeanTest.java:57) - str : 경기도 판교
+[2022-06-03 09:24:58.464] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:45) - =================
+[2022-06-03 09:24:58.465] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:46) - =9. tearDown()=
+[2022-06-03 09:24:58.465] DEBUG JCollectionSetBeanTest.tearDown(JCollectionSetBeanTest.java:47) - =================
+[2022-06-03 09:35:35.054] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:35:35.063] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ed3ccb2, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@1a677343, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@15de0b3c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@489115ef, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3857f613, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@198b6731, org.springframework.test.context.event.EventPublishingTestExecutionListener@7c6908d7]
+[2022-06-03 09:35:35.246] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:26) - =================
+[2022-06-03 09:35:35.246] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:27) - =0. setUp()=
+[2022-06-03 09:35:35.246] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:28) - =================
+[2022-06-03 09:35:35.254] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:30) - =context=org.springframework.context.support.GenericApplicationContext@37271612, started on Fri Jun 03 09:35:35 KST 2022
+[2022-06-03 09:35:35.255] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:43) - =================
+[2022-06-03 09:35:35.255] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:44) - =Test()=
+[2022-06-03 09:35:35.255] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:45) - =================
+[2022-06-03 09:35:35.257] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:36) - =================
+[2022-06-03 09:35:35.257] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:37) - =9. tearDown()=
+[2022-06-03 09:35:35.257] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:38) - =================
+[2022-06-03 09:37:33.073] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:37:33.082] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-06-03 09:37:33.273] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:31) - =================
+[2022-06-03 09:37:33.273] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:32) - =0. setUp()=
+[2022-06-03 09:37:33.273] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:33) - =================
+[2022-06-03 09:37:33.276] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:35) - =context=org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Fri Jun 03 09:37:33 KST 2022
+[2022-06-03 09:37:33.276] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:36) - =collectionProp=com.pcwk.ehr.collection.CollectionProp@7dc3712
+[2022-06-03 09:37:33.276] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:50) - =================
+[2022-06-03 09:37:33.276] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:51) - =Test()=
+[2022-06-03 09:37:33.277] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:52) - =================
+[2022-06-03 09:37:33.278] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:43) - =================
+[2022-06-03 09:37:33.278] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:44) - =9. tearDown()=
+[2022-06-03 09:37:33.278] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:45) - =================
+[2022-06-03 09:40:14.290] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:40:14.300] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-06-03 09:40:14.502] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:34) - =================
+[2022-06-03 09:40:14.502] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:35) - =0. setUp()=
+[2022-06-03 09:40:14.502] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:36) - =================
+[2022-06-03 09:40:14.504] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:38) - =context=org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Fri Jun 03 09:40:14 KST 2022
+[2022-06-03 09:40:14.504] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:39) - =collectionProp=com.pcwk.ehr.collection.CollectionProp@7dc3712
+[2022-06-03 09:40:14.505] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:53) - =================
+[2022-06-03 09:40:14.505] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:54) - =Test()=
+[2022-06-03 09:40:14.505] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:55) - =================
+[2022-06-03 09:40:14.506] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:60) - key : 홍길동
+[2022-06-03 09:40:14.506] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:60) - key : 이상무
+[2022-06-03 09:40:14.507] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:46) - =================
+[2022-06-03 09:40:14.507] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:47) - =9. tearDown()=
+[2022-06-03 09:40:14.507] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:48) - =================
+[2022-06-03 09:40:53.690] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:40:53.701] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-06-03 09:40:53.931] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:34) - =================
+[2022-06-03 09:40:53.931] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:35) - =0. setUp()=
+[2022-06-03 09:40:53.931] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:36) - =================
+[2022-06-03 09:40:53.934] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:38) - =context=org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Fri Jun 03 09:40:53 KST 2022
+[2022-06-03 09:40:53.934] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:39) - =collectionProp=com.pcwk.ehr.collection.CollectionProp@7dc3712
+[2022-06-03 09:40:53.936] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:53) - =================
+[2022-06-03 09:40:53.936] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:54) - =Test()=
+[2022-06-03 09:40:53.936] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:55) - =================
+[2022-06-03 09:40:53.936] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:60) - key : 홍길동
+[2022-06-03 09:40:53.936] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:61) - key : 서울시 마포구 DMC
+[2022-06-03 09:40:53.936] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:60) - key : 이상무
+[2022-06-03 09:40:53.937] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:61) - key : 서울시 강남구 삼성동
+[2022-06-03 09:40:53.938] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:46) - =================
+[2022-06-03 09:40:53.938] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:47) - =9. tearDown()=
+[2022-06-03 09:40:53.938] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:48) - =================
+[2022-06-03 09:41:40.731] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:41:40.741] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-06-03 09:41:40.927] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:34) - =================
+[2022-06-03 09:41:40.927] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:35) - =0. setUp()=
+[2022-06-03 09:41:40.928] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:36) - =================
+[2022-06-03 09:41:40.930] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:38) - =context=org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Fri Jun 03 09:41:40 KST 2022
+[2022-06-03 09:41:40.930] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:39) - =collectionProp=com.pcwk.ehr.collection.CollectionProp@7dc3712
+[2022-06-03 09:41:40.931] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:53) - =================
+[2022-06-03 09:41:40.931] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:54) - =Test()=
+[2022-06-03 09:41:40.931] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:55) - =================
+[2022-06-03 09:41:40.931] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:60) - key : 홍길동, 서울시 마포구 DMC
+[2022-06-03 09:41:40.931] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:60) - key : 이상무, 서울시 강남구 삼성동
+[2022-06-03 09:41:40.932] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:46) - =================
+[2022-06-03 09:41:40.933] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:47) - =9. tearDown()=
+[2022-06-03 09:41:40.933] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:48) - =================
+[2022-06-03 09:44:07.303] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-03 09:44:07.318] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15de0b3c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@489115ef, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3857f613, org.springframework.test.context.support.DirtiesContextTestExecutionListener@198b6731, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c6908d7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3c9754d8, org.springframework.test.context.event.EventPublishingTestExecutionListener@3bf7ca37]
+[2022-06-03 09:44:07.559] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:34) - =================
+[2022-06-03 09:44:07.559] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:35) - =0. setUp()=
+[2022-06-03 09:44:07.559] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:36) - =================
+[2022-06-03 09:44:07.561] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:38) - =context=org.springframework.context.support.GenericApplicationContext@4c309d4d, started on Fri Jun 03 09:44:07 KST 2022
+[2022-06-03 09:44:07.561] DEBUG JCollectionPropBeanTest.setUp(JCollectionPropBeanTest.java:39) - =collectionProp=com.pcwk.ehr.collection.CollectionProp@7dc3712
+[2022-06-03 09:44:07.562] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:53) - =================
+[2022-06-03 09:44:07.562] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:54) - =Test()=
+[2022-06-03 09:44:07.562] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:55) - =================
+[2022-06-03 09:44:07.563] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:60) - key : 홍길동, 서울시 마포구 DMC
+[2022-06-03 09:44:07.563] DEBUG JCollectionPropBeanTest.Test(JCollectionPropBeanTest.java:60) - key : 이상무, 서울시 강남구 삼성동
+[2022-06-03 09:44:07.564] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:46) - =================
+[2022-06-03 09:44:07.564] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:47) - =9. tearDown()=
+[2022-06-03 09:44:07.564] DEBUG JCollectionPropBeanTest.tearDown(JCollectionPropBeanTest.java:48) - =================
