@@ -206,3 +206,289 @@ WHERE  u_id = ?
 [2022-06-10 10:11:05.163] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5d99c6b5 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
 [2022-06-10 10:11:05.163] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@3c3d9b6b testClass = JUnitUserServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@79d8407f testClass = JUnitUserServiceTest, locations = '{classpath:/applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
 [2022-06-10 10:11:05.164] DEBUG AbstractApplicationContext.doClose(AbstractApplicationContext.java:1049) - Closing org.springframework.context.support.GenericApplicationContext@175b9425, started on Fri Jun 10 10:11:03 KST 2022
+[2022-06-10 10:29:29.973] DEBUG ReflectionTest.main(ReflectionTest.java:17) - name에 길이:6
+[2022-06-10 10:29:51.672] DEBUG ReflectionTest.main(ReflectionTest.java:17) - name의 length:6
+[2022-06-10 10:33:54.292] DEBUG ReflectionTest.main(ReflectionTest.java:22) - name의 length:6
+[2022-06-10 10:33:54.294] DEBUG ReflectionTest.main(ReflectionTest.java:27) - 리플렉션: name의 length->6
+[2022-06-10 10:35:18.521] DEBUG ReflectionTest.main(ReflectionTest.java:22) - name의 length:6
+[2022-06-10 10:35:18.521] DEBUG ReflectionTest.main(ReflectionTest.java:28) - 리플렉션: name의 length->6
+[2022-06-10 10:35:18.521] DEBUG ReflectionTest.main(ReflectionTest.java:29) - -----------------------------------
+[2022-06-10 10:35:18.522] DEBUG ReflectionTest.main(ReflectionTest.java:33) - charAt:S
+[2022-06-10 10:37:45.244] DEBUG ReflectionTest.main(ReflectionTest.java:22) - name의 length:6
+[2022-06-10 10:37:45.246] DEBUG ReflectionTest.main(ReflectionTest.java:28) - 리플렉션: name의 length->6
+[2022-06-10 10:37:45.246] DEBUG ReflectionTest.main(ReflectionTest.java:29) - -----------------------------------
+[2022-06-10 10:37:45.246] DEBUG ReflectionTest.main(ReflectionTest.java:33) - charAt:S
+[2022-06-10 10:37:45.246] DEBUG ReflectionTest.main(ReflectionTest.java:38) - 리플렉션 charAtMethod:S
+[2022-06-10 11:07:25.226] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:16) - =========================
+[2022-06-10 11:07:25.228] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:17) - =setUp()=
+[2022-06-10 11:07:25.228] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:18) - =========================
+[2022-06-10 11:07:25.228] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:23) - =========================
+[2022-06-10 11:07:25.228] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:24) - =proxyTest()=
+[2022-06-10 11:07:25.228] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:25) - =========================
+[2022-06-10 11:08:56.891] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:08:56.893] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:08:56.893] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:08:56.893] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:08:56.893] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:08:56.893] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:08:56.894] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:09:05.230] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:09:05.232] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:09:05.232] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:09:05.232] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:09:05.232] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:09:05.232] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:09:05.233] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:10:24.967] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:10:24.969] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:10:24.969] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:10:24.970] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:10:24.970] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:10:24.970] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:10:24.970] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:10:38.778] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:10:38.780] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:10:38.780] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:10:38.780] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:10:38.780] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:10:38.780] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:10:38.781] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:11:10.384] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:11:10.386] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:11:10.386] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:11:10.387] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:11:10.387] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:11:10.387] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:11:10.387] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:11:10.387] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - HI PCWK
+[2022-06-10 11:11:26.923] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:11:26.925] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:11:26.925] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:11:26.925] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:11:26.926] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:11:26.926] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:11:26.926] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:11:26.926] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - HI PCWK
+[2022-06-10 11:11:46.503] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:11:46.505] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:11:46.505] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:11:46.505] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:11:46.505] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:11:46.506] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:11:46.506] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:11:46.506] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - HI PCWK
+[2022-06-10 11:11:51.724] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:11:51.726] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:11:51.726] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:11:51.726] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:11:51.726] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:11:51.726] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:11:51.727] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:11:51.727] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - HI PCWK
+[2022-06-10 11:12:25.181] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:12:25.183] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:12:25.183] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:12:25.183] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:12:25.184] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:12:25.184] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:12:25.184] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:12:25.184] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - HI PCWK
+[2022-06-10 11:12:25.185] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:34) - THANK YOU PCWK
+[2022-06-10 11:12:38.029] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =========================
+[2022-06-10 11:12:38.031] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =setUp()=
+[2022-06-10 11:12:38.031] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =========================
+[2022-06-10 11:12:38.032] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =========================
+[2022-06-10 11:12:38.032] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =proxyTest()=
+[2022-06-10 11:12:38.032] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:29) - =========================
+[2022-06-10 11:12:38.033] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HELLO PCWK
+[2022-06-10 11:12:38.033] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - HI PCWK
+[2022-06-10 11:12:38.033] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:34) - THANK YOU PCWK
+[2022-06-10 11:35:45.565] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 11:35:45.567] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 11:35:45.567] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 11:35:45.568] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 11:35:45.568] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 11:35:45.568] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - THANK YOU PCWK
+[2022-06-10 11:37:16.202] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 11:37:16.204] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 11:37:16.204] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 11:37:16.205] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:16.205] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:37:16.206] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:16.206] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 11:37:16.206] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:16.206] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:37:16.206] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:16.206] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 11:37:16.206] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:16.206] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:37:16.206] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:16.206] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - THANK YOU PCWK
+[2022-06-10 11:39:23.094] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 11:39:23.096] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 11:39:23.096] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 11:39:23.097] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.097] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:39:23.098] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.098] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 11:39:23.098] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.098] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:39:23.098] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.098] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 11:39:23.098] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.098] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:39:23.098] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.098] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - THANK YOU PCWK
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+
+[2022-06-10 11:39:23.099] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.758] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 11:40:31.764] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 11:40:31.764] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 11:40:31.766] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.767] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+sayHello
+[2022-06-10 11:40:31.767] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.767] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 11:40:31.767] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.767] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+sayHi
+[2022-06-10 11:40:31.767] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.767] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 11:40:31.767] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.768] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+sayThankYou
+[2022-06-10 11:40:31.769] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.769] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - THANK YOU PCWK
+[2022-06-10 11:40:31.769] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.770] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+sayHello
+[2022-06-10 11:40:31.770] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.770] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.770] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+sayHi
+[2022-06-10 11:40:31.770] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.770] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:24) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:31.770] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:25) - +invoke()+sayThankYou
+[2022-06-10 11:40:31.770] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:26) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.613] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 12:02:51.615] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 12:02:51.615] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 12:02:51.616] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.616] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:02:51.616] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.617] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 12:02:51.617] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.617] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:02:51.617] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.617] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 12:02:51.617] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.617] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:02:51.617] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.617] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - THANK YOU PCWK
+[2022-06-10 12:02:51.617] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.618] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:02:51.618] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.618] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.618] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:02:51.618] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.618] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:51.618] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:02:51.618] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.709] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 12:06:35.711] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 12:06:35.711] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 12:06:35.712] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.713] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:06:35.713] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.713] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 12:06:35.713] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.713] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:06:35.713] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.713] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 12:06:35.713] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.713] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:06:35.713] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.714] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - THANK YOU PCWK
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:06:35.714] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.414] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 12:11:16.416] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 12:11:16.416] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 12:11:16.417] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.418] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:11:16.418] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.418] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 12:11:16.418] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.418] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:11:16.418] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.418] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 12:11:16.418] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.418] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:11:16.419] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.419] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - Thank you Pcwk
+[2022-06-10 12:11:16.419] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.419] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:11:16.419] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.419] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.419] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:11:16.419] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.419] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:16.420] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:11:16.420] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.252] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 12:12:41.254] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 12:12:41.254] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 12:12:41.255] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.256] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:12:41.256] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.256] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 12:12:41.256] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.256] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:12:41.256] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.256] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 12:12:41.256] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.256] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.257] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - Thank you Pcwk
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:12:41.257] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:12:41.258] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.015] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =========================
+[2022-06-10 12:13:13.018] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:25) - =setUp()=
+[2022-06-10 12:13:13.018] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:26) - =========================
+[2022-06-10 12:13:13.020] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.020] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:13:13.020] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.020] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:37) - HELLO PCWK
+[2022-06-10 12:13:13.020] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.020] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:13:13.020] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.020] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:38) - HI PCWK
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.021] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:39) - Thank you Pcwk
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHello
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayHi
+[2022-06-10 12:13:13.021] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.022] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - ++++++++++++++++++++++++++++++++++
+[2022-06-10 12:13:13.022] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +invoke()+sayThankYou
+[2022-06-10 12:13:13.022] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - ++++++++++++++++++++++++++++++++++
