@@ -15,10 +15,9 @@ public class UserDaoTest {
 
 	public UserDaoTest() {
 		ConnectionMaker connectionMaker = new NConnectionMaker();
-		//UserDao가 사용할 ConnectionMaker구현체를 결정!
-		
+		// UserDao가 사용할 ConnectionMaker 구현체를 결정!
 		dao = new UserDao(connectionMaker);
-		userVO = new UserVO("P04", "김병완", "6789");
+		userVO = new UserVO("p03", "김동호", "1130");
 	}
 
 	// 단건조회

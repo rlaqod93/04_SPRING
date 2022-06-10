@@ -14,11 +14,9 @@ public class UserDaoTest {
 	UserVO userVO;
 
 	public UserDaoTest() {
-
-		
+		// UserDao가 사용할 ConnectionMaker 구현체를 결정!
 		dao = new DaoFactory().userDao();
-		
-		userVO = new UserVO("P04", "김병완", "6789");
+		userVO = new UserVO("p03", "김동호", "1130");
 	}
 
 	// 단건조회

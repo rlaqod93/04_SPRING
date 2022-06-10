@@ -14,15 +14,19 @@ public class UserDao {
 	
 	private ConnectionMaker connectionMaker;
 	
-	public UserDao() {}
+	public UserDao() {
+		
+	}
+	
 	public UserDao(ConnectionMaker connectionMaker) {
 		this.connectionMaker = connectionMaker;
 	}
 	
-	//setter를 통한 의존성 주입
+	// setter를 통한 의존성 주입
 	public void setConnectionMaker(ConnectionMaker connectionMaker) {
 		this.connectionMaker = connectionMaker;
-	}
+	}		
+	
 	
 	/**
 	 * 회원 단건 return
@@ -41,7 +45,8 @@ public class UserDao {
 		
 		// 1.
 		Connection connection = null;
-		connection = connectionMaker.makeConection();
+		connection = connectionMaker.makeConnection();
+		
 		// 2.
 		StringBuilder sb = new StringBuilder(100);
 		sb.append("SELECT u_id,     \n");
@@ -79,8 +84,7 @@ public class UserDao {
 		
 		return outVO;
 	}
-
-
+	
 
 
 	/**
@@ -101,7 +105,7 @@ public class UserDao {
 		
 		// 1.
 		Connection connection = null;
-		connection = connectionMaker.makeConection();
+		connection = connectionMaker.makeConnection();
 		
 		// 2.
 		StringBuilder sb = new StringBuilder(100);

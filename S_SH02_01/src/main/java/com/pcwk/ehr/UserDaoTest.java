@@ -9,56 +9,49 @@ public class UserDaoTest {
 	
 	static final Logger LOG = LogManager.getLogger(UserDaoTest.class);
 	
-	//멤버변수
 	UserDao dao;
-	UserVO userVO;
-	
+	UserVO userVo;
 	public UserDaoTest() {
 		dao = new UserDao();
-		userVO = new UserVO("p04", "김병완", "4083");
+		userVo = new UserVO("p03", "김동호", "1130");
 	}
 	
-	//단건조회
-	public void get()throws SQLException,ClassNotFoundException {
-		UserVO outVO = dao.get(userVO);
-		if(null != outVO) {
-			LOG.debug("==================");
+	public void get() throws SQLException, ClassNotFoundException{
+		UserVO outVO = dao.get(userVo);
+		if(outVO != null) {
+			LOG.debug("========================");
 			LOG.debug("=성공=");
-			LOG.debug("==================");
+			LOG.debug("========================");
 		}else {
-			LOG.debug("==================");
+			LOG.debug("========================");
 			LOG.debug("=실패=");
-			LOG.debug("==================");
+			LOG.debug("========================");
 		}
 	}
 	
-	//사용자 등록
-	public void add()throws SQLException, ClassNotFoundException{
-		int flag = dao.add(userVO);
-		if(1==flag) {
-			LOG.debug("==================");
+	public void add() throws SQLException, ClassNotFoundException{
+		int flag = dao.add(userVo);
+		if(flag == 1) {
+			LOG.debug("========================");
 			LOG.debug("=성공=");
-			LOG.debug("==================");
+			LOG.debug("========================");
 		}else {
-			LOG.debug("==================");
+			LOG.debug("========================");
 			LOG.debug("=실패=");
-			LOG.debug("==================");
+			LOG.debug("========================");
 		}
 	}
 	
 	public static void main(String[] args) {
 		UserDaoTest main = new UserDaoTest();
 		try {
-			//main.add();
+			main.add();
 			main.get();
 		} catch (ClassNotFoundException | SQLException e) {
-			LOG.debug("======================");
-			LOG.debug("=ClassNotFoundException | SQLException="+e.getMessage());
-			LOG.debug("======================");
+			LOG.debug("========================");
+			LOG.debug("=ClassNotFoundException | SQLException=" + e.getMessage());
+			LOG.debug("========================");
 			e.printStackTrace();
 		}
-		
-
 	}
-
 }

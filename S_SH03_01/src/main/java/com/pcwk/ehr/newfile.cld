@@ -40,7 +40,7 @@
       <constraint>
         <height>-1</height>
         <width>-1</width>
-        <x>59</x>
+        <x>56</x>
         <y>201</y>
       </constraint>
       <sourceConnections>
@@ -916,7 +916,7 @@
             <constraint>
               <height>-1</height>
               <width>-1</width>
-              <x>59</x>
+              <x>56</x>
               <y>16</y>
             </constraint>
             <sourceConnections>
@@ -1044,7 +1044,7 @@
                   </java.beans.PropertyChangeSupport>
                 </listeners>
                 <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../../../../../sourceConnections/net.java.amateras.uml.classdiagram.model.AggregationModel/target/sourceConnections/net.java.amateras.uml.classdiagram.model.AggregationModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AggregationModel[2]/source/children/net.java.amateras.uml.classdiagram.model.OperationModel/visibility"/>
-                <name>makeConection</name>
+                <name>makeConnection</name>
                 <type>Connection</type>
                 <params/>
                 <isAbstract>false</isAbstract>
@@ -1120,7 +1120,7 @@
             </java.beans.PropertyChangeSupport>
           </listeners>
           <visibility class="net.java.amateras.uml.classdiagram.model.Visibility$1" reference="../../../sourceConnections/net.java.amateras.uml.classdiagram.model.AggregationModel/target/sourceConnections/net.java.amateras.uml.classdiagram.model.AggregationModel/target/targetConnections/net.java.amateras.uml.classdiagram.model.AggregationModel[2]/source/children/net.java.amateras.uml.classdiagram.model.OperationModel/visibility"/>
-          <name>makeConection</name>
+          <name>makeConnection</name>
           <type>Connection</type>
           <params/>
           <isAbstract>false</isAbstract>

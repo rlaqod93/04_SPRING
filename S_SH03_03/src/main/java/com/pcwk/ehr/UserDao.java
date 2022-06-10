@@ -35,7 +35,8 @@ public class UserDao {
 		
 		// 1.
 		Connection connection = null;
-		connection = connectionMaker.makeConection();
+		connection = connectionMaker.makeConnection();
+		
 		// 2.
 		StringBuilder sb = new StringBuilder(100);
 		sb.append("SELECT u_id,     \n");
@@ -92,7 +93,7 @@ public class UserDao {
 		
 		// 1.
 		Connection connection = null;
-		connection = connectionMaker.makeConection();
+		connection = connectionMaker.makeConnection();
 		
 		// 2.
 		StringBuilder sb = new StringBuilder(100);

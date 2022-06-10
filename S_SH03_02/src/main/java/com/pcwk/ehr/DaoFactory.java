@@ -8,10 +8,9 @@ public class DaoFactory {
 		
 		return userDao;
 	}
-	
 //	public BoardDao boardDao() {
 //		ConnectionMaker connectionMaker = new NConnectionMaker();
-//		BoardDao boarDao = new BoardDao(connectionMaker);
+//		BoardDao boardDao = new UserDao(connectionMaker);
 //		
 //		return boardDao;
 //	}

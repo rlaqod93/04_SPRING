@@ -3,11 +3,11 @@ package com.pcwk.ehr;
 public class UserVO {
 
 	private String uId; // 사용자 아이디
-	private String name; // 사용자 이름
-	private String passwd; // 사용자 비번
+	private String name; // 이름
+	private String passwd; // 비밀번호
 
 	public UserVO() {
-		
+
 	}
 
 	public UserVO(String uId, String name, String passwd) {
@@ -47,5 +47,4 @@ public class UserVO {
 	}
 	
 	
-
 }

@@ -6,30 +6,29 @@
 
   <groupId>com.pcwk.ehr</groupId>
   <artifactId>S_SH01_01</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1</version>
 
   <name>S_SH01_01</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
- <properties>
+  <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <!-- lib version관리 -->
+    <!-- LIB version관리 -->
     <junit-version>4.13.1</junit-version>
     <log4j-core-version>2.17.2</log4j-core-version>
   </properties>
-  
-  <!-- lib관리 -->
+
+  <!-- LIB 관리 -->
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-<dependency>
-    <groupId>org.apache.logging.log4j</groupId>
-    <artifactId>log4j-core</artifactId>
-    <version>${log4j-core-version}</version>
-</dependency>
-  
+    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+	<dependency>
+	  <groupId>org.apache.logging.log4j</groupId>
+	  <artifactId>log4j-core</artifactId>
+	  <version>${log4j-core-version}</version>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

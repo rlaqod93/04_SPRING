@@ -2,6 +2,7 @@ package com.pcwk.ehr;
 
 import java.sql.SQLException;
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.context.ApplicationContext;
@@ -16,18 +17,16 @@ public class UserDaoTest {
 	UserVO userVO;
 	
 	ApplicationContext context;
-	
+
 	public UserDaoTest() {
 		context = new AnnotationConfigApplicationContext(DaoFactory.class);
 		dao = context.getBean("userDao", UserDao.class);
-		LOG.debug("==============================");
-		LOG.debug("=context="+context);
-		LOG.debug("=dao="+dao);
-		LOG.debug("==============================");
-		
-		//dao = new DaoFactory().userDao();
-		
-		userVO = new UserVO("P04", "김병완", "7894");
+		LOG.debug("==================================");
+		LOG.debug("=context=" + context);
+		LOG.debug("=dao=" + dao);
+		LOG.debug("==================================");
+		// dao = new DaoFactory().userDao();
+		userVO = new UserVO("p03", "김동호", "1130");
 	}
 
 	// 단건조회
@@ -61,7 +60,7 @@ public class UserDaoTest {
 	public static void main(String[] args) {
 		UserDaoTest main = new UserDaoTest();
 		try {
-			//main.add();
+			main.add();
 			main.get();
 		} catch (ClassNotFoundException | SQLException e) {
 			LOG.debug("======================");
