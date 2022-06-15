@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcwk.ehr.user">
+	
+	<select id="getAll" parameterType="UserVO" resultType="List">
+	    SELECT u_id,      
+		       name,      
+		       passwd,    
+		       u_level,   
+		       login,     
+		       recommend, 
+		       email,     
+		       TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') reg_dt
+		FROM hr_member   
+		WHERE u_id LIKE ?
+		ORDER BY u_id    
+	</select>
+	
+	
+	<select id="getCount" parameterType="UserVO" resultType="int">
+		SELECT COUNT(*) AS cnt  
+		FROM hr_member          
+		WHERE u_id LIKE #{uId} || '%'
+	</select>
+		
+	<resultMap type="UserVO" id="userResultMap">
+		<id     property="uId"          column="u_id"/>
+		<result property="name"         column="name"/>
+		<result property="passwd"       column="passwd"/>
+		<result property="intLevel"     column="u_level"/>
+		<result property="login"        column="login"/>
+		<result property="recommend"    column="recommend"/>
+		<result property="email"        column="email"/>
+		<result property="regDt"        column="reg_dt"/>
+	</resultMap>
+	
+	<!-- namespace+id = com.pcwk.ehr.user.doSelectOne -->
+	<select id="doSelectOne" parameterType="UserVO" resultMap="userResultMap">
+		<![CDATA[
+		SELECT u_id,
+		       name,
+		       passwd,
+		       u_level,
+		       login,
+		       recommend,
+		       email,
+		       TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') reg_dt
+		FROM   hr_member
+		WHERE  u_id = #{uId}
+		]]>
+	</select>
+	
+	<delete id="doDelete" parameterType="UserVO">
+		DELETE FROM hr_member
+		WHERE u_id = #{uId}
+	</delete>
+	
+	<!-- 단건등록 : namesapce+id = com.pcwk.ehr.user.doInsert -->
+	<insert id="doInsert" parameterType="UserVO">
+		INSERT INTO hr_member (
+	        u_id,      
+	        name,      
+	        passwd,    
+            u_level,   
+            login,     
+            recommend, 
+            email,     
+            reg_dt     
+		) VALUES (             
+		    #{uId},                 
+		    #{name},                 
+		    #{passwd},                 
+		    #{intLevel},                 
+		    #{login},       
+		    #{recommend},                 
+		    #{email},                 
+		    SYSDATE            
+		)                      
+	</insert>
+</mapper>
