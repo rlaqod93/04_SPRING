@@ -25,28 +25,28 @@
             <AppenderRef ref="Console_Appender"/>
             <AppenderRef ref="File_Appender"/>
         </Root>
-        	<!-- 3rdparty Loggers -->
-	<Logger name="org.springframework.core" level="DEBUG" additivity="false">
-		    <AppenderRef ref="Console_Appender" />
+            <!-- 3rdparty Loggers -->
+    <Logger name="org.springframework.core" level="INFO" additivity="false">
+            <AppenderRef ref="Console_Appender" />
             <AppenderRef ref="File_Appender"/>
-	</Logger>
-	
-	<Logger name="org.springframework.beans" level="DEBUG" additivity="false">
-			<AppenderRef ref="Console_Appender" />
+    </Logger>
+    
+    <Logger name="org.springframework.beans" level="INFO" additivity="false">
+            <AppenderRef ref="Console_Appender" />
             <AppenderRef ref="File_Appender"/>
-	</Logger>
-	
-	<Logger name="org.springframework.context" level="DEBUG" additivity="false">
-			<AppenderRef ref="Console_Appender" />
+    </Logger>
+    
+    <Logger name="org.springframework.context" level="INFO" additivity="false">
+            <AppenderRef ref="Console_Appender" />
             <AppenderRef ref="File_Appender"/>
-	</Logger>
+    </Logger>
 
-	<Logger name="org.springframework.web" level="DEBUG" additivity="false">
-			<AppenderRef ref="Console_Appender" />
+    <Logger name="org.springframework.web" level="INFO" additivity="false">
+            <AppenderRef ref="Console_Appender" />
             <AppenderRef ref="File_Appender"/>
-	</Logger>
+    </Logger>
         
-        <Logger name="com.fucct" level="DEBUG" additivity="true">
+        <Logger name="com.fucct" level="INFO" additivity="true">
             <AppenderRef ref="Console_Appender" />
             <AppenderRef ref="File_Appender"/>
         </Logger>
@@ -55,4 +55,3 @@
         </Logger>
     </Loggers>
 </Configuration>
-

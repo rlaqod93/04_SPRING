@@ -24,7 +24,7 @@ import com.pcwk.ehr.user.domain.UserVO;
 
 @RunWith(SpringJUnit4ClassRunner.class) // JUnit기능을 스프링 프레임으로 확장
 @ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/spring/root-context.xml",
-								    "file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"}) // applicationContext.xml loading
+									"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"}) // applicationContext.xml loading
 public class JUnitUserDaoTest {
 
 	final Logger LOG = LogManager.getLogger(this.getClass());
@@ -44,9 +44,9 @@ public class JUnitUserDaoTest {
 		LOG.debug("=0.setUp()=");
 		LOG.debug("========================");
 		
-		user01 = new UserVO("p04", "김병완04", "4444", Level.BASIC, 1, 0, "rlaqod93@nave.com", "날짜_사용안함");
-		user02 = new UserVO("p040", "김병완040", "4444", Level.SILVER, 50, 2, "rlaqod93@naver.com", "날짜_사용안함");
-		user03 = new UserVO("p0400", "김병완0400", "4444", Level.GOLD, 100, 31, "rlaqod93@naver.com", "날짜_사용안함");
+		user01 = new UserVO("p03", "김병완04", "4444", Level.BASIC, 1, 0, "rlaqod93@naver.com", "날짜_사용안함");
+		user02 = new UserVO("p030", "김병완040", "4444", Level.SILVER, 50, 2, "rlaqod93@naver.com", "날짜_사용안함");
+		user03 = new UserVO("p0300", "김병완0400", "4444", Level.GOLD, 100, 31, "rlaqod93@naver.com", "날짜_사용안함");
 		
 		LOG.debug("context : " + context);
 		LOG.debug("dao : " + dao);
@@ -106,7 +106,7 @@ public class JUnitUserDaoTest {
 	@Ignore
 	public void getAll() throws SQLException{
 		// 1. 전체 삭제	
-//		dao.deleteAll();
+		dao.deleteAll();
 		dao.doDelete(user01);
 		dao.doDelete(user02);
 		dao.doDelete(user03);
@@ -156,6 +156,8 @@ public class JUnitUserDaoTest {
 			// 단건 조회
 			UserVO vsUser02 = dao.doSelectOne(user02);
 			isSameUser(vsUser02, user02);
+			
+			dao.doRetrieve(user01);
 			
 			
 		} catch (SQLException e) {
