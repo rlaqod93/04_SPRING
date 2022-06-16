@@ -21,13 +21,21 @@
         <commons-dbcp-version>1.4</commons-dbcp-version>
         <org.mybatis-version>3.5.7</org.mybatis-version>
         <mybatis-spring-version>2.0.6</mybatis-spring-version>
-        
         <servlet-api-version>2.5</servlet-api-version>
         <jsp-api-version>2.1</jsp-api-version>
         <jstl-version>1.2</jstl-version>
+        <org.bgee.log4jdbc-log4j2-version>1.16</org.bgee.log4jdbc-log4j2-version>
         
     </properties>
     <dependencies>
+    <!-- mybatis log4jdbc-log4j2 라이브러리 -->
+    <!-- https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1 -->
+	<dependency>
+	    <groupId>org.bgee.log4jdbc-log4j2</groupId>
+	    <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+	    <version>${org.bgee.log4jdbc-log4j2-version}</version>
+	</dependency>
+	    
         <!-- mybatis spring -->
         <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
         <dependency>
