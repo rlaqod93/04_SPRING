@@ -12,7 +12,7 @@ public class BootController {
 	final Logger LOG = LogManager.getLogger(this.getClass());
 	
 	// http://localhost:8081/ehr/boot/bootList.do
-	@RequestMapping(value = "/bootList.do", method = RequestMethod.GET)
+	@RequestMapping(value = "/after.do", method = RequestMethod.GET)
 	public String bootList() {
 		LOG.debug("===================");
 		LOG.debug("=bootList()=");
@@ -20,7 +20,7 @@ public class BootController {
 		
 		// /WEB-INF/views/ + boot/boot_list + .jsp
 		// /WEB-INF/views/boot/boot_list.jsp
-		return "boot/boot_list";
+		return "jsp/after";
 	}
 	
 	@RequestMapping(value = "/bootReg.do", method = RequestMethod.GET)
