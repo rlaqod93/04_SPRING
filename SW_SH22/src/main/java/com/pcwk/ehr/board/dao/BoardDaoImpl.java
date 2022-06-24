@@ -55,8 +55,17 @@ public class BoardDaoImpl implements BoardDao {
 
 	@Override
 	public int getCount(BoardVO inVO) throws SQLException {
-		// TODO Auto-generated method stub
-		return 0;
+		int count = 0;
+		String statement = NAVESPACE+".getCount";
+		LOG.debug("==============================");
+		LOG.debug("param:" + inVO.toString());
+		LOG.debug("statement:" + statement);
+		LOG.debug("==============================");
+		
+		count = sqlSessionTemplate.selectOne(statement, inVO);
+		LOG.debug("flag:" + count);
+		
+		return count;
 	}
 
 	@Override

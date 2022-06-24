@@ -1,0 +1,943 @@
+[2022-06-22 14:31:35.032] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+[2022-06-22 14:31:35.282] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+[2022-06-22 14:31:35.311] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+[2022-06-22 14:31:35.337] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+[2022-06-22 14:31:35.342] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+[2022-06-22 14:31:35.345] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+[2022-06-22 14:31:35.351] DEBUG AbstractDetectingUrlHandlerMapping.detectHandlers(AbstractDetectingUrlHandlerMapping.java:86) - 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' {}
+[2022-06-22 14:31:35.352] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+[2022-06-22 14:31:35.353] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+[2022-06-22 14:31:35.354] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'localeResolver'
+[2022-06-22 14:31:35.355] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'themeResolver'
+[2022-06-22 14:31:35.356] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'viewNameTranslator'
+[2022-06-22 14:31:35.361] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'flashMapManager'
+[2022-06-22 14:31:35.367] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+[2022-06-22 14:31:35.368] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcPathMatcher'
+[2022-06-22 14:31:35.369] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcUrlPathHelper'
+[2022-06-22 14:31:35.373] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[2022-06-22 14:31:35.400] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+[2022-06-22 14:31:35.407] DEBUG SimpleUrlHandlerMapping.logMappings(SimpleUrlHandlerMapping.java:177) - 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' {/resources/**=ResourceHttpRequestHandler [ServletContext [/resources/]]}
+[2022-06-22 14:31:35.412] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+[2022-06-22 14:31:35.451] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'homeController'
+[2022-06-22 14:31:35.454] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'bootController'
+[2022-06-22 14:31:35.455] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userController'
+[2022-06-22 14:31:35.468] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userService'
+[2022-06-22 14:31:35.480] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+[2022-06-22 14:31:35.523] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:126) - Storing ApplicationContext [1522132780] in cache under key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:31:35.524] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5f462e3b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+[2022-06-22 14:31:35.526] DEBUG ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@585c13de, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]].
+[2022-06-22 14:31:35.559] DEBUG DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@585c13de, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+[2022-06-22 14:31:35.563] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:31:35.565] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5f462e3b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+[2022-06-22 14:31:35.573] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:31:35.574] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5f462e3b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+[2022-06-22 14:31:35.589] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@585c13de, testMethod = idCheck@JunitUserControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[2022-06-22 14:31:35.600] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:31:35.601] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5f462e3b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+[2022-06-22 14:31:35.602] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:60) - ====================
+[2022-06-22 14:31:35.602] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:61) - =0.setUp()=
+[2022-06-22 14:31:35.602] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:62) - ====================
+[2022-06-22 14:31:35.639] INFO  MockServletContext.log(MockServletContext.java:455) - Initializing Spring TestDispatcherServlet ''
+[2022-06-22 14:31:35.639] INFO  FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet ''
+[2022-06-22 14:31:35.641] DEBUG DispatcherServlet.initLocaleResolver(DispatcherServlet.java:544) - Detected AcceptHeaderLocaleResolver
+[2022-06-22 14:31:35.642] DEBUG DispatcherServlet.initThemeResolver(DispatcherServlet.java:569) - Detected FixedThemeResolver
+[2022-06-22 14:31:35.643] DEBUG DispatcherServlet.initRequestToViewNameTranslator(DispatcherServlet.java:719) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4e868ef5
+[2022-06-22 14:31:35.643] DEBUG DispatcherServlet.initFlashMapManager(DispatcherServlet.java:783) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@71c905a3
+[2022-06-22 14:31:35.643] DEBUG FrameworkServlet.initServletBean(FrameworkServlet.java:542) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-06-22 14:31:35.643] INFO  FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
+[2022-06-22 14:31:35.655] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:70) - webApplicationContext:org.springframework.web.context.support.GenericWebApplicationContext@5ab9e72c, started on Wed Jun 22 14:31:33 KST 2022
+[2022-06-22 14:31:35.659] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:71) - mockMvc:org.springframework.test.web.servlet.MockMvc@afb5821
+[2022-06-22 14:31:35.662] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:31:35.662] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5f462e3b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+[2022-06-22 14:31:35.663] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:169) - ==============================
+[2022-06-22 14:31:35.663] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:170) - param:UserVO [uId=p31, name=이상무31, passwd=4321, level=BASIC, login=1, recommend=0, email=jamesol@paran.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:31:35.663] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:171) - statement:com.pcwk.ehr.user.doDelete
+[2022-06-22 14:31:35.663] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:172) - ==============================
+[2022-06-22 14:31:35.668] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:31:35.682] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66bfd864] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:31:35.700] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:31:36.745] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+1. Connection opened. {executed in 1028ms} 
+open connections:  1 (1)
+[2022-06-22 14:31:36.745] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+1. Connection.new Connection returned 
+[2022-06-22 14:31:36.746] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnectionFactory.initializeConnection(PoolableConnectionFactory.java:597)
+1. Connection.isClosed() returned false
+[2022-06-22 14:31:36.747] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.748] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.isClosed(DelegatingConnection.java:386)
+1. Connection.isClosed() returned false
+[2022-06-22 14:31:36.748] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.748] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+1. Connection.clearWarnings() returned 
+[2022-06-22 14:31:36.748] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.749] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+1. Connection closed. {executed in 1ms} 
+open connections:  none
+[2022-06-22 14:31:36.749] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+1. Connection.close() returned 
+[2022-06-22 14:31:36.791] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+2. Connection opened. {executed in 41ms} 
+open connections:  2 (1)
+[2022-06-22 14:31:36.791] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+2. Connection.new Connection returned 
+[2022-06-22 14:31:36.792] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnectionFactory.initializeConnection(PoolableConnectionFactory.java:597)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.792] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.793] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.794] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.794] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@309028af
+[2022-06-22 14:31:36.794] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:31:36.799] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[2022-06-22 14:31:36.888] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:31:36.888] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member  
+	WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@86733
+[2022-06-22 14:31:36.897] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p31") returned 
+[2022-06-22 14:31:36.898] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p31(String)
+[2022-06-22 14:31:36.902] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p31'  {executed in 4 ms}
+[2022-06-22 14:31:36.903] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-22 14:31:36.904] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 1
+[2022-06-22 14:31:36.905] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[2022-06-22 14:31:36.905] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:31:36.906] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66bfd864]
+[2022-06-22 14:31:36.907] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.907] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.907] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:31:36.908] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:175) - flag:1
+[2022-06-22 14:31:36.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:169) - ==============================
+[2022-06-22 14:31:36.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:170) - param:UserVO [uId=p310, name=이상무310, passwd=4321, level=SILVER, login=50, recommend=2, email=jamesol@naver.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:31:36.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:171) - statement:com.pcwk.ehr.user.doDelete
+[2022-06-22 14:31:36.909] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:172) - ==============================
+[2022-06-22 14:31:36.909] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:31:36.909] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e1b9411] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:31:36.909] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:31:36.909] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.910] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.910] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.910] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@309028af
+[2022-06-22 14:31:36.910] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:31:36.911] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[2022-06-22 14:31:36.911] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:31:36.911] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member  
+	WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@21d1b321
+[2022-06-22 14:31:36.911] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p310") returned 
+[2022-06-22 14:31:36.911] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p310(String)
+[2022-06-22 14:31:36.912] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p310'  {executed in 0 ms}
+[2022-06-22 14:31:36.913] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-22 14:31:36.913] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 0
+[2022-06-22 14:31:36.913] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 0
+[2022-06-22 14:31:36.913] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:31:36.914] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e1b9411]
+[2022-06-22 14:31:36.914] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.914] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.915] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:31:36.915] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.915] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:175) - flag:0
+[2022-06-22 14:31:36.915] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:169) - ==============================
+[2022-06-22 14:31:36.915] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:170) - param:UserVO [uId=p3100, name=이상무3100, passwd=4321, level=GOLD, login=100, recommend=31, email=jamesol03@paran.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:31:36.916] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:171) - statement:com.pcwk.ehr.user.doDelete
+[2022-06-22 14:31:36.916] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:172) - ==============================
+[2022-06-22 14:31:36.916] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:31:36.916] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ec46cdd] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:31:36.916] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:31:36.917] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.917] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.917] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.917] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@309028af
+[2022-06-22 14:31:36.918] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:31:36.918] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[2022-06-22 14:31:36.918] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:31:36.919] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member  
+	WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2324bfe7
+[2022-06-22 14:31:36.919] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p3100") returned 
+[2022-06-22 14:31:36.919] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p3100(String)
+[2022-06-22 14:31:36.921] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p3100'  {executed in 1 ms}
+[2022-06-22 14:31:36.922] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-22 14:31:36.922] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 0
+[2022-06-22 14:31:36.923] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 0
+[2022-06-22 14:31:36.923] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:31:36.923] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ec46cdd]
+[2022-06-22 14:31:36.923] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.923] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.924] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:31:36.924] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.924] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:175) - flag:0
+[2022-06-22 14:31:36.924] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:109) - ==============================
+[2022-06-22 14:31:36.924] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:110) - param:UserVO [uId=p31, name=이상무31, passwd=4321, level=BASIC, login=1, recommend=0, email=jamesol@paran.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:31:36.924] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:111) - statement:com.pcwk.ehr.user.doInsert
+[2022-06-22 14:31:36.924] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:112) - ==============================
+[2022-06-22 14:31:36.925] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:31:36.925] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@112d1c8e] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:31:36.925] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:31:36.925] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.925] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.926] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.926] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@309028af
+[2022-06-22 14:31:36.926] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:31:36.926] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: INSERT INTO hr_member ( u_id, name, passwd, u_level, login, recommend, email, reg_dt ) VALUES ( ?, ?, ?, ?, ?, ?, ?, SYSDATE )
+[2022-06-22 14:31:36.926] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:31:36.927] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(INSERT INTO hr_member ( 
+	         u_id,           
+	         name,           
+	         passwd,         
+	         u_level,        
+	         login,         
+	         recommend,     
+	         email,         
+	         reg_dt         
+	 ) VALUES (              
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     SYSDATE             
+	 )) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@3d49fd31
+[2022-06-22 14:31:36.927] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p31") returned 
+[2022-06-22 14:31:36.928] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(2, "이상무31") returned 
+[2022-06-22 14:31:36.928] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(3, "4321") returned 
+[2022-06-22 14:31:36.931] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(4, 1) returned 
+[2022-06-22 14:31:36.932] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(5, 1) returned 
+[2022-06-22 14:31:36.933] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(6, 0) returned 
+[2022-06-22 14:31:36.933] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(7, "jamesol@paran.com") returned 
+[2022-06-22 14:31:36.934] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p31(String), 이상무31(String), 4321(String), 1(Integer), 1(Integer), 0(Integer), jamesol@paran.com(String)
+[2022-06-22 14:31:36.942] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. INSERT INTO hr_member ( u_id, name, passwd, u_level, login, recommend, email, reg_dt ) VALUES 
+( 'p31', '이상무31', '4321', 1, 1, 0, 'jamesol@paran.com', SYSDATE )  {executed in 6 ms}
+[2022-06-22 14:31:36.943] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-22 14:31:36.943] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 1
+[2022-06-22 14:31:36.944] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[2022-06-22 14:31:36.944] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:31:36.945] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@112d1c8e]
+[2022-06-22 14:31:36.945] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.946] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.946] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:31:36.946] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.947] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:115) - flag:1
+[2022-06-22 14:31:36.947] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - ==============================
+[2022-06-22 14:31:36.948] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:82) - param:UserVO [uId=p31, name=이상무31, passwd=4321, level=BASIC, login=1, recommend=0, email=jamesol@paran.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:31:36.948] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:83) - statement:com.pcwk.ehr.user.getCount
+[2022-06-22 14:31:36.948] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ==============================
+[2022-06-22 14:31:36.949] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:31:36.949] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@470a659f] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:31:36.954] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:31:36.955] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.955] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:36.955] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:36.955] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@309028af
+[2022-06-22 14:31:36.957] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:31:36.957] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE ? ||'%'
+[2022-06-22 14:31:36.959] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:31:36.959] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT COUNT(*) AS cnt    
+	FROM  hr_member           
+	WHERE u_id LIKE ? ||'%') returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@263bbfeb
+[2022-06-22 14:31:36.960] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p31") returned 
+[2022-06-22 14:31:36.960] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p31(String)
+[2022-06-22 14:31:37.034] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE 'p31' ||'%'  {executed in 74 ms}
+[2022-06-22 14:31:37.036] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[2022-06-22 14:31:37.049] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[2022-06-22 14:31:37.050] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@6c518474
+[2022-06-22 14:31:37.062] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@74dbb1ee
+[2022-06-22 14:31:37.063] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[2022-06-22 14:31:37.063] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-22 14:31:37.063] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[2022-06-22 14:31:37.064] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(CNT) returned 1
+[2022-06-22 14:31:37.065] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-22 14:31:37.066] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+[2022-06-22 14:31:37.066] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[2022-06-22 14:31:37.066] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[2022-06-22 14:31:37.066] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[2022-06-22 14:31:37.068] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@309028af
+[2022-06-22 14:31:37.068] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:31:37.068] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@470a659f]
+[2022-06-22 14:31:37.069] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:31:37.069] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:37.069] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:31:37.069] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:31:37.069] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:87) - ==============================
+[2022-06-22 14:31:37.069] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:88) - count=1
+[2022-06-22 14:31:37.070] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:89) - ==============================
+[2022-06-22 14:31:37.071] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:31:37.071] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5f462e3b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+[2022-06-22 14:31:37.080] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:31:37.080] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5f462e3b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+[2022-06-22 14:31:37.082] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@585c13de, testMethod = idCheck@JunitUserControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[2022-06-22 14:31:37.083] DEBUG ServletTestExecutionListener.afterTestMethod(ServletTestExecutionListener.java:166) - Resetting RequestContextHolder for test context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@585c13de, testMethod = idCheck@JunitUserControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]].
+[2022-06-22 14:31:37.085] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:31:37.085] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@5f462e3b size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+[2022-06-22 14:31:37.086] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false, 'org.springframework.test.context.support.DependencyInjectionTestExecutionListener.reinjectDependencies' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+[2022-06-22 14:31:37.097] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+2. Connection closed. {executed in 4ms} 
+open connections:  none
+[2022-06-22 14:31:37.099] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+2. Connection.close() returned 
+[2022-06-22 14:35:30.064] DEBUG SpringJUnit4ClassRunner.<init>(SpringJUnit4ClassRunner.java:139) - SpringJUnit4ClassRunner constructor called with [class com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.070] DEBUG BootstrapUtils.createCacheAwareContextLoaderDelegate(BootstrapUtils.java:108) - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[2022-06-22 14:35:30.077] DEBUG BootstrapUtils.createBootstrapContext(BootstrapUtils.java:88) - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+[2022-06-22 14:35:30.099] DEBUG BootstrapUtils.resolveTestContextBootstrapper(BootstrapUtils.java:143) - Instantiating TestContextBootstrapper for test class [com.pcwk.ehr.JunitUserControllerTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+[2022-06-22 14:35:30.112] DEBUG AbstractDelegatingSmartContextLoader.delegateProcessing(AbstractDelegatingSmartContextLoader.java:263) - Delegating to GenericXmlWebContextLoader to process context configuration [ContextConfigurationAttributes@3349e9bb declaringClass = 'com.pcwk.ehr.JunitUserControllerTest', classes = '{}', locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+[2022-06-22 14:35:30.136] DEBUG ActiveProfilesUtils.resolveActiveProfiles(ActiveProfilesUtils.java:79) - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.137] DEBUG AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:124) - @TestExecutionListeners is not present for class [com.pcwk.ehr.JunitUserControllerTest]: using defaults.
+[2022-06-22 14:35:30.137] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-22 14:35:30.148] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2002fc1d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@69453e37, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6f4a47c7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@ae13544, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3d34d211, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7dc0f706, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4009e306, org.springframework.test.context.event.EventPublishingTestExecutionListener@43c1b556]
+[2022-06-22 14:35:30.149] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.150] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.151] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.151] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.151] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.151] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.158] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.158] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.159] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.159] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.159] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.160] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.162] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:143) - Before test class: context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+[2022-06-22 14:35:30.164] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:70) - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.165] DEBUG ProfileValueUtils.retrieveProfileValueSource(ProfileValueUtils.java:83) - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserControllerTest]
+[2022-06-22 14:35:30.166] DEBUG AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:273) - Delegating to GenericXmlWebContextLoader to load context from [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]].
+[2022-06-22 14:35:30.166] DEBUG AbstractGenericWebContextLoader.loadContext(AbstractGenericWebContextLoader.java:111) - Loading WebApplicationContext for merged context configuration [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]].
+[2022-06-22 14:35:30.416] DEBUG XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:393) - Loaded 11 bean definitions from URL [file:src/main/webapp/WEB-INF/spring/root-context.xml]
+[2022-06-22 14:35:30.579] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH20\target\classes\com\pcwk\ehr\HomeController.class]
+[2022-06-22 14:35:30.586] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH20\target\classes\com\pcwk\ehr\boot\controller\BootController.class]
+[2022-06-22 14:35:30.593] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH20\target\classes\com\pcwk\ehr\user\controller\UserController.class]
+[2022-06-22 14:35:30.598] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH20\target\classes\com\pcwk\ehr\user\dao\UserDaoImpl.class]
+[2022-06-22 14:35:30.602] DEBUG ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:435) - Identified candidate component class: file [C:\DCOM_20220127\04_SPRING\workspace\SW_SH20\target\classes\com\pcwk\ehr\user\service\UserServiceImpl.class]
+[2022-06-22 14:35:30.627] DEBUG XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:393) - Loaded 35 bean definitions from URL [file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml]
+[2022-06-22 14:35:30.692] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[2022-06-22 14:35:30.829] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+[2022-06-22 14:35:30.880] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.880] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.881] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.881] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.881] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.maxActive' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.881] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.maxIdle' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.881] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.maxWait' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.882] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.removeAbandoned' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.882] DEBUG PropertySourcesPropertyResolver.logKeyFound(PropertySourcesPropertyResolver.java:115) - Found key 'jdbc.removeAbandonedTimeout' in PropertySource 'localProperties' with value of type String
+[2022-06-22 14:35:30.882] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[2022-06-22 14:35:30.884] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[2022-06-22 14:35:30.886] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[2022-06-22 14:35:30.888] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[2022-06-22 14:35:30.893] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[2022-06-22 14:35:30.944] DEBUG UiApplicationContextUtils.initThemeSource(UiApplicationContextUtils.java:85) - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@6fb365ed]
+[2022-06-22 14:35:30.945] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'sqlSessionTemplate'
+[2022-06-22 14:35:30.945] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[2022-06-22 14:35:30.967] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
+[2022-06-22 14:35:30.988] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dataSource'
+[2022-06-22 14:35:30.995] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - log4jdbc-logj2 properties initialization...
+[2022-06-22 14:35:30.996] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - Using logger: null
+[2022-06-22 14:35:30.996] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.debug.stack.prefix is not defined
+[2022-06-22 14:35:30.996] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.sqltiming.warn.threshold is not defined
+[2022-06-22 14:35:30.996] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.sqltiming.error.threshold is not defined
+[2022-06-22 14:35:30.996] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+[2022-06-22 14:35:30.996] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+[2022-06-22 14:35:30.997] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+[2022-06-22 14:35:30.997] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.statement.warn is not defined (using default value false)
+[2022-06-22 14:35:30.997] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.select is not defined (using default value true)
+[2022-06-22 14:35:30.997] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.insert is not defined (using default value true)
+[2022-06-22 14:35:30.997] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.update is not defined (using default value true)
+[2022-06-22 14:35:30.998] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.delete is not defined (using default value true)
+[2022-06-22 14:35:30.998] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.create is not defined (using default value true)
+[2022-06-22 14:35:30.998] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+[2022-06-22 14:35:30.998] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+[2022-06-22 14:35:30.998] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.drivers is not defined
+[2022-06-22 14:35:30.999] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.trim.sql is not defined (using default value true)
+[2022-06-22 14:35:30.999] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+[2022-06-22 14:35:30.999] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+[2022-06-22 14:35:30.999] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - log4jdbc-logj2 properties initialization done.
+[2022-06-22 14:35:30.999] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - DriverSpy intialization...
+[2022-06-22 14:35:31.056] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) -   FOUND DRIVER oracle.jdbc.OracleDriver
+[2022-06-22 14:35:31.057] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+[2022-06-22 14:35:31.062] DEBUG Log4j2SpyLogDelegator.debug(Log4j2SpyLogDelegator.java:372) - DriverSpy intialization done.
+[2022-06-22 14:35:31.299] DEBUG LogFactory.setImplementation(LogFactory.java:105) - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[2022-06-22 14:35:31.389] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'dummyMailSender'
+[2022-06-22 14:35:31.396] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mailSenderImpl'
+[2022-06-22 14:35:31.417] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'transactionManager'
+[2022-06-22 14:35:31.431] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'txAdvice'
+[2022-06-22 14:35:31.461] DEBUG NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:102) - Adding transactional method [do*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+[2022-06-22 14:35:31.461] DEBUG NameMatchTransactionAttributeSource.addTransactionalMethod(NameMatchTransactionAttributeSource.java:102) - Adding transactional method [up*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+[2022-06-22 14:35:31.464] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+[2022-06-22 14:35:31.480] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+[2022-06-22 14:35:31.544] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+[2022-06-22 14:35:31.566] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+[2022-06-22 14:35:31.568] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+[2022-06-22 14:35:31.707] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+[2022-06-22 14:35:31.759] DEBUG AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:295) - 
+	c.p.e.HomeController:
+	{GET [/]}: home(Locale,Model)
+[2022-06-22 14:35:31.764] DEBUG AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:295) - 
+	c.p.e.b.c.BootController:
+	{GET [/boot/bootList.do]}: bootList()
+	{GET [/boot/bootReg.do]}: bootReg()
+	{GET [/boot/tmpMenu.do]}: tmpMenu()
+[2022-06-22 14:35:31.780] DEBUG AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:295) - 
+	c.p.e.u.c.UserController:
+	{POST [/user/add.do], produces [application/json;charset=UTF-8]}: add(UserVO)
+	{GET [/user/idCheck.do], produces [application/json;charset=UTF-8]}: idCheck(UserVO)
+	{GET [/user/doSelectOne.do], produces [application/json;charset=UTF-8]}: doSelectOne(UserVO)
+	{ [/user/doRetrieve.do], produces [application/json;charset=UTF-8]}: doRetrieve(SearchVO)
+	{POST [/user/doUpdate.do], produces [application/json;charset=UTF-8]}: doUpdate(UserVO)
+	{GET [/user/doDelete.do], produces [application/json;charset=UTF-8]}: doDelete(HttpServletRequest,UserVO)
+	{GET [/user/userView.do]}: userView(Model,SearchVO)
+[2022-06-22 14:35:31.795] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+[2022-06-22 14:35:32.043] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+[2022-06-22 14:35:32.061] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+[2022-06-22 14:35:32.087] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+[2022-06-22 14:35:32.092] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+[2022-06-22 14:35:32.095] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+[2022-06-22 14:35:32.101] DEBUG AbstractDetectingUrlHandlerMapping.detectHandlers(AbstractDetectingUrlHandlerMapping.java:86) - 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' {}
+[2022-06-22 14:35:32.102] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+[2022-06-22 14:35:32.103] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+[2022-06-22 14:35:32.103] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'localeResolver'
+[2022-06-22 14:35:32.104] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'themeResolver'
+[2022-06-22 14:35:32.105] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'viewNameTranslator'
+[2022-06-22 14:35:32.105] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'flashMapManager'
+[2022-06-22 14:35:32.107] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+[2022-06-22 14:35:32.108] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcPathMatcher'
+[2022-06-22 14:35:32.109] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'mvcUrlPathHelper'
+[2022-06-22 14:35:32.110] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[2022-06-22 14:35:32.120] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+[2022-06-22 14:35:32.125] DEBUG SimpleUrlHandlerMapping.logMappings(SimpleUrlHandlerMapping.java:177) - 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' {/resources/**=ResourceHttpRequestHandler [ServletContext [/resources/]]}
+[2022-06-22 14:35:32.127] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+[2022-06-22 14:35:32.142] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'homeController'
+[2022-06-22 14:35:32.144] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'bootController'
+[2022-06-22 14:35:32.144] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userController'
+[2022-06-22 14:35:32.150] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userService'
+[2022-06-22 14:35:32.152] DEBUG DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225) - Creating shared instance of singleton bean 'userDao'
+[2022-06-22 14:35:32.195] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:126) - Storing ApplicationContext [1522132780] in cache under key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:35:32.196] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@28cb9120 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+[2022-06-22 14:35:32.197] DEBUG ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:200) - Setting up MockHttpServletRequest, MockHttpServletResponse, ServletWebRequest, and RequestContextHolder for test context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@25c5e994, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]].
+[2022-06-22 14:35:32.212] DEBUG DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:81) - Performing dependency injection for test context [[DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@25c5e994, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+[2022-06-22 14:35:32.213] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:35:32.213] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@28cb9120 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+[2022-06-22 14:35:32.215] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:35:32.215] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@28cb9120 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+[2022-06-22 14:35:32.218] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:108) - Before test method: context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@25c5e994, testMethod = idCheck@JunitUserControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[2022-06-22 14:35:32.230] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:35:32.231] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@28cb9120 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+[2022-06-22 14:35:32.232] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:60) - ====================
+[2022-06-22 14:35:32.232] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:61) - =0.setUp()=
+[2022-06-22 14:35:32.232] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:62) - ====================
+[2022-06-22 14:35:32.245] INFO  MockServletContext.log(MockServletContext.java:455) - Initializing Spring TestDispatcherServlet ''
+[2022-06-22 14:35:32.246] INFO  FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet ''
+[2022-06-22 14:35:32.246] DEBUG DispatcherServlet.initLocaleResolver(DispatcherServlet.java:544) - Detected AcceptHeaderLocaleResolver
+[2022-06-22 14:35:32.246] DEBUG DispatcherServlet.initThemeResolver(DispatcherServlet.java:569) - Detected FixedThemeResolver
+[2022-06-22 14:35:32.247] DEBUG DispatcherServlet.initRequestToViewNameTranslator(DispatcherServlet.java:719) - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@332f25c8
+[2022-06-22 14:35:32.247] DEBUG DispatcherServlet.initFlashMapManager(DispatcherServlet.java:783) - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1b32cd16
+[2022-06-22 14:35:32.247] DEBUG FrameworkServlet.initServletBean(FrameworkServlet.java:542) - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[2022-06-22 14:35:32.247] INFO  FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1 ms
+[2022-06-22 14:35:32.250] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:70) - webApplicationContext:org.springframework.web.context.support.GenericWebApplicationContext@5ab9e72c, started on Wed Jun 22 14:35:30 KST 2022
+[2022-06-22 14:35:32.251] DEBUG JunitUserControllerTest.setUp(JunitUserControllerTest.java:71) - mockMvc:org.springframework.test.web.servlet.MockMvc@69cac930
+[2022-06-22 14:35:32.251] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:35:32.252] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@28cb9120 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+[2022-06-22 14:35:32.252] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:169) - ==============================
+[2022-06-22 14:35:32.252] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:170) - param:UserVO [uId=p31, name=이상무31, passwd=4321, level=BASIC, login=1, recommend=0, email=jamesol@paran.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:35:32.252] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:171) - statement:com.pcwk.ehr.user.doDelete
+[2022-06-22 14:35:32.252] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:172) - ==============================
+[2022-06-22 14:35:32.256] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:35:32.261] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e3a39cd] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:35:32.267] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:35:33.233] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+1. Connection opened. {executed in 958ms} 
+open connections:  1 (1)
+[2022-06-22 14:35:33.235] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+1. Connection.new Connection returned 
+[2022-06-22 14:35:33.235] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnectionFactory.initializeConnection(PoolableConnectionFactory.java:597)
+1. Connection.isClosed() returned false
+[2022-06-22 14:35:33.237] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.237] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.isClosed(DelegatingConnection.java:386)
+1. Connection.isClosed() returned false
+[2022-06-22 14:35:33.237] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.237] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+1. Connection.clearWarnings() returned 
+[2022-06-22 14:35:33.237] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.238] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+1. Connection closed. {executed in 0ms} 
+open connections:  none
+[2022-06-22 14:35:33.239] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+1. Connection.close() returned 
+[2022-06-22 14:35:33.280] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+2. Connection opened. {executed in 41ms} 
+open connections:  2 (1)
+[2022-06-22 14:35:33.280] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+2. Connection.new Connection returned 
+[2022-06-22 14:35:33.280] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnectionFactory.initializeConnection(PoolableConnectionFactory.java:597)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.281] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.282] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.282] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.282] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@56ac5c80
+[2022-06-22 14:35:33.283] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:35:33.287] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[2022-06-22 14:35:33.365] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:35:33.366] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member  
+	WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@670ce331
+[2022-06-22 14:35:33.383] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p31") returned 
+[2022-06-22 14:35:33.384] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p31(String)
+[2022-06-22 14:35:33.392] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p31'  {executed in 7 ms}
+[2022-06-22 14:35:33.393] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-22 14:35:33.394] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 1
+[2022-06-22 14:35:33.394] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[2022-06-22 14:35:33.395] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:35:33.396] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5e3a39cd]
+[2022-06-22 14:35:33.396] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:35:33.397] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.398] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:175) - flag:1
+[2022-06-22 14:35:33.398] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:169) - ==============================
+[2022-06-22 14:35:33.398] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:170) - param:UserVO [uId=p310, name=이상무310, passwd=4321, level=SILVER, login=50, recommend=2, email=jamesol@naver.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:35:33.398] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:171) - statement:com.pcwk.ehr.user.doDelete
+[2022-06-22 14:35:33.398] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:172) - ==============================
+[2022-06-22 14:35:33.398] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:35:33.399] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e73b552] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:35:33.399] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:35:33.399] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.399] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.399] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.400] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@56ac5c80
+[2022-06-22 14:35:33.400] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:35:33.400] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[2022-06-22 14:35:33.400] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:35:33.400] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member  
+	WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@221dad51
+[2022-06-22 14:35:33.401] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p310") returned 
+[2022-06-22 14:35:33.401] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p310(String)
+[2022-06-22 14:35:33.402] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p310'  {executed in 1 ms}
+[2022-06-22 14:35:33.402] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-22 14:35:33.402] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 0
+[2022-06-22 14:35:33.402] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 0
+[2022-06-22 14:35:33.403] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:35:33.403] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e73b552]
+[2022-06-22 14:35:33.403] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.403] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.403] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:35:33.404] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.404] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:175) - flag:0
+[2022-06-22 14:35:33.404] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:169) - ==============================
+[2022-06-22 14:35:33.404] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:170) - param:UserVO [uId=p3100, name=이상무3100, passwd=4321, level=GOLD, login=100, recommend=31, email=jamesol03@paran.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:35:33.405] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:171) - statement:com.pcwk.ehr.user.doDelete
+[2022-06-22 14:35:33.405] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:172) - ==============================
+[2022-06-22 14:35:33.405] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:35:33.405] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cec704c] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:35:33.405] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:35:33.406] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.406] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.407] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.407] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@56ac5c80
+[2022-06-22 14:35:33.407] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:35:33.408] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[2022-06-22 14:35:33.408] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:35:33.409] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member  
+	WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@771cbb1a
+[2022-06-22 14:35:33.409] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p3100") returned 
+[2022-06-22 14:35:33.410] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p3100(String)
+[2022-06-22 14:35:33.413] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p3100'  {executed in 2 ms}
+[2022-06-22 14:35:33.414] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-22 14:35:33.414] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 0
+[2022-06-22 14:35:33.414] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 0
+[2022-06-22 14:35:33.415] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:35:33.415] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cec704c]
+[2022-06-22 14:35:33.415] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.416] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.416] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:35:33.416] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.416] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:175) - flag:0
+[2022-06-22 14:35:33.417] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:109) - ==============================
+[2022-06-22 14:35:33.417] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:110) - param:UserVO [uId=p31, name=이상무31, passwd=4321, level=BASIC, login=1, recommend=0, email=jamesol@paran.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:35:33.417] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:111) - statement:com.pcwk.ehr.user.doInsert
+[2022-06-22 14:35:33.417] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:112) - ==============================
+[2022-06-22 14:35:33.417] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:35:33.417] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2416498e] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:35:33.417] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:35:33.418] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.418] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.418] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.418] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@56ac5c80
+[2022-06-22 14:35:33.419] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:35:33.419] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: INSERT INTO hr_member ( u_id, name, passwd, u_level, login, recommend, email, reg_dt ) VALUES ( ?, ?, ?, ?, ?, ?, ?, SYSDATE )
+[2022-06-22 14:35:33.420] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:35:33.421] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(INSERT INTO hr_member ( 
+	         u_id,           
+	         name,           
+	         passwd,         
+	         u_level,        
+	         login,         
+	         recommend,     
+	         email,         
+	         reg_dt         
+	 ) VALUES (              
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     SYSDATE             
+	 )) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@6b2e0f78
+[2022-06-22 14:35:33.422] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p31") returned 
+[2022-06-22 14:35:33.423] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(2, "이상무31") returned 
+[2022-06-22 14:35:33.423] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(3, "4321") returned 
+[2022-06-22 14:35:33.425] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(4, 1) returned 
+[2022-06-22 14:35:33.426] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(5, 1) returned 
+[2022-06-22 14:35:33.426] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(6, 0) returned 
+[2022-06-22 14:35:33.427] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(7, "jamesol@paran.com") returned 
+[2022-06-22 14:35:33.427] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p31(String), 이상무31(String), 4321(String), 1(Integer), 1(Integer), 0(Integer), jamesol@paran.com(String)
+[2022-06-22 14:35:33.429] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. INSERT INTO hr_member ( u_id, name, passwd, u_level, login, recommend, email, reg_dt ) VALUES 
+( 'p31', '이상무31', '4321', 1, 1, 0, 'jamesol@paran.com', SYSDATE )  {executed in 1 ms}
+[2022-06-22 14:35:33.429] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-22 14:35:33.429] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 1
+[2022-06-22 14:35:33.429] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[2022-06-22 14:35:33.429] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:35:33.430] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2416498e]
+[2022-06-22 14:35:33.430] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.430] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.430] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:35:33.430] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.430] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:115) - flag:1
+[2022-06-22 14:35:33.431] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - ==============================
+[2022-06-22 14:35:33.431] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:82) - param:UserVO [uId=p31, name=이상무31, passwd=4321, level=BASIC, login=1, recommend=0, email=jamesol@paran.com, regDt=날짜_사용않함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:35:33.431] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:83) - statement:com.pcwk.ehr.user.getCount
+[2022-06-22 14:35:33.431] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:84) - ==============================
+[2022-06-22 14:35:33.431] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:35:33.431] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@117bcfdc] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:35:33.432] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:35:33.433] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.433] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.433] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.433] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@56ac5c80
+[2022-06-22 14:35:33.433] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:35:33.434] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE ? ||'%'
+[2022-06-22 14:35:33.434] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:35:33.434] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT COUNT(*) AS cnt    
+	FROM  hr_member           
+	WHERE u_id LIKE ? ||'%') returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@4016ccc1
+[2022-06-22 14:35:33.434] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p31") returned 
+[2022-06-22 14:35:33.434] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p31(String)
+[2022-06-22 14:35:33.514] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE 'p31' ||'%'  {executed in 80 ms}
+[2022-06-22 14:35:33.515] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[2022-06-22 14:35:33.523] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[2022-06-22 14:35:33.524] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@3f9f71ff
+[2022-06-22 14:35:33.531] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@48eb9836
+[2022-06-22 14:35:33.533] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[2022-06-22 14:35:33.534] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-22 14:35:33.534] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[2022-06-22 14:35:33.535] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(CNT) returned 1
+[2022-06-22 14:35:33.536] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-22 14:35:33.537] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+[2022-06-22 14:35:33.538] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[2022-06-22 14:35:33.538] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[2022-06-22 14:35:33.538] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[2022-06-22 14:35:33.542] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@56ac5c80
+[2022-06-22 14:35:33.546] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:35:33.548] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@117bcfdc]
+[2022-06-22 14:35:33.548] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.549] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.549] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:35:33.549] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.550] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:87) - ==============================
+[2022-06-22 14:35:33.550] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:88) - count=1
+[2022-06-22 14:35:33.550] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:89) - ==============================
+[2022-06-22 14:35:33.604] DEBUG LogFormatUtils.traceDebug(LogFormatUtils.java:108) - GET "/user/idCheck.do", parameters={masked}
+[2022-06-22 14:35:33.650] DEBUG UserController.idCheck(UserController.java:44) - ==============================
+[2022-06-22 14:35:33.651] DEBUG UserController.idCheck(UserController.java:45) - =inVO=UserVO [uId=p31, name=null, passwd=null, level=null, login=0, recommend=0, email=null, regDt=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:35:33.651] DEBUG UserController.idCheck(UserController.java:46) - ==============================
+[2022-06-22 14:35:33.672] DEBUG UserDaoImpl.idCheck(UserDaoImpl.java:200) - ==============================
+[2022-06-22 14:35:33.673] DEBUG UserDaoImpl.idCheck(UserDaoImpl.java:201) - param:UserVO [uId=p31, name=null, passwd=null, level=null, login=0, recommend=0, email=null, regDt=null, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:35:33.674] DEBUG UserDaoImpl.idCheck(UserDaoImpl.java:202) - statement:com.pcwk.ehr.user.idCheck
+[2022-06-22 14:35:33.674] DEBUG UserDaoImpl.idCheck(UserDaoImpl.java:203) - ==============================
+[2022-06-22 14:35:33.674] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-22 14:35:33.674] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20de05e5] was not registered for synchronization because synchronization is not active
+[2022-06-22 14:35:33.675] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-22 14:35:33.675] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.676] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.676] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.677] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@56ac5c80
+[2022-06-22 14:35:33.677] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-22 14:35:33.679] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: SELECT COUNT(*) cnt FROM hr_member WHERE u_id = ?
+[2022-06-22 14:35:33.681] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-22 14:35:33.683] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT COUNT(*) cnt
+	  FROM hr_member
+	  WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@36c0d0bd
+[2022-06-22 14:35:33.683] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p31") returned 
+[2022-06-22 14:35:33.684] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p31(String)
+[2022-06-22 14:35:33.692] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT COUNT(*) cnt FROM hr_member WHERE u_id = 'p31'  {executed in 7 ms}
+[2022-06-22 14:35:33.693] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[2022-06-22 14:35:33.693] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[2022-06-22 14:35:33.693] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@5e1fc2aa
+[2022-06-22 14:35:33.694] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@688d411b
+[2022-06-22 14:35:33.694] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[2022-06-22 14:35:33.695] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-22 14:35:33.696] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[2022-06-22 14:35:33.697] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(CNT) returned 1
+[2022-06-22 14:35:33.697] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-22 14:35:33.698] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+[2022-06-22 14:35:33.699] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[2022-06-22 14:35:33.700] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[2022-06-22 14:35:33.700] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[2022-06-22 14:35:33.701] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@56ac5c80
+[2022-06-22 14:35:33.702] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-22 14:35:33.702] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20de05e5]
+[2022-06-22 14:35:33.702] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-22 14:35:33.702] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.703] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-22 14:35:33.703] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-22 14:35:33.703] DEBUG UserDaoImpl.idCheck(UserDaoImpl.java:206) - count:1
+[2022-06-22 14:35:33.716] DEBUG UserController.idCheck(UserController.java:58) - ==============================
+[2022-06-22 14:35:33.717] DEBUG UserController.idCheck(UserController.java:59) - =jsonString={"msgId":"1","msgContents":"p31가 존재 합니다.","num":0,"totalCnt":0}
+[2022-06-22 14:35:33.717] DEBUG UserController.idCheck(UserController.java:60) - ==============================
+[2022-06-22 14:35:33.753] DEBUG FrameworkServlet.logResult(FrameworkServlet.java:1131) - Completed 200 OK
+[2022-06-22 14:35:33.766] DEBUG JunitUserControllerTest.idCheck(JunitUserControllerTest.java:105) - ====================
+[2022-06-22 14:35:33.766] DEBUG JunitUserControllerTest.idCheck(JunitUserControllerTest.java:106) - =result={"msgId":"1","msgContents":"p31가 존재 합니다.","num":0,"totalCnt":0}
+[2022-06-22 14:35:33.767] DEBUG JunitUserControllerTest.idCheck(JunitUserControllerTest.java:107) - ====================
+[2022-06-22 14:35:33.772] DEBUG JunitUserControllerTest.idCheck(JunitUserControllerTest.java:112) - ====================
+[2022-06-22 14:35:33.774] DEBUG JunitUserControllerTest.idCheck(JunitUserControllerTest.java:113) - =messageVO=MessageVO [msgId=1, msgContents=p31가 존재 합니다., toString()=DTO [num=0, totalCnt=0]]
+[2022-06-22 14:35:33.774] DEBUG JunitUserControllerTest.idCheck(JunitUserControllerTest.java:114) - ====================
+[2022-06-22 14:35:33.777] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:35:33.778] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@28cb9120 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+[2022-06-22 14:35:33.784] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:35:33.784] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@28cb9120 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+[2022-06-22 14:35:33.786] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@25c5e994, testMethod = idCheck@JunitUserControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[2022-06-22 14:35:33.786] DEBUG ServletTestExecutionListener.afterTestMethod(ServletTestExecutionListener.java:166) - Resetting RequestContextHolder for test context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = com.pcwk.ehr.JunitUserControllerTest@25c5e994, testMethod = idCheck@JunitUserControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]].
+[2022-06-22 14:35:33.789] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [1522132780] from cache with key [[WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]]]
+[2022-06-22 14:35:33.790] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@28cb9120 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+[2022-06-22 14:35:33.791] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@5c671d7f testClass = JunitUserControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@757277dc testClass = JunitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false, 'org.springframework.test.context.support.DependencyInjectionTestExecutionListener.reinjectDependencies' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+[2022-06-22 14:35:33.797] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+2. Connection closed. {executed in 1ms} 
+open connections:  none
+[2022-06-22 14:35:33.798] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+2. Connection.close() returned 

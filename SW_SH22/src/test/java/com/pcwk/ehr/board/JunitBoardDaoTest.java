@@ -41,9 +41,9 @@ public class JunitBoardDaoTest {
 		  LOG.debug("=0.setUp()=");
 		  LOG.debug("====================");
 		  
-		  board01 = new BoardVO(04,"제목_04","내용_04", 0,"10","날짜_사용않함","김병완","날짜_사용않함","김병완");
-		  board02 = new BoardVO(040,"제목_040","내용_04", 0,"10","날짜_사용않함","김병완","날짜_사용않함","김병완");
-		  board03 = new BoardVO(0400,"제목_0400","내용_04", 0,"10","날짜_사용않함","김병완","날짜_사용않함","김병완");
+		  board01 = new BoardVO(4,"제목_04","내용_04", 0,"10","날짜_사용않함","김병완","날짜_사용않함","김병완");
+		  board02 = new BoardVO(40,"제목_040","내용_04", 0,"10","날짜_사용않함","김병완","날짜_사용않함","김병완");
+		  board03 = new BoardVO(400,"제목_0400","내용_04", 0,"10","날짜_사용않함","김병완","날짜_사용않함","김병완");
 				  
 		  
 		  LOG.debug("context:"+context);
@@ -66,9 +66,11 @@ public class JunitBoardDaoTest {
 		  dao.doDelete(board02);
 		  dao.doDelete(board03);
 		  
+		  assertEquals(0, dao.getCount(board01));
+		  
 		  //2.등록
 		  dao.doInsert(board01);
-		  
+		  assertEquals(1, dao.getCount(board01));
 		  //3.단건조회
 		  BoardVO outVO = dao.doSelectOne(board01);
 		  
@@ -76,6 +78,8 @@ public class JunitBoardDaoTest {
 		  isSameData(outVO, board01);
 		  
 		  dao.doInsert(board02);
+		  assertEquals(2, dao.getCount(board01));
+		  
 		  BoardVO outVO2 = dao.doSelectOne(board02);
 		  isSameData(outVO2, board02);
 		  
