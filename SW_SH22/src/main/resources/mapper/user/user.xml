@@ -3,6 +3,8 @@
 <mapper namespace="com.pcwk.ehr.user">
 
 
+  
+
   <!-- 10:uId, 20:name,30:email -->
   <sql id="searchCondition">
    <where>
@@ -18,14 +20,16 @@
 	    </when>
 	   </choose>
    </where>        
+   
   </sql>
   
-  <!-- 비번확인 : passCheck(1 id/비번 일치 , 0 id/비번  불일치) -->
+  
+  <!-- 비번확인 :passCheck(1 id/비번 일치, 0 id/비번 불일치 -->
   <select id="passCheck" parameterType="UserVO" resultType="int">
-  	SELECT COUNT(*) cnt
-	FROM hr_member
-	WHERE u_id = #{uId}
-	AND passwd =  #{passwd}
+		SELECT COUNT(*) cnt
+		FROM hr_member
+		WHERE u_id = #{uId} 
+		AND   passwd = #{passwd}
   </select>
   
   
