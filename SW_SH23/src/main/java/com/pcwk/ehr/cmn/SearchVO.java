@@ -1,18 +1,16 @@
 package com.pcwk.ehr.cmn;
 
 public class SearchVO extends DTO {
-
-	private int pageSize;//10,20,30,50,100
-	private int pageNum; //1,2,3,...10
-	private String searchDiv; //검색구분
-	private String searchWord;//검색어
-	//구분
-	private String div;
+	private int pageSize; // 10, 20, 30, 50, 100
+	private int pageNum; // 1, 2, 3, ..., 10
+	private String searchDiv; // 검색구분
+	private String searchWord; // 검색어
 	
+	private String div; //구분
 	
-	
-	public SearchVO() {}
-
+	public SearchVO() {
+		
+	}
 	public SearchVO(int pageSize, int pageNum, String searchDiv, String searchWord) {
 		super();
 		this.pageSize = pageSize;
@@ -20,7 +18,7 @@ public class SearchVO extends DTO {
 		this.searchDiv = searchDiv;
 		this.searchWord = searchWord;
 	}
-	
+
 	public SearchVO(int pageSize, int pageNum, String searchDiv, String searchWord, String div) {
 		super();
 		this.pageSize = pageSize;
@@ -29,15 +27,6 @@ public class SearchVO extends DTO {
 		this.searchWord = searchWord;
 		this.div = div;
 	}
-
-	public String getDiv() {
-		return div;
-	}
-
-	public void setDiv(String div) {
-		this.div = div;
-	}
-
 	public int getPageSize() {
 		return pageSize;
 	}
@@ -69,15 +58,18 @@ public class SearchVO extends DTO {
 	public void setSearchWord(String searchWord) {
 		this.searchWord = searchWord;
 	}
-
+	
+	public String getDiv() {
+		return div;
+	}
+	public void setDiv(String div) {
+		this.div = div;
+	}
 	@Override
 	public String toString() {
 		return "SearchVO [pageSize=" + pageSize + ", pageNum=" + pageNum + ", searchDiv=" + searchDiv + ", searchWord="
 				+ searchWord + ", div=" + div + ", toString()=" + super.toString() + "]";
 	}
-
-
-	
 	
 	
 }

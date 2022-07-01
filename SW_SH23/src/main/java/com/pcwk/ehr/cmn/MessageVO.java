@@ -1,11 +1,12 @@
 package com.pcwk.ehr.cmn;
 
 public class MessageVO extends DTO {
-
-	private String msgId;//메시지 ID
-	private String msgContents;//메시지 내용
+	private String msgId; //메세지 ID
+	private String msgContents; //메세지내용
 	
-	public MessageVO() {}
+	public MessageVO() {
+		
+	}
 
 	public MessageVO(String msgId, String msgContents) {
 		super();
@@ -31,10 +32,9 @@ public class MessageVO extends DTO {
 
 	@Override
 	public String toString() {
-		return "MessageVO [msgId=" + msgId + ", msgContents=" + msgContents + ", toString()=" + super.toString() + "]";
+		return "MessageVO [msgId=" + msgId + ", msgContents=" + msgContents + ", getNum()=" + getNum()
+				+ ", getTotalCnt()=" + getTotalCnt() + "]";
 	}
-
-
 	
 	
 }

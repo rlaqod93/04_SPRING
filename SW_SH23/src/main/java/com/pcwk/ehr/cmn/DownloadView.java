@@ -6,7 +6,7 @@
 * Author: ITSC
 * Since: 2022/06/30
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -35,9 +35,9 @@ import org.springframework.web.servlet.view.AbstractView;
  * @author ITSC
  *
  */
-public class DownloadView extends AbstractView {
+public class DownloadView extends AbstractView{
 
-	final Logger LOG = LogManager.getLogger(getClass());
+	final Logger LOG = LogManager.getLogger(this.getClass());
 	
 	public DownloadView() {
 		setContentType("application/download;charset=utf-8");
@@ -50,15 +50,14 @@ public class DownloadView extends AbstractView {
 	 * @param response
 	 * @throws Exception
 	 */
-	public void setDownloadFileName(String orgFileNm, HttpServletRequest request,
-			HttpServletResponse response)throws Exception {
+	public void setDownloadFileName(String orgFileNm, HttpServletRequest request, HttpServletResponse response) throws Exception{
 		String userAgent = request.getHeader("User-Agent");//브라우저 구분
-		LOG.debug("===========================");
-		LOG.debug("==userAgent="+userAgent);
-		LOG.debug("==orgFileNm="+orgFileNm);
+		LOG.debug("========================");
+		LOG.debug("=userAgent=" + userAgent);
+		LOG.debug("=orgFileNm=" + orgFileNm);
 		
-		orgFileNm = URLEncoder.encode(orgFileNm, "utf-8");
-		LOG.debug("==encode orgFileNm="+orgFileNm);
+		URLEncoder.encode(orgFileNm, "utf-8");
+		LOG.debug("=encode orgFileNm" + orgFileNm);
 		
 		//header에 원본 파일명 전달
 		response.setHeader("Content-Disposition", "attachment; fileName=\""+orgFileNm+"\";");
@@ -66,45 +65,43 @@ public class DownloadView extends AbstractView {
 	}
 	
 	/**
-	 * 파일 다운로드 
+	 * 실제 파일 다운로드
 	 * @param downloadFile
+	 * @param request
+	 * @param response
+	 * @throws Exception
 	 */
-	public void downloadFile(File downloadFile, HttpServletRequest request,
-			HttpServletResponse response)throws Exception {
-		FileInputStream  in=new FileInputStream(downloadFile);
+	public void downloadFile(File downloadFile, HttpServletRequest request, HttpServletResponse response) throws Exception{
+		FileInputStream in = new FileInputStream(downloadFile);
 		
-		OutputStream     out = response.getOutputStream();
+		OutputStream out = response.getOutputStream();
 		
 		try {
-			
 			int bytes = FileCopyUtils.copy(in, out);
-			LOG.debug("===========================");
-			LOG.debug("==bytes="+bytes);			
-			LOG.debug("===========================");
+			LOG.debug("========================");
+			LOG.debug("=bytes=" + bytes);
+			LOG.debug("========================");
+			
 		}catch(IOException e) {
 			throw e;
 		}finally {
-			if(null !=in) {
+			if(in != null) {
 				try {
 					in.close();
 				}catch(IOException e) {
 					
 				}
 			}
-			
-			if(null !=out) {
+			if(out != null) {
 				try {
 					out.close();
 				}catch(IOException e) {
 					
-				}				
+				}
 			}
-			
-			
 		}
 		
 	}
-	
 	
 	//다운로드 view에 시작
 	@Override
@@ -112,32 +109,22 @@ public class DownloadView extends AbstractView {
 			HttpServletResponse response) throws Exception {
 		
 		setResponseContentType(request, response);
-		String orgFileNm = (String) model.get("orgFileNm");
-		File downloadFile = (File) model.get("downloadFile");
+		String orgFileNm = (String)model.get("orgFileNm");
+		File downloadFile = (File)model.get("downloadFile");
 		
-		LOG.debug("===========================");
-		LOG.debug("==orgFileNm="+orgFileNm);
-		LOG.debug("==downloadFile="+downloadFile);
-		LOG.debug("===========================");
+		LOG.debug("=========================");
+		LOG.debug("=orgFileNm=" + orgFileNm);
+		LOG.debug("=downloadFile=" + downloadFile);
+		LOG.debug("=========================");
 		
 		//다운로드 파일을 원본파일로 변경
-		setDownloadFileName(orgFileNm,request,response);
+		setDownloadFileName(orgFileNm, request, response);
 		
 		//stream을 통한 파일 다운로드
-		downloadFile(downloadFile,request,response);
+		downloadFile(downloadFile, request, response);
+		
+		
 		
 	}
-
+	
 }
-
-
-
-
-
-
-
-
-
-
-
-

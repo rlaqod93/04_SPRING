@@ -6,7 +6,7 @@
 * Author: ITSC
 * Since: 2022/06/27
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -34,16 +34,15 @@ import com.pcwk.ehr.cmn.DTO;
  */
 @Service("boardService")
 public class BoardServiceImpl implements BoardService {
-	final Logger LOG = LogManager.getLogger(getClass());
+
+	final Logger LOG = LogManager.getLogger(this.getClass());
 	
 	@Autowired
-	private BoardDao  boardDao;
-	
+	private BoardDao boardDao;
 	
 	public BoardServiceImpl() {
 		
 	}
-	
 	
 	@Override
 	public List<BoardVO> doRetrieve(DTO dto) throws SQLException {
@@ -67,23 +66,14 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public BoardVO doSelectOne(BoardVO inVO) throws SQLException {
-        //1.단건 조회
-		//2.조회count증가 
+		//1. 단건 조회
+		//2. 조회 count증가
 		BoardVO outVO = boardDao.doSelectOne(inVO);
-		//2.1. 본인이 등록한 글은 조회count가 증가되지 않게 처리
-		
-		//if(null != outVO && !outVO.getRegId().equals(inVO.getModId())) {
-		if(null != outVO ) {
+		//2-1. 본인이 등록한 글은 조희 count가 증가되지 않게 처리
+		//  && !outVO.getRegId().equals(inVO.getModId())
+		if(outVO != null) {
 			boardDao.updateReadCnt(inVO);
 		}
-		
 		return outVO;
 	}
-
 }
-
-
-
-
-
-

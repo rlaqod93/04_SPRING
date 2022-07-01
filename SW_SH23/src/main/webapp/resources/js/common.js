@@ -1,11 +1,9 @@
 'use strict';
 
 let isEmpty = function(value){
-  if(null ==value || value == "" || "null" == value || value == undefined){
+  if(value == null || value == "" || value == "null" || value == undefined){
     return true;
   }else{
     return false;
   }
-  
 };
- 

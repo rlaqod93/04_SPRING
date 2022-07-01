@@ -1,12 +1,12 @@
 /**
 * <pre>
 * com.pcwk.ehr.naver.domain
-* Class Name : Item.java
-* Description: naver blog item데이터 
+* Class Name : item.java
+* Description: naver blog item데이터
 * Author: ITSC
 * Since: 2022/06/29
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -29,8 +29,9 @@ public class Item extends DTO {
 	private String bloggername;
 	private String bloggerlink;
 	private String postdate;
-
+	
 	public Item() {
+		
 	}
 
 	public String getTitle() {
@@ -84,9 +85,8 @@ public class Item extends DTO {
 	@Override
 	public String toString() {
 		return "Item [title=" + title + ", link=" + link + ", description=" + description + ", bloggername="
-				+ bloggername + ", bloggerlink=" + bloggerlink + ", postdate=" + postdate + "]";
+				+ bloggername + ", bloggerlink=" + bloggerlink + ", postdate=" + postdate + ", toString()="
+				+ super.toString() + "]";
 	}
 
-	
-	
 }

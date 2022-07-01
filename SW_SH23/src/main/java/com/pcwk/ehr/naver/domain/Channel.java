@@ -6,7 +6,7 @@
 * Author: ITSC
 * Since: 2022/06/29
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -24,10 +24,11 @@ import java.util.List;
  *
  */
 public class Channel {
-
-	private List<Item>  items = new ArrayList<Item>();
+	private List<Item> items = new ArrayList<Item>();
 	
-	public Channel() {}
+	public Channel() {
+		
+	}
 
 	public List<Item> getItems() {
 		return items;
@@ -36,7 +37,5 @@ public class Channel {
 	public void setItems(List<Item> items) {
 		this.items = items;
 	}
-	
-	
 	
 }

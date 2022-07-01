@@ -6,7 +6,7 @@
 * Author: ITSC
 * Since: 2022/06/29
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -39,61 +39,61 @@ import com.pcwk.ehr.naver.domain.Item;
  */
 @Service("naverBlogService")
 public class NaverBlogServiceImpl implements NaverBlogService {
-	final Logger LOG = LogManager.getLogger(getClass());
+
+	final Logger LOG = LogManager.getLogger(this.getClass());
 	
-	public NaverBlogServiceImpl() {}
+	public NaverBlogServiceImpl() {
+		
+	}
 	
 	@Override
 	public List<Item> doRetrieve(SearchVO dto) throws SQLException {
-		String clientId = "xkHJBdkGsqi8u1fyY_WT";//회원ID
-		String clientSecret = "gHSDoIjdTs";      //회원비번
-		LOG.debug("================================");
+		
+		String clientId = "w7CZy4kWb13gklCaYPPz"; //회원ID
+		String clientSecret = "D0GPTIhYIe";       //회원비번
+		LOG.debug("=======================================");
 		Channel channel = null;
 		try {
-			String searchText = URLEncoder.encode(dto.getSearchWord(), "UTF-8") ;
-		    String apiURL     = "https://openapi.naver.com/v1/search/blog?query="+searchText+"&display="+dto.getPageSize();//json
-		    //String apiURL   = "https://openapi.naver.com/v1/search/blog.xml?query="+searchText; //xml
-		    
-		    URL  url=new URL(apiURL);
-		    
-		    HttpURLConnection  con = (HttpURLConnection)url.openConnection();
-		    con.setRequestMethod("GET");
-		    con.setRequestProperty("X-Naver-Client-Id", clientId);
-		    con.setRequestProperty("X-Naver-Client-Secret", clientSecret);
-		    
-		    int responseCode = con.getResponseCode();
-		    LOG.debug("=responseCode="+responseCode);
-		    
-		    BufferedReader  br;
-		    
-		    if(200 == responseCode) {
-		    	br=new BufferedReader(new InputStreamReader(con.getInputStream()));
-		    }else {
-		    	br=new BufferedReader(new InputStreamReader(con.getErrorStream()));
-		    }
-		    
-		    String inputLine = "";
-		    StringBuffer  responseData=new StringBuffer(2000);
-		    
-		    while( (inputLine=br.readLine()) !=null) {
-		    	//LOG.debug(inputLine);
-		    	responseData.append(inputLine);
-		    }
-		    br.close();
-		    
-		    Gson gson=new Gson();
-		    channel = gson.fromJson(responseData.toString(), Channel.class);
-		    
-		    for(Item item  :channel.getItems()) {
-		    	LOG.debug(item);
-		    }
-		    
+			String searchText = URLEncoder.encode(dto.getSearchWord(), "UTF-8");
+//			String apiURL = "https://openapi.naver.com/v1/search/blog.xml?query=" + searchText; //xml
+			String apiURL = "https://openapi.naver.com/v1/search/blog?query=" + searchText + "&display=" +dto.getPageSize(); //json
+			URL url = new URL(apiURL);
+			
+			HttpURLConnection con = (HttpURLConnection)url.openConnection();
+			con.setRequestMethod("GET");
+			con.setRequestProperty("X-Naver-Client-Id", clientId);
+			con.setRequestProperty("X-Naver-Client-Secret", clientSecret);
+			
+			int responseCode = con.getResponseCode();
+			LOG.debug("=responseCode=" + responseCode);
+			
+			BufferedReader br;
+			if(responseCode == 200) {
+				br = new BufferedReader(new InputStreamReader(con.getInputStream()));
+			}else {
+				br = new BufferedReader(new InputStreamReader(con.getErrorStream()));
+			}
+			String inputLine = "";
+			StringBuffer responseData = new StringBuffer();
+			
+			while((inputLine = br.readLine()) != null) {
+				LOG.debug(inputLine);
+				responseData.append(inputLine);
+			}
+			br.close();
+			
+			Gson gson = new Gson();
+			channel = gson.fromJson(responseData.toString(), Channel.class);
+			for(Item item : channel.getItems()) {
+				LOG.debug(item);
+			}
 		}catch(Exception e) {
-			LOG.debug("================================");
-			LOG.debug("=e="+e.getMessage());
-			LOG.debug("================================");
+			LOG.debug("=======================================");
+			LOG.debug("=e=" + e.getMessage());
+			LOG.debug("=======================================");
 			e.printStackTrace();
 		}
+		
 		return channel.getItems();
 	}
 

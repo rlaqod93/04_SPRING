@@ -9,40 +9,38 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("boot")
 public class BootController {
-    final Logger LOG=LogManager.getLogger(getClass());
-    
-	@RequestMapping(value = "/bootList.do",method = RequestMethod.GET)
+	final Logger LOG = LogManager.getLogger(this.getClass());
+	
+	// http://localhost:8081/ehr/boot/bootList.do
+	@RequestMapping(value = "/bootList.do", method = RequestMethod.GET)
 	public String bootList() {
-		LOG.debug("========================");
+		LOG.debug("===================");
 		LOG.debug("=bootList()=");
-		LOG.debug("========================");
+		LOG.debug("===================");
 		
-		///WEB-INF/views/+ boot/boot_list+ .jsp
-		///WEB-INF/views/boot/boot_list.jsp
+		// /WEB-INF/views/ + boot/boot_list + .jsp
+		// /WEB-INF/views/boot/boot_list.jsp
 		return "boot/boot_list";
 	}
 	
-	@RequestMapping(value = "/bootReg.do",method = RequestMethod.GET)
+	@RequestMapping(value = "/bootReg.do", method = RequestMethod.GET)
 	public String bootReg() {
-		LOG.debug("========================");
+		LOG.debug("===================");
 		LOG.debug("=bootReg()=");
-		LOG.debug("========================");
+		LOG.debug("===================");
 		
-		///WEB-INF/views/+ boot/boot_list+ .jsp
-		///WEB-INF/views/boot/boot_list.jsp
-		return "boot/boot_reg";    
+		// /WEB-INF/views/ + boot/boot_reg + .jsp
+		// /WEB-INF/views/boot/boot_reg.jsp
+		return "boot/boot_reg";
 	}
 	
-	@RequestMapping(value = "/tmpMenu.do",method = RequestMethod.GET)
+	@RequestMapping(value = "/tmpMenu.do", method = RequestMethod.GET)
 	public String tmpMenu() {
-		LOG.debug("========================");
+		LOG.debug("===================");
 		LOG.debug("=tmpMenu()=");
-		LOG.debug("========================");
+		LOG.debug("===================");
 		
-		///WEB-INF/views/+ boot/boot_list+ .jsp
-		///WEB-INF/views/boot/boot_list.jsp
-		return "menu/tmp_menu";    
+		return "menu/tmp_menu";
 	}
 	
 }
-

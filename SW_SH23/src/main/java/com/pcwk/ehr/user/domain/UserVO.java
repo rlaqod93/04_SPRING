@@ -2,20 +2,25 @@ package com.pcwk.ehr.user.domain;
 
 import com.pcwk.ehr.cmn.DTO;
 
-public class UserVO extends DTO {
-	private String uId;  // 사용자 아이디
-	private String name; // 이름
-	private String passwd; // 비밀번호
+public class UserVO extends DTO{
 	
-	private Level  level;//등급: 1 -> BASIC,2 -> SILVER,3 -> GOLD
-	private int    login; //로그인
-	private int    recommend;//추천수
-	private String email;//이메일
-	private String regDt;//등록일
+	private String uId; // 사용자 아이디
+	private String name; // 사용자 이름
+	private String passwd; // 사용자 비번
 	
-	private int intLevel;//mybatis level
+	private Level level;// 등급 : 1->BASIC, 2->SILVER, 3->GOLD
+	private int login; // 로그인
+	private int recommend; // 추천수
+	private String email; // 이메일
+	private String regDt; // 등록일
 	
-	public UserVO() {}
+	private int intLevel; // mybatis level
+	
+	
+
+	public UserVO() {
+		
+	}
 	
 	public UserVO(String uId, String name, String passwd, Level level, int login, int recommend, String email,
 			String regDt) {
@@ -31,9 +36,6 @@ public class UserVO extends DTO {
 		
 		this.intLevel = level.getValue();
 	}
-	
-	
-	
 	public int getIntLevel() {
 		return intLevel;
 	}
@@ -41,10 +43,9 @@ public class UserVO extends DTO {
 	public void setIntLevel(int intLevel) {
 		this.intLevel = intLevel;
 		//mybatis
-		this.level=Level.valueOf(intLevel);
-		
+		this.level = level.valueOf(intLevel);
 	}
-
+	
 	public int getLogin() {
 		return login;
 	}
@@ -80,16 +81,15 @@ public class UserVO extends DTO {
 	public Level getLevel() {
 		return level;
 	}
-
+	
 	public void setLevel(Level level) {
 		this.level = level;
-		
 		//mybatis
-		if(null !=level) {
+		if(level != null) {
 			this.intLevel = this.level.getValue();
 		}
 	}
-   
+
 	public String getuId() {
 		return uId;
 	}
@@ -120,15 +120,14 @@ public class UserVO extends DTO {
 				+ ", recommend=" + recommend + ", email=" + email + ", regDt=" + regDt + ", toString()="
 				+ super.toString() + "]";
 	}
-
-    //
+	
 	/**
-	 * 다음 레벨로 up
+	 * 다음레벨로 up
 	 */
 	public void upgradeLevel() {
 		Level nextLevel = this.level.nextLevel();
-		if(null == nextLevel) {
-			throw new IllegalArgumentException(this.level+"더이상 등업이 불가능 합니다.");
+		if(nextLevel == null) {
+			throw new IllegalArgumentException(this.level + "더 이상 등업이 불가능 합니다!");
 		}else {
 			this.level = nextLevel;
 			
@@ -136,8 +135,4 @@ public class UserVO extends DTO {
 			this.intLevel = this.level.getValue();
 		}
 	}
-	
-
-	
-	
 }

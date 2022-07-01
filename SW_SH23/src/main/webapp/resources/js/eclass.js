@@ -1,6 +1,10 @@
 /**
  * 
  */
+function updateProgress(percentage){
+    document.getElementById('progressBar').style.width = percentage+'%';
+    $('#progressBar').html(percentage+'%');
+}
 
 EClass = {
     /**
@@ -23,17 +27,20 @@ EClass = {
              
             console.log("=callAjax========================="); 
             console.log("_URL:"+_URL);
-            //console.log("_PARAMETERS:"+_PARAMETERS);
+            console.log("_PARAMETERS:"+_PARAMETERS);
             
 			let _paramArray = Object.keys(_PARAMETERS);//param key목록
             if(_paramArray.length>0){
-	            for(let i=0;i<_paramArray.length;i++){
+	            for(let i=1;i<_paramArray.length;i++){
 	            	console.log(_paramArray[i]+":"+_PARAMETERS[_paramArray[i]]);
 	            }
             }   
             console.log("_METHOD:"+_METHOD);
             console.log("_ASYNC_STATUS:"+_ASYNC_STATUS);
             console.log("=callAjax=========================");
+            
+            
+            
             $.ajax({
                 url     : _URL,
                 type    : _METHOD,
@@ -42,14 +49,6 @@ EClass = {
                 success : function(rst){
                     _CALLBACK(rst);
                 },
-                beforeSend: function (){  
-            		$("#loading").show(); //프로그래스 바
-            		console.log("프로그램스 start");
-            	},
-            	complete : function (){
-            		$("#loading").hide();
-            		console.log("프로그램스 end");
-            	},             
                 error   : function(xhr,status,err){
                 
                     console.log("_errorMsg:"+xhr.status);
@@ -69,5 +68,4 @@ EClass = {
             return false;
         }
     }
-
 };

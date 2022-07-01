@@ -1,12 +1,12 @@
 /**
 * <pre>
 * com.pcwk.ehr.login.controller
-* Class Name : LonginController.java
+* Class Name : LoginController.java
 * Description:
 * Author: ITSC
 * Since: 2022/06/23
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -37,66 +37,59 @@ import com.pcwk.ehr.user.service.UserService;
  * @author ITSC
  *
  */
-@Controller("longinController")
+@Controller("loginController")
 @RequestMapping("login")
 public class LoginController {
-
-	final Logger LOG = LogManager.getLogger(getClass());
+	final Logger LOG = LogManager.getLogger(this.getClass());
 	
 	@Autowired
-	UserService  userService;
+	UserService userService;
 	
 	public LoginController() {
-		LOG.debug("===========================");
-		LOG.debug("=LonginController()=");
-		LOG.debug("===========================");
+		LOG.debug("========================");
+		LOG.debug("=LoginController()=");
+		LOG.debug("========================");
 	}
 	
-	@RequestMapping(value="/doLogin.do"
-			, method = RequestMethod.POST 
-			,produces = "application/json;charset=UTF-8")
+	@RequestMapping(value="/doLogin.do", method=RequestMethod.POST
+			, produces = "application/json;charset=UTF-8")
 	@ResponseBody
-	public String doLogin(UserVO  inVO, HttpSession session)throws SQLException{
+	public String doLogin(UserVO inVO, HttpSession session) throws SQLException {
 		String jsonString = "";
-		LOG.debug("===========================");
-		LOG.debug("=inVO="+inVO);
-		LOG.debug("===========================");
-		
+		LOG.debug("========================");
+		LOG.debug("=inVO=" + inVO);
+		LOG.debug("========================");
 		
 		MessageVO message = userService.idPassCheck(inVO);
-        //msgId
-		//1. ID확인 : 10
-		//2. 비번확인: 20      
-		//3. id/비번 통과: 30		
+		//msgId : 메시지id
+		//1. id확인 : 10
+		//2. 비번확인 : 20
+		//3. id/비번 통과 : 30
 		
-		if(null !=message && "30".equals(message.getMsgId())){
+		if(message != null && message.getMsgId().equals("30")) {
 			UserVO loginUser = userService.doSelectOne(inVO);
-			if(null !=loginUser) {
+			if(loginUser != null) {
 				session.setAttribute("user", loginUser);
-				
-				message.setMsgContents(loginUser.getName()+"님이  로그인 되었습니다.");
+				message.setMsgContents(loginUser.getName() + "님이 로그인 되었습니다.");
 			}
 		}
-		
 		jsonString = new Gson().toJson(message);
 		
-		LOG.debug("===========================");
-		LOG.debug("=jsonString="+jsonString);
-		LOG.debug("===========================");		
+		LOG.debug("====================");
+		LOG.debug("=jsonString=" + jsonString);
+		LOG.debug("====================");
+		
 		return jsonString;
 	}
 	
 	
-	
 	@RequestMapping(value="/loginView.do", method=RequestMethod.GET)
-	public String loginView()throws SQLException{
-		LOG.debug("===========================");
+	public String loginView() throws SQLException{
+		LOG.debug("========================");
 		LOG.debug("=loginView()=");
-		LOG.debug("===========================");
-		
+		LOG.debug("========================");
 		// /WEB-INF/views/login/login.jsp
 		return "login/login";
 	}
-	
 	
 }

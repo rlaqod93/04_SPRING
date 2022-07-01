@@ -6,7 +6,7 @@
 * Author: ITSC
 * Since: 2022/06/29
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -21,15 +21,16 @@ package com.pcwk.ehr.cmn;
  *
  */
 public class FileVO extends DTO {
-	// 파일아이디(DB)
-	// 파일순번(DB)
-	private String orgFileNm; // 원본 파일명
-	private String saveFileNm; // 저장 파일명
-	private String savePath; // 저장 경로
-	private long fileSize; // 파일 사이즈
-	private String ext; // 확장자
-
+	//파일 아이디
+	//파일 순번
+	private String orgFileNm; //원본 파일명
+	private String saveFileNm;//저장 파일명
+	private String savePath; //저장 경로
+	private long fileSize;//파일 사이즈
+	private String ext;//확장자
+	
 	public FileVO() {
+		
 	}
 
 	public String getOrgFileNm() {
@@ -78,7 +79,4 @@ public class FileVO extends DTO {
 				+ ", fileSize=" + fileSize + ", ext=" + ext + ", toString()=" + super.toString() + "]";
 	}
 	
-	
-	
-
 }

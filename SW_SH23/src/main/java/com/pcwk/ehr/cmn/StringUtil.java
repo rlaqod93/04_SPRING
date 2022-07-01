@@ -4,24 +4,17 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class StringUtil {
-
-	public final static String
-	     CONTENT_UTF_8="text/html;charset=UTF-8";
-	
-	
+	public final static String CONTENT_UTF_8 = "text/html;charset=UTF-8";
 	
 	/**
 	 * File Rename
 	 * @param dateFormat
-	 * @return 46byte 데이터 
+	 * @return 46byte 데이터
 	 */
 	public static String getRenameFile(String dateFormat) {
-		return currentDate(dateFormat)+getUUID();
+		return currentDate(dateFormat) + getUUID();
 	}
-	
 	
 	/**
 	 * 현재 날짜를 format에 따라 추출
@@ -29,55 +22,18 @@ public class StringUtil {
 	 * @return
 	 */
 	public static String currentDate(String dateFormat) {
-		SimpleDateFormat  sdf=new SimpleDateFormat(dateFormat);
-		return sdf.format(new Date());
+		Date curDate = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
+		return sdf.format(curDate);		
 	}
 	
-	//
-	/**
-	 * uuid는 범용고유식별자(Universal Unique IDentifier)라고 한다.
+	/**UUID는 범용고유식별자(Universal Unique Identifier)라고 한다.
 	 * 32bit uuid
 	 * @return
 	 */
 	public static String getUUID() {
 		return UUID.randomUUID().toString().replaceAll("-", "");
 	}
-	
-	
-	
-	
-	public final static String CARRIAGE_RETURN = "\r";
-	public final static String LINE_FEED       = "\n";
-	
-	
-	public static String replaceAllNewlineToBrTag(String str,String replaceStr) {
-		//\r\n 또는 \n\r 또는 \n 또는 \r을 찾아서 공백으로 치환하는 명령입니다.
-		return StringUtils.defaultString(str).replaceAll(CARRIAGE_RETURN+LINE_FEED, replaceStr);
-		
-	}
-	
-	
-	public static String trimReplaceNewlineToBrTag(String str) {
-		return replaceNewlineToBrTag(str).trim();
-	}
-	/**
-	 * 
-	 * @param str
-	 * @return
-	 */
-	public static String replaceNewlineToBrTag(String str) {
-		return StringUtils.defaultString(str).replace(CARRIAGE_RETURN+LINE_FEED, "<br/>").replace(LINE_FEED, "<br/>");
-		
-	}
-	
-	public static String trimAndReplaceCRLFtoLF(String str) {
-		return replaceCRLFtoLF(str).trim();
-	}
-	
-	public static String replaceCRLFtoLF(String str) {
-		return StringUtils.defaultString(str).replace(CARRIAGE_RETURN+LINE_FEED,LINE_FEED);
-	}
-	
 	
 	/**
 	 * <table>
@@ -90,7 +46,7 @@ public class StringUtil {
 	 * @param currPageNo: 1
 	 * @param rowPerPage  : 10
 	 * @param bottomCount : 10
-	 * @param url         : /WEB_H01/board/board.do?work_div=doRetrieve
+	 * @param url         : /WEB_H01/board/board.do?work_div=doRetrieve&div=10
 	 * @param scriptName  : doRetrieve
 	 * @return
 	 */
@@ -98,11 +54,7 @@ public class StringUtil {
 			String scriptName) {
 
 		/**
-		 * 총글수: 21 
-		 * 현재페이지: 1 
-		 * 한페이지에 보여질 행수: 10 
-		 * 바닥에 보여질 페이지 수: 10 
-		 * << 시작페이지 < bottomCount :
+		 * 총글수: 21 현재페이지: 1 한페이지에 보여질 행수: 10 바닥에 보여질 페이지 수: 10 << 시작페이지 < bottomCount :
 		 * -10개씩 > bottomCount : +10개씩 >> 마지막 page
 		 * 
 		 * << < 1 2 3 4 5 6 7 8 9 10 > >>
@@ -182,20 +134,17 @@ public class StringUtil {
 		html.append("</table>   \n");
 
 		return html.toString();
-	}	
-	/**  
+	}
+	/**
 	 * request null처리 함수
 	 * @param input : 입력
 	 * @param replace : 치환
-	 * @return String:앞뒤 빈공간 제거된 문자열
+	 * @return String : 앞뒤 빈공간 제거된 문자열
 	 */
-	public static String nvl(String input,String replace) {
-		if(null == input || input.equals("")) {
+	public static String nvl(String input, String replace) {
+		if(input == null || input.equals("")) {
 			input = replace;
 		}
-		
 		return input.trim();
 	}
-	
 }
-

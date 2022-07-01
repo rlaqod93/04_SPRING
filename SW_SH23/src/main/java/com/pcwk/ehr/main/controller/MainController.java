@@ -6,7 +6,7 @@
 * Author: ITSC
 * Since: 2022/06/23
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -28,26 +28,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author ITSC
  *
  */
-
 @Controller("mainController")
 @RequestMapping("main")
 public class MainController {
-
-	final Logger LOG = LogManager.getLogger(getClass());
-	
+	final Logger LOG = LogManager.getLogger(this.getClass());
 	
 	public MainController() {
-		LOG.debug("===========================");
+		LOG.debug("========================");
 		LOG.debug("=MainController()=");
-		LOG.debug("===========================");		
-		
+		LOG.debug("========================");
 	}
 	
 	@RequestMapping(value="/mainView.do", method=RequestMethod.GET)
-	public String mainView()throws SQLException{
+	public String mainView() throws SQLException{
+		LOG.debug("========================");
+		LOG.debug("=mainView()=");
+		LOG.debug("========================");
 		
-		// /WEB-INF/views/main/main.jsp
 		return "main/main";
 	}
-	
 }

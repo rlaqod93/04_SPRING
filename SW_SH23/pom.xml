@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.pcwk</groupId>
 	<artifactId>ehr</artifactId>
-	<name>SW_SH23</name>
+	<name>SW_SH23_01</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
-    <properties>
+   <properties>
         <java-version>1.8</java-version>
         <spring-context.version>5.3.13</spring-context.version>
         <aopalliance.version>1.0</aopalliance.version>
@@ -17,12 +17,13 @@
         <log4j-core.version>2.17.1</log4j-core.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>4.13.1</junit.version>
-        <ojdbc8.version>18.3.0.0</ojdbc8.version>        
+        <ojdbc8.version>18.3.0.0</ojdbc8.version>
         <commons-dbcp-version>1.4</commons-dbcp-version>
-        <org.mybatis-version>3.5.7</org.mybatis-version>    
+        <org.mybatis-version>3.5.7</org.mybatis-version>
         <mybatis-spring-version>2.0.6</mybatis-spring-version>
+        
         <servlet-api-version>2.5</servlet-api-version>
-        <jsp-api-version>2.1</jsp-api-version>  
+        <jsp-api-version>2.1</jsp-api-version>
         <jstl-version>1.2</jstl-version>
         <org.bgee.log4jdbc-log4j2-version>1.16</org.bgee.log4jdbc-log4j2-version>
         
@@ -31,209 +32,179 @@
         <gson-version>2.8.5</gson-version>
         <commons-fileupload-version>1.4</commons-fileupload-version>
         <commons-io-version>2.11.0</commons-io-version>
-        <tiles-version>3.0.5</tiles-version>
+        <tiles-jsp-version>3.0.5</tiles-jsp-version>
+        
     </properties>
     <dependencies>
-		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-api -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-api -->
 		<dependency>
 		    <groupId>org.apache.tiles</groupId>
 		    <artifactId>tiles-api</artifactId>
-		    <version>${tiles-version}</version>
+		    <version>${tiles-jsp-version}</version>
 		</dependency>
-		    
-		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-servlet -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-servlet -->
 		<dependency>
 		    <groupId>org.apache.tiles</groupId>
 		    <artifactId>tiles-servlet</artifactId>
-		    <version>${tiles-version}</version>
+		    <version>${tiles-jsp-version}</version>
 		</dependency>
-		
-		    
-		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-core -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-core -->
 		<dependency>
 		    <groupId>org.apache.tiles</groupId>
 		    <artifactId>tiles-core</artifactId>
-		    <version>${tiles-version}</version>
+		    <version>${tiles-jsp-version}</version>
 		</dependency>
-		
-		    
-		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-jsp -->
+        <!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-jsp -->
 		<dependency>
 		    <groupId>org.apache.tiles</groupId>
 		    <artifactId>tiles-jsp</artifactId>
-		    <version>${tiles-version}</version>
+		    <version>${tiles-jsp-version}</version>
 		</dependency>
-		    
-		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		        
+        <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
 		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-lang3</artifactId>
-		    <version>3.12.0</version>
+		    <groupId>commons-fileupload</groupId>
+		    <artifactId>commons-fileupload</artifactId>
+		    <version>${commons-fileupload-version}</version>
 		</dependency>
-		    
-		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-text</artifactId>
-		    <version>1.9</version>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>${commons-io-version}</version>
 		</dependency>
-
-    
-	<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
-	<dependency>
-	    <groupId>commons-fileupload</groupId>
-	    <artifactId>commons-fileupload</artifactId>
-	    <version>${commons-fileupload-version}</version>
-	</dependency>
-	    
-	<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-	<dependency>
-	    <groupId>commons-io</groupId>
-	    <artifactId>commons-io</artifactId>
-	    <version>${commons-io-version}</version>
-	</dependency>
-    
-    <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
-    <dependency>
-        <groupId>com.google.code.gson</groupId>
-        <artifactId>gson</artifactId>
-        <version>${gson-version}</version>
-    </dependency>
-
-    
-    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
-    <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>${javax.servlet-api-version}</version>
-        <scope>provided</scope>
-    </dependency>
-
-    
-    <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
-    <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-all</artifactId>
-        <version>${org.mockito-version}</version>
-        <scope>test</scope>
-    </dependency>
-
-    
-        <!-- mybatis log4jdbc-log4j2 라이브러리 -->
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson-version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet-api-version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${org.mockito-version}</version>
+            <scope>test</scope>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1 -->
         <dependency>
             <groupId>org.bgee.log4jdbc-log4j2</groupId>
             <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
             <version>${org.bgee.log4jdbc-log4j2-version}</version>
         </dependency>
-
-
+        <!-- mybatis spring -->
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis-spring-version}</version>
+        </dependency>
+        <!-- mybatis -->
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${org.mybatis-version}</version>
+        </dependency> 
+        <!-- dbcp -->
+        <!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>${commons-dbcp-version}</version>
+        </dependency>
+        <!-- ojdbc8 -->
+        <!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc8 -->
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>${ojdbc8.version}</version>
+        </dependency>
     
-    <!-- mybatis-spring -->
-    <dependency>
-        <groupId>org.mybatis</groupId>
-        <artifactId>mybatis-spring</artifactId>
-        <version>${mybatis-spring-version}</version>
-    </dependency>
-        
-    <!-- mybatis -->
-    <dependency>
-        <groupId>org.mybatis</groupId>
-        <artifactId>mybatis</artifactId>
-        <version>${org.mybatis-version}</version>
-    </dependency>
-        
-    <!-- commons-dbcp -->
-    <dependency>
-        <groupId>commons-dbcp</groupId>
-        <artifactId>commons-dbcp</artifactId>
-        <version>${commons-dbcp-version}</version>
-    </dependency>
-        
-    <!-- ojdbc8 -->
-    <dependency>
-        <groupId>com.oracle.database.jdbc</groupId>
-        <artifactId>ojdbc8</artifactId>
-        <version>${ojdbc8.version}</version>
-    </dependency>
-        
-    <!-- log4j-core -->
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <version>${log4j-core.version}</version>
-    </dependency>
-        
-    <!-- Mail -->
-    <dependency>
-        <groupId>javax.mail</groupId>
-        <artifactId>mail</artifactId>
-        <version>${javax.mail.version}</version>
-    </dependency> 
-        
+        <!-- log4j-core -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j-core.version}</version>
+        </dependency>
+       
+        <!-- Mail -->
+        <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>${javax.mail.version}</version>
+        </dependency>  
+    
         <!-- Aspectj -->
-    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjtools -->
-    <dependency>
-        <groupId>org.aspectj</groupId>
-        <artifactId>aspectjtools</artifactId>
-        <version>${aspectjweaver.version}</version>
-    </dependency>
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjtools -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjtools</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>  
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/aopalliance/aopalliance -->
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>${aopalliance.version}</version>
+        </dependency>
         
-    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
-    <dependency>
-        <groupId>org.aspectj</groupId>
-        <artifactId>aspectjrt</artifactId>
-        <version>${aspectjweaver.version}</version>
-    </dependency>  
-    
-    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
-    <dependency>
-        <groupId>org.aspectj</groupId>
-        <artifactId>aspectjweaver</artifactId>
-        <version>${aspectjweaver.version}</version>
-        <scope>runtime</scope>
-    </dependency>
-            
-    <!-- https://mvnrepository.com/artifact/aopalliance/aopalliance -->
-    <dependency>
-        <groupId>aopalliance</groupId>
-        <artifactId>aopalliance</artifactId>
-        <version>${aopalliance.version}</version>
-    </dependency>
-            
+        
         <!-- Spring -->
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring-context.version}</version>
-        </dependency>       
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>${spring-context.version}</version>
         </dependency>
-                
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${spring-context.version}</version>
             <scope>test</scope>
-        </dependency>       
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
             <version>${spring-context.version}</version>
         </dependency>
-    
+        
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring-context.version}</version>
-        </dependency>               
+        </dependency>
+        
         
         <!-- Logging -->
         <dependency>
@@ -305,12 +276,12 @@
         </dependency>
     
         <!-- Test -->
-       <dependency>
-         <groupId>junit</groupId>
-         <artifactId>junit</artifactId>
-         <version>${junit.version}</version>
-         <scope>test</scope>
-       </dependency>       
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>       
     </dependencies>
     <build>
         <plugins>

@@ -6,7 +6,7 @@
 * Author: ITSC
 * Since: 2022/06/24
 * Version 0.1
-* Copyright (C) by KandJang All right
+* Copyright (C) by KandJang All right reserved.
 * Modification Information
 * 수정일   수정자    수정내용
 *-----------------------------------------------------
@@ -29,7 +29,6 @@ import org.springframework.stereotype.Repository;
 import com.pcwk.ehr.board.domain.BoardVO;
 import com.pcwk.ehr.cmn.DTO;
 import com.pcwk.ehr.cmn.SearchVO;
-import com.pcwk.ehr.user.domain.UserVO;
 
 /**
  * @author ITSC
@@ -37,31 +36,33 @@ import com.pcwk.ehr.user.domain.UserVO;
  */
 @Repository("boardDao")
 public class BoardDaoImpl implements BoardDao {
-
+	
 	final Logger LOG = LogManager.getLogger(this.getClass());
 	
-	//mybatis namespace
-	final String NAVESPACE ="com.pcwk.ehr.board";
+	// mybatis namespace와 일치시켜야함
+	final String NAMESPACE = "com.pcwk.ehr.board";
 	
-	//mybatis db연결객체
+	// mybatis db연결객체
 	@Autowired
 	SqlSessionTemplate sqlSessionTemplate;
 	
-	public BoardDaoImpl() {}
-	
+	public BoardDaoImpl() {
+		
+	}
+
 	@Override
 	public List<BoardVO> doRetrieve(DTO dto) throws SQLException {
-        List<BoardVO> list =new ArrayList<BoardVO>();
-        String statement = NAVESPACE+".doRetrieve";
-        SearchVO   inVO = (SearchVO) dto;
-		LOG.debug("==============================");
+		List<BoardVO> list = new ArrayList<BoardVO>();
+		String statement = this.NAMESPACE + ".doRetrieve";
+		SearchVO inVO = (SearchVO)dto;
+		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
 		LOG.debug("statement:" + statement);
-		LOG.debug("==============================");        
+		LOG.debug("============================");
 		
-		list = sqlSessionTemplate.selectList(statement, inVO);
-        
-		for(BoardVO vo :list) {
+		list = this.sqlSessionTemplate.selectList(statement, inVO);
+		
+		for(BoardVO vo : list) {
 			LOG.debug(vo);
 		}
 		
@@ -71,101 +72,97 @@ public class BoardDaoImpl implements BoardDao {
 	@Override
 	public int doDelete(BoardVO inVO) throws SQLException {
 		int flag = 0;
-		String statement = NAVESPACE+".doDelete";
-		LOG.debug("==============================");
+		
+		String statement = this.NAMESPACE + ".doDelete";
+		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
 		LOG.debug("statement:" + statement);
-		LOG.debug("==============================");		
+		LOG.debug("============================");
 		
 		flag = this.sqlSessionTemplate.delete(statement, inVO);
-		LOG.debug("flag:" + flag);
+		LOG.debug("flag = " + flag);
 		return flag;
 	}
 
 	@Override
 	public int doUpdate(BoardVO inVO) throws SQLException {
-        int flag = 0;
-		String statement = NAVESPACE+".doUpdate";
-		LOG.debug("==============================");
+		int flag = 0;
+		String statement = this.NAMESPACE + ".doUpdate";
+		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
-		LOG.debug("statement:" + statement);
-		LOG.debug("==============================");	        
-        
+		LOG.debug("statement: " + statement);
+		LOG.debug("============================");
+		
 		flag = sqlSessionTemplate.update(statement, inVO);
-		LOG.debug("flag:" + flag);
-        
+		LOG.debug("flag : " + flag);
 		return flag;
 	}
 
 	@Override
 	public int getCount(BoardVO inVO) throws SQLException {
 		int count = 0;
-		String statement = NAVESPACE+".getCount";
-		LOG.debug("==============================");
+		
+		String statement = this.NAMESPACE + ".getCount";
+		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
-		LOG.debug("statement:" + statement);
-		LOG.debug("==============================");			
-		count = sqlSessionTemplate.selectOne(statement, inVO);
-		LOG.debug("count:" + count);
+		LOG.debug("statement: " + statement);
+		LOG.debug("============================");
+		
+		count = this.sqlSessionTemplate.selectOne(statement, inVO);
+		LOG.debug("============================");
+		LOG.debug("count=" + count);
+		LOG.debug("============================");
 		return count;
 	}
 
 	@Override
 	public int doInsert(BoardVO inVO) throws SQLException {
-        int flag = 0;
-        String statement = NAVESPACE+".doInsert";
-		LOG.debug("==============================");
+		int flag = 0;
+		
+		String statement = this.NAMESPACE + ".doInsert";
+		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
 		LOG.debug("statement:" + statement);
-		LOG.debug("==============================");	
+		LOG.debug("============================");
 		
-		flag = sqlSessionTemplate.insert(statement, inVO);
-		LOG.debug("flag:" + flag);
+		flag = this.sqlSessionTemplate.insert(statement, inVO);
+		LOG.debug("flag : " + flag);
+		
 		return flag;
 	}
 
 	@Override
 	public BoardVO doSelectOne(BoardVO inVO) throws SQLException {
 		BoardVO outVO = null;
-		String statement = NAVESPACE+".doSelectOne";
-		LOG.debug("==============================");
+		
+		String statement = this.NAMESPACE + ".doSelectOne";
+		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
 		LOG.debug("statement:" + statement);
-		LOG.debug("==============================");			
+		LOG.debug("============================");
 		
-		outVO = sqlSessionTemplate.selectOne(statement, inVO);
-		LOG.debug("outVO:" + outVO);
+		outVO = this.sqlSessionTemplate.selectOne(statement, inVO);
+		LOG.debug("============================");
+		LOG.debug("outVO=" + outVO);
+		LOG.debug("============================");
+		
 		return outVO;
 	}
 
 	@Override
 	public int updateReadCnt(BoardVO inVO) throws SQLException {
 		int flag = 0;
-		String statement = NAVESPACE+".updateReadCnt";
-		LOG.debug("==============================");
+		
+		String statement = this.NAMESPACE + ".updateReadCnt";
+		LOG.debug("============================");
 		LOG.debug("param:" + inVO.toString());
 		LOG.debug("statement:" + statement);
-		LOG.debug("==============================");			
-		flag = sqlSessionTemplate.update(statement, inVO);
+		LOG.debug("============================");
 		
-		LOG.debug("flag:" + flag);
+		flag = this.sqlSessionTemplate.update(statement, inVO);
+		LOG.debug("flag : " + flag);
+		
 		return flag;
 	}
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -8,28 +8,27 @@ import com.pcwk.ehr.cmn.MessageVO;
 import com.pcwk.ehr.user.domain.UserVO;
 
 public interface UserService {
-
 	
 	/**
-	 * 아이디 비번확인
+	 * 아이디, 비번확인
 	 * @param inVO
 	 * @return MessageVO
 	 * @throws SQLException
-	 */	
-	public MessageVO  idPassCheck(UserVO inVO) throws SQLException;
+	 */
+	public MessageVO idPassCheck(UserVO inVO) throws SQLException;
 	
 	/**
-	 * 비번확인 check
+	 * 비번확인 체크
 	 * @param inVO
-	 * @return 1(id와 비번 일치)/0(id와 비번 불일치)
+	 * @return 1(아이디비번 일치) / 0(아이디비번 불일치)
 	 * @throws SQLException
 	 */
-	public int passCheck(UserVO inVO) throws SQLException;
+	int passCheck(UserVO inVO) throws SQLException;
 	
 	/**
-	 * id중복 check
+	 * id중복 체크
 	 * @param inVO
-	 * @return
+	 * @return 
 	 * @throws SQLException
 	 */
 	public int idCheck(UserVO inVO) throws SQLException;
@@ -45,10 +44,11 @@ public interface UserService {
 	/**
 	 * 회원정보 삭제
 	 * @param inVO
-	 * @return 1(성공)/0(실패)
+	 * @return 1(성공) / 0(실패)
 	 * @throws SQLException
 	 */
 	public int doDelete(UserVO inVO) throws SQLException;
+	
 	/**
 	 * 회원정보 단건 조회
 	 * @param inVO
@@ -60,20 +60,20 @@ public interface UserService {
 	/**
 	 * 회원정보 수정
 	 * @param inVO
-	 * @return 1(성공)/0(실패)
+	 * @return 1(성공) / 0(실패)
 	 * @throws SQLException
 	 */
 	public int doUpdate(UserVO inVO) throws SQLException;
-	
+
 	/**
 	 * 회원등록
 	 * @param inVO
-	 * @return 1(성공)/0(실패)
+	 * @return 1(성공) / 0(실패)
 	 * @throws SQLException
 	 */
 	public int doInsert(final UserVO inVO) throws SQLException;
 	
-	
+
 	
 	/**
 	 * 등업기능
@@ -81,16 +81,11 @@ public interface UserService {
 	 */
 	public void upgradeLevels(UserVO inVO) throws SQLException;
 	
-	
-	// 
-	
 	/**
 	 * 최초 가입자는 기본적으로 BASIC 레벨이어야 한다.
 	 * @param inVO
-	 * @return 1(성공)/0(실패)
+	 * @return 1(성공) / 0(실패)
 	 * @throws SQLException
 	 */
 	public int add(UserVO inVO) throws SQLException;
-	
-	
 }
