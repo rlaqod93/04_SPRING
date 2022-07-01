@@ -87,7 +87,23 @@
                  <tr>
                      <td class="text-center col-sm-2 col-md-2 col-lg-2">6</td>
                      <td class="text-left   col-sm-10 col-md-10 col-lg-10"><a href="${CP }/board/boardView.do?div=20">자유게시판</a></td>
-                 </tr>                                                                                                           
+                 </tr>
+                 <tr>
+                     <td class="text-center col-sm-2 col-md-2 col-lg-2">7</td>
+                     <td class="text-left   col-sm-10 col-md-10 col-lg-10"><a href="${CP }/except/nullPointer.do?uId=">예외(Common)</a></td>
+                 </tr>
+                 <tr>
+                     <td class="text-center col-sm-2 col-md-2 col-lg-2">8</td>
+                     <td class="text-left   col-sm-10 col-md-10 col-lg-10"><a href="${CP }/except/illegal.do?uId=">예외(IllegalArgumentException)</a></td>
+                 </tr> 
+                 <tr>
+                     <td class="text-center col-sm-2 col-md-2 col-lg-2">9</td>
+                     <td class="text-left   col-sm-10 col-md-10 col-lg-10"><a href="${CP }/naverBlog/naverBlogView.do?searchWord=JAVA">NAVER Blog API</a></td>
+                 </tr>
+                 <tr>
+                     <td class="text-center col-sm-2 col-md-2 col-lg-2">10</td>
+                     <td class="text-left   col-sm-10 col-md-10 col-lg-10"><a href="${CP }/file/fileUpView.do">파일 업로드</a></td>
+                 </tr>                                                                                                                                                                                
                </tbody>
            </table>
           </div>

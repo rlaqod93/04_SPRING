@@ -69,7 +69,7 @@
           <!--// 검색영역 ----------------------------------------------------------->
           
           
-          <!-- tabble -->
+          <!-- table -->
           <div class="table-responsive">
            <table class="table table-striped table-bordered table-hover table-condensed">
                <thead class="bg-primary">
@@ -107,7 +107,7 @@
                </tbody>
            </table>
           </div>
-          <!--// tabble ----------------------------------------------------------->
+          <!--// table ----------------------------------------------------------->
           <!-- pagenation -->
 	        <div  class="text-center">
 	           <nav>

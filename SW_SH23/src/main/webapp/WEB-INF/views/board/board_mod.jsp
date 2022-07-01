@@ -1,6 +1,6 @@
 <%--
 /**
-	Class Name: boot_reg.jsp
+	Class Name: board_mod.jsp
 	Description: 부트스트랩 등록
 	Modification information
 	
